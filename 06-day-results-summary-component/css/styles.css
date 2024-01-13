@@ -21,6 +21,11 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 @media (max-width: 768px)
-main{
-   
+main {
+    width: 100%;
+    padding: 2rem;
+    overflow: auto;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 1s ease-out;
 }
