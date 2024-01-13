@@ -1,0 +1,132 @@
+/* ----- Variables ----- */
+* {
+    /* colores primarios*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream-color: hsl(30, 38%, 92%);
+    /* colores neutrales*/
+    --very-dar-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+    /* fuentes */
+    --fraunces-family: 'Fraunces', serif;
+    --montserrat-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    border-radius: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 750px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card__image {
+    position: relative;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.card__details {
+    padding: 20px;
+    font-family: var(--fraunces-family);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto;
+}
+
+span,
+p {
+    font-family: var(--montserrat-family);
+    color: var(--dark-grayish-blue);
+}
+
+span {
+    font-size: .9rem;
+    letter-spacing: .3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.actual-price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3d8168;
+}
+
+.discounted-price {
+    text-align: right;
+    font-size: .8rem;
+    color: #3d8168;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3d8168;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: var(--very-dar-blue);
+    transition: all ease .3s;
+}
+
+@media only screen and (max-width: 765px) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card__image {
+        background-image: url("../images/image-product-mobile.jpg")center center;
+        background-size: cover;
+        height: 600px;
+    }
+
+    span{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    h1{
+        font-size: 2.5rem
+    }
+}
