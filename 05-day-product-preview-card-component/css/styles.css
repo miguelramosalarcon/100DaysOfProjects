@@ -16,6 +16,9 @@
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 
+body{
+    background-color: #f2eae3;
+}
 .container {
     display: grid;
     place-items: center;
@@ -27,7 +30,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 750px;
-    background: #f2eae3;
+    background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
