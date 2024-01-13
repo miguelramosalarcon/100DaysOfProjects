@@ -6,26 +6,43 @@ Tabla de contenidos:
 3. Estilos generales ..... 32
 -------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,800&display=swap');
-
 
 /* ----- Fuente ----- */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,800&display=swap');
 
 /* ----- Variables ----- */
+*{
+    /* primarios */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
 
+    /* gradientes */
+    --Light-slate-blue-bg: hsl(252, 100%, 67%);
+    --Light-royal-blue-bg: hsl(241, 81%, 54%);
+    
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    /* neutrales */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
 
+}
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
-@media (max-width: 768px)
-main {
-    width: 100%;
-    padding: 2rem;
-    overflow: auto;
-    justify-content: center;
-    align-items: flex-start;
-    transition: all 1s ease-out;
+.card{
+    background-color: linear-gradient(var(--Light-royal-blue-bg));
+}
+@media only screen and (max-width: 765px){
+
+    .card{
+        background-image: linear-gradient(var(--Light-royal-blue-bg));
+    }
+
 }
