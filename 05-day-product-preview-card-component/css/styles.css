@@ -15,9 +15,7 @@
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
-body{
-    background-color: #f2eae3;
-}
+
 .container {
     display: grid;
     place-items: center;
