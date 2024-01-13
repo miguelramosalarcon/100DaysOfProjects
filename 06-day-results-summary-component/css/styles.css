@@ -36,8 +36,14 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    border-radius: 40px;
+}
 .card{
-    background-color: linear-gradient(var(--Light-royal-blue-bg));
+    background-image: linear-gradient(var(--Light-royal-blue-bg),var(--Light-slate-blue-bg));
 }
 @media only screen and (max-width: 765px){
 
