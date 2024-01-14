@@ -101,9 +101,33 @@ body {
 	align-items: center;
 }
 
+.circle-bar{
+	transform-origin: center center;
+	transition: .5s ease;
+	stroke-dashoffset:0 ;
+	stroke-width: 18;
+	stroke-linecap: butt;
+}
 .circle-bar:nth-child(1) {
     transform: rotateZ(-90deg);
     animation: percent1 1s ease-in-out forwards;
     stroke: var(--blue-color-3);
 }
 
+.circle-bar:nth-child(2) {
+    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100)));
+    animation: percent2 1s ease-in-out forwards;
+    stroke: var(--blue-color-2);
+}
+
+.circle-bar:nth-child(3) {
+    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100)));
+    animation: percent3 1s ease-in-out forwards;
+    stroke: var(--blue-color-4);
+}
+
+.circle-bar:nth-child(4) {
+    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100) + calc(var(--n3) * 360deg / 100)));
+    animation: percent4 1s ease-in-out forwards;
+    stroke: var(--blue-color-1);
+}
