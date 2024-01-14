@@ -30,7 +30,7 @@ Tabla de contenidos:
     --Pale-blue: hsl(221, 100%, 96%);
     --Light-lavender: hsl(241, 100%, 89%);
     --Dark-gray-blue: hsl(224, 30%, 27%);
-
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 /* ----------------------------- */
@@ -45,19 +45,34 @@ body{
 }
 
 .container{
-    display: grid;
-    place-items: center;
+    width: 100vw;
     height: 100vh;
-    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--White);
 }
 
 .card_izquierda{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     border-radius: 20px;
     background: radial-gradient( at center top, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
     overflow: hidden;
+    color: var(--Pale-blue);
 
 }
 
 .card_title{
     color: var(--White);
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    background-image: linear-gradient(var(--grad-Violet-blue-circle),var(--grad-Persian-blue-circle));
 }
