@@ -286,3 +286,33 @@ body {
 		align-items: center;
 	}
   }
+
+  @media only screen and (max-width: 400px) {
+	body {
+		overflow-y: visible;
+		height: 130vh;
+	}
+	.container {
+		width: 90%;
+	}
+	.flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1{
+		font-size: 1.5rem;
+	}
+	.inf{
+		font-size: .8rem;
+	}
+	.pro-bar-info{
+		font-size: 1rem;
+	}
+
+	.bar-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+ }
