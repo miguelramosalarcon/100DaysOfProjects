@@ -143,8 +143,23 @@ body{
 
 .rectangulo_item{
     z-index: 100;
+
+}
+
+.rectangulo_item:nth-child(1){
     color: var(--Light-red);
 }
+
+.rectangulo_item:nth-child(2){
+    color: var(--Orangey-yellow);
+}
+.rectangulo_item:nth-child(3){
+    color: var(--Green-teal);
+}
+.rectangulo_item:nth-child(4){
+    color: var(--Cobalt-blue);
+}
+
 
 .rectangulo:nth-child(1){
     background-color: #FFEEEE;
