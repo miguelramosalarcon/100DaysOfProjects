@@ -55,26 +55,28 @@ body{
 }
 
 .card_izquierda{
-    width: 400px;
+    width: 320px;
     display: flex;
     flex-direction:column;
     align-items: center;
     border-radius: 20px;
-    background: radial-gradient( at center top, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    background-image: linear-gradient(var(--Light-slate-blue-bg),var(--Light-royal-blue-bg));
     overflow: hidden;
     color: var(--Pale-blue);
 
 }
 
 .card_title{
-    color: var(--White);
+    color: var(--Pale-blue);
+    font-size: 1.1rem;
+    padding: 5px 0px;
 }
 
 .circle{
     width: 150px;
     height: 150px;
     border-radius:50%;
-    background: radial-gradient( at center top, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    background-image: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,10 +84,15 @@ body{
 }
 
 .porcentaje{
-    font-size: 3rem;
+    font-size: 4rem;
+    color: var(--White);
 }
 
 .off100{
     font-size:.8rem;
-    color:var(--Pale-blue)
+    color:var(--Light-lavender);
+}
+
+.card_text{
+    
 }
