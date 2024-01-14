@@ -51,4 +51,49 @@ body {
     justify-content: center;
 }
 
+.container {
+	width: 65vw;
+    background: white;
+    border-radius: 30px;
+    box-shadow: #e5edff 10px 10px;
+    color: #24284a;
+}
 
+.title{
+	font-size: 2rem;
+	margin-top: 2.5rem;
+	margin-left: 2.5rem;
+}
+
+.inf{
+	margin-left: 2.5rem;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.circle{
+	width: 240px;
+	height: 240px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle p{
+	position: absolute;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: var(--text-color);
+	line-height: 1.3rem;
+}
+
+.circle-bar:nth-child(1) {
+    transform: rotateZ(-90deg);
+    animation: percent1 1s ease-in-out forwards;
+    stroke: var(--blue-color-3);
+}
