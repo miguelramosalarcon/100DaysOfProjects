@@ -14,7 +14,7 @@ Tabla de contenidos:
 
 
 /* ----- Variables ----- */
-root{
+:root{
     /* Colores primarios */
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
@@ -24,7 +24,7 @@ root{
     --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
     --Very-dark-blue: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
-    
+    --bg-body: #D5E1EE;
     /* Tipografía */
 
 }
@@ -39,18 +39,21 @@ body{
 
 .container {
     height: 100vh;
-    background-color: var(--Very-dark-blue);
+    background-color: var(--bg-body);
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .card{
-    background-color: var(--Very-dark-blue-card-bg);
+    background-color: var(--White);
     /* border-style: dashed; */
     width: 300px;
     border-radius: 20px;
     text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 15px rgb(166, 166, 166);
 }
 
 .card img{
@@ -61,4 +64,10 @@ body{
 
 h1{
     font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 17px;
+    opacity: .5;
 }
