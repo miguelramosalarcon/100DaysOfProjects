@@ -173,9 +173,6 @@ body{
     opacity: 50%;
 }
 
-
-
-
 .button{
     width: 100%;
     border-radius: 20px;
@@ -190,4 +187,18 @@ body{
 .button:hover{
     background-color: var(--Light-red);
     color: var(--White);
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card_izquierda,
+    .card_derecha {
+        width: 100%;
+    }
 }
