@@ -20,16 +20,45 @@ root{
     --Cyan: hsl(178, 100%, 50%);
     
     /* Colores neutrales */
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue: hsl(216, 50%, 16%);
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
     --Very-dark-blue: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
     
     /* Tipografía */
-    --font-family:'Outfil',sans-serif;
+
 }
 
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body{
+    font-family: "Outfit", sans-serif;;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--Very-dark-blue-card-bg);
+    /* border-style: dashed; */
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1{
+    font-weight: bold;
+}
