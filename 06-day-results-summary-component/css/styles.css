@@ -94,5 +94,12 @@ body{
 }
 
 .card_text{
-    
+    text-align: center;
+    font-size: .7rem;
+    width: 220px;
+    color: var(--Light-lavender);
+    line-height: 1.5;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    margin-top: -5px;
 }
