@@ -48,12 +48,13 @@ body{
 
 .container{
     width: 500px;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: var(--White);
+    box-shadow: 5px 5px 60px -40px var(--Light-royal-blue-bg);
+    border-radius: 0px 20px 20px 0px;
 }
 
 /* CARD IZQUIERDA */
@@ -112,7 +113,7 @@ body{
     flex-direction:column;
     gap: 1rem;
     align-items: center;
-    border-radius: 0px 20px 20px 0px;
+    
     background-color: var(--White);
     overflow: hidden;
     color: var(--Pale-blue);
@@ -128,7 +129,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    
+
 }
 .button{
     width: 100%;
