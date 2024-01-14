@@ -10,11 +10,23 @@ Tabla de contenidos:
 
 /* ----- Fuente ----- */
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
 /* ----- Variables ----- */
 root{
-    --bg-body:#D4E1EE;
+    /* Colores primarios */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Colores neutrales */
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue: hsl(216, 50%, 16%);
+    --Very-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* Tipografía */
+    --font-family:'Outfil',sans-serif;
 }
 
 
