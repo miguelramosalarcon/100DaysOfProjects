@@ -36,19 +36,28 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .container{
     display: grid;
     place-items: center;
     height: 100vh;
     border-radius: 40px;
 }
-.card{
-    background-image: linear-gradient(var(--Light-royal-blue-bg),var(--Light-slate-blue-bg));
+
+.card_izquierda{
+    border-radius: 20px;
+    background: radial-gradient( at center top, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    overflow: hidden;
+
 }
-@media only screen and (max-width: 765px){
 
-    .card{
-        background-image: linear-gradient(var(--Light-royal-blue-bg),var(--Light-slate-blue-bg));
-    }
-
+.card_title{
+    color: var(--White);
 }
