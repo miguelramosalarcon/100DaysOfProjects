@@ -14,11 +14,10 @@ Tabla de contenidos:
 
 /* ----- Variables ----- */
 * {
-	font-family: 'Merryweather', sans-serif;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 1000;
+	--title-font-family: 'Merryweather', sans-serif;
+	--body-font-family: 'Poppins', sans-serif;
 
-	--body-bg-color: #D0DBF4;
+	--body-bg-color: #D2DDF6;
 	--card-bg-color: #F6F9FF;
 	--text-color: #12163C;
 
@@ -26,56 +25,46 @@ Tabla de contenidos:
 	--blue-color-2: #6792FF;
 	--blue-color-3: #4473EA;
 	--blue-color-4: #1A52E1;
-
+	font-family: var(--body-font-family);
 	--fs-text: 1rem;
 	--lh-text: 22px;
-	margin: 0px;
-	padding: 0px;
 }
 
+:root {
+	--lg: 3.14159265359;
+	--n1: 32;
+	--n2: 22;
+	--n3: 30;
+	--n4: 10;
+}
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
 	font-family: var(--primary-font-family);
-    background-color: var(--body-bg-color);
-    color: var(--text-color);
-    font-size: var(--fs-text);
-    line-height: var(--lh-text);
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--fs-text);
+	line-height: var(--lh-text);
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 
 .container {
 	width: 65vw;
-    background: white;
-    border-radius: 30px;
-    box-shadow: #e5edff 10px 10px;
-    color: #24284a;
+	background: white;
+	border-radius: 30px;
+	box-shadow: #e5edff 10px 10px;
+	color: #24284a;
 }
 
-.title{
-	font-size: 2rem;
-	margin-top: 2.5rem;
-	margin-left: 2.5rem;
-}
-
-.inf{
-	margin-left: 2.5rem;
-}
-
-.flex{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.circle{
+.circle {
 	width: 240px;
 	height: 240px;
 	position: relative;
@@ -84,16 +73,16 @@ body {
 	align-items: center;
 }
 
-.circle p{
+.circle>p {
 	position: absolute;
-	font-size: 1.3rem;
-	font-weight: bold;
+	font-size: 20px;
+	font-weight: 600;
 	color: var(--text-color);
-	line-height: 1.3rem;
 	text-align: center;
+	line-height: 30px;
 }
 
-.circle-svg{
+.circle-svg {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -101,33 +90,199 @@ body {
 	align-items: center;
 }
 
-.circle-bar{
+@keyframes percent1 {
+	to {
+		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n1) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n1) / 100));
+		stroke-dashoffset: -20;
+	}
+
+}
+
+@keyframes percent2 {
+	to {
+		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n2) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n2) / 100));
+		stroke-dashoffset: -30;
+	}
+}
+
+@keyframes percent3 {
+	to {
+		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n3) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n3) / 100));
+		stroke-dashoffset: -40;
+	}
+}
+
+@keyframes percent4 {
+	to {
+		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n4) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n4) / 100));
+		stroke-dashoffset: -49;
+	}
+}
+
+.circle-bar {
 	transform-origin: center center;
-	transition: .5s ease;
-	stroke-dashoffset:0 ;
+	transition: 0.5s ease-in-out;
+	stroke-dashoffset: 0;
 	stroke-width: 18;
 	stroke-linecap: butt;
 }
+
 .circle-bar:nth-child(1) {
-    transform: rotateZ(-90deg);
-    animation: percent1 1s ease-in-out forwards;
-    stroke: var(--blue-color-3);
+	transform: rotateZ(-90deg);
+	animation: percent1 1s ease-in-out forwards;
+
+	stroke: var(--blue-color-3);
 }
 
 .circle-bar:nth-child(2) {
-    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100)));
-    animation: percent2 1s ease-in-out forwards;
-    stroke: var(--blue-color-2);
+	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100)));
+	animation: percent2 1s ease-in-out forwards;
+
+	stroke: var(--blue-color-2);
 }
 
 .circle-bar:nth-child(3) {
-    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100)));
-    animation: percent3 1s ease-in-out forwards;
-    stroke: var(--blue-color-4);
+	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100)));
+	animation: percent3 1s ease-in-out forwards;
+	stroke: var(--blue-color-4);
 }
 
 .circle-bar:nth-child(4) {
-    transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100) + calc(var(--n3) * 360deg / 100)));
-    animation: percent4 1s ease-in-out forwards;
-    stroke: var(--blue-color-1);
+	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100) + calc(var(--n3) * 360deg / 100)));
+	animation: percent4 1s ease-in-out forwards;
+	stroke: var(--blue-color-1);
 }
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bar-container {
+	display: flex;
+	gap: 10px;
+	font-weight: 600;
+}
+
+.more-inf{
+	margin-left: -50px;
+	margin-bottom: 50px;
+}
+
+.row-container,
+.percent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.row {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bar {
+	width: 200px;
+	height: 5px;
+	background: transparent;
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+}
+
+.title {
+	margin-left: 2.5rem;
+	margin-top: 2.5rem;
+}
+
+.inf {
+	margin-left: 2.5rem;
+}
+
+.progress {
+	height: 10px;
+	position: absolute;
+	right: 0;
+}
+
+.p1 {
+	width: 37.5%;
+	background: #6792ff;
+	animation: p1 1s;
+}
+
+@keyframes p1 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 37.5%;
+	}
+}
+
+.p2 {
+	width: 33.6%;
+	background: #4473ea;
+	animation: p2 1s;
+}
+
+@keyframes p2 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 33.6%;
+	}
+}
+
+.p3 {
+	width: 11%;
+	background: #1a52e1;
+	animation: p3 1s;
+}
+
+@keyframes p3 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 11%;
+	}
+}
+
+.p4 {
+	width: 6%;
+	background: #96b3ff;
+	animation: p4 1s;
+}
+
+@keyframes p4 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 6%;
+	}
+}
+
+@media only screen and (max-width: 955px) {
+	body {
+		overflow-y: visible;
+		height: 130vh;
+	}
+	.container {
+		width: 80%;
+	}
+	.flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+  }
