@@ -1,28 +1,120 @@
 <!DOCTYPE html>
 <html lang="es-pe">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miguel Ramos Alarcón">
-    <meta name="description" content="Tarjeta de análisis de tráfico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos Alarcón" />
+    <meta name="description" content="Tarjeta de análisis de tráfico" />
     <!-- Biblioteca de íconos Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Archivo reset Normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Archivo de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Analytics</title>
-</head>
+  </head>
 
-<body>
-    <main>
-        
-    </main>
+  <body>
+    <div class="container">
+      <h1 class="title">Traffic source types</h1>
+      <p class="inf">Views - Lost 28 days</p>
+      <div class="flex">
+        <div class="circle-content">
+          <div class="circle">
+            <p>
+              Traffic
+              <br />
+              sources
+            </p>
+            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg">
+              <circle
+                cx="120"
+                cy="120"
+                class="circle-bar"
+                r="100"
+                stroke-width="25"
+                fill="none"
+              ></circle>
+              <circle
+                cx="120"
+                cy="120"
+                class="circle-bar"
+                r="100"
+                stroke-width="25"
+                fill="none"
+              ></circle>
+              <circle
+                cx="120"
+                cy="120"
+                class="circle-bar"
+                r="100"
+                stroke-width="25"
+                fill="none"
+              ></circle>
+              <circle
+                cx="120"
+                cy="120"
+                class="circle-bar"
+                r="100"
+                stroke-width="25"
+                fill="none"
+              ></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="bar-container">
+          <div class="row-container">
+            <!--       Channel pages -->
+            <div class="row">
+              <p class="pro-bar-info">Channel pages</p>
+              <div class="bar">
+                <div class="progress p1"></div>
+              </div>
+            </div>
 
-</body>
+            <!-- Direct or unkown -->
+            <div class="row">
+              <p class="pro-bar-info">Direct or unkown</p>
+              <div class="bar">
+                <div class="progress p2"></div>
+              </div>
+            </div>
 
+            <!--  search -->
+            <div class="row">
+              <p class="pro-bar-info">Search</p>
+              <div class="bar">
+                <div class="progress p3"></div>
+              </div>
+            </div>
+
+            <!--    External -->
+            <div class="row">
+              <p class="pro-bar-info">External</p>
+              <div class="bar">
+                <div class="progress p4"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="percent">
+            <p class="percent">37.5%</p>
+            <p class="percent">33.6%</p>
+            <p class="percent">11%</p>
+            <p class="percent">6%</p>
+            <div class="more-inf">
+              <a href="#" target="_blank">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
