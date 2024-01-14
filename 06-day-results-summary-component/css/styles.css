@@ -55,7 +55,7 @@ body{
 }
 
 .card_izquierda{
-    width: 50%;
+    width: 400px;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -74,5 +74,18 @@ body{
     width: 150px;
     height: 150px;
     border-radius:50%;
-    background-image: linear-gradient(var(--grad-Violet-blue-circle),var(--grad-Persian-blue-circle));
+    background: radial-gradient( at center top, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.porcentaje{
+    font-size: 3rem;
+}
+
+.off100{
+    font-size:.8rem;
+    color:var(--Pale-blue)
 }
