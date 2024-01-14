@@ -138,13 +138,27 @@ body{
     z-index: 1;
     padding: 1rem;
     font-size: .8rem;
-    background-color: #FFEEEE;
+    /* background-color: #FFEEEE; */
 }
 
 .rectangulo_item{
     z-index: 100;
     color: var(--Light-red);
 }
+
+.rectangulo:nth-child(1){
+    background-color: #FFEEEE;
+}
+.rectangulo:nth-child(2){
+    background-color: #FFFBF2;
+}
+.rectangulo:nth-child(3){
+    background-color: #F2FBFA;
+}
+.rectangulo:nth-child(4){
+    background-color: #F3F3FD;
+}
+
 
 .rectangulo_datos{
     color: var(--Dark-gray-blue);
