@@ -29,7 +29,6 @@
             <img
               src="./images/image-equilibrium.jpg"
               alt="Equilibrium"
-              onclick="openModal()"
             />
             <div class="overlay">
               <img src="./images/icon-view.svg" alt="view-icon" class="eye" />
@@ -66,27 +65,8 @@
         </div>
       </div>
     </main>
-    <!-- Modal Container -->
-    <div class="modal-container" id="modalContainer">
-      <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
-        <img
-          src="./images/image-equilibrium.jpg"
-          alt="Equilibrium"
-          class="modal-image"
-        />
-      </div>
-    </div>
+    
 
-    <script>
-      function openModal() {
-        console.log("Clic en la imagen");
-        document.getElementById("modalContainer").style.display = "flex";
-      }
-
-      function closeModal() {
-        document.getElementById("modalContainer").style.display = "none";
-      }
-    </script>
+    
   </body>
 </html>
