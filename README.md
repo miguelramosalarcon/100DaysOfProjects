@@ -19,7 +19,7 @@
 
 # <p align="center"> **https://frontend-club.bullet.site**
 
-- Diseñado Por: <b> Jefferson Perez (<em><a href="https://github.com/SevenStark">Seven Stark</a></em>)
+- Diseñado Por: <b> Miguel Ramos Alarcón (<em><a href="https://github.com/miguelramosalarcon"></a></em>)
 - Date: <a>[</a>10<a>|</a>01<a>|</a>2024<a>]</a></b>
 
 
