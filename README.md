@@ -18,9 +18,10 @@
 ## <p align="center">🛠️<b> Dinamica realizada por: </b> 🛠️</p>
 
 # <p align="center"> **https://frontend-club.bullet.site**
+# <p align="center"> **https://www.facebook.com/frontendclubfb**
 
-- Diseñado Por: <b> Miguel Ramos Alarcón (<em><a href="https://github.com/miguelramosalarcon"></a></em>)
-- Date: <a>[</a>10<a>|</a>01<a>|</a>2024<a>]</a></b>
+
+- Diseñado Por: <b> Miguel Ramos Alarcón
 
 
 
