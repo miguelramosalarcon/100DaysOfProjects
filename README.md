@@ -5,7 +5,7 @@
 
 <br>
 
-- Como practica cada dia se reta a los participantes a llevar a cabo una plantilla establecida por los admins, demostrando el uso resposive y siguiendo los estadares.
+- Como practica cada dia se reta a los participantes a llevar a cabo una plantilla establecida por el Administrador, demostrando el uso de HTML y CSS puros. Todos los días a las 10pm hora Colombia mediante el canal de Twitch <a href="[https://www.w3.org/html/](https://www.twitch.tv/search?term=frontendclub)" target="_blank" rel="noreferrer"> se transmiten las soluciones.
 
 - <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
 
