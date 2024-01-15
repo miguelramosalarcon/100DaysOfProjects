@@ -39,16 +39,12 @@ body {
 }
 
 .card {
-    /*  border:1px solid #ccc; */
     width: 20rem;
     height: 33.2rem;
     background-color: var(--Very-dark-blue-bg);
     border-radius: 10px;
 }
 
-/* .card > div{
-    border:1px solid red;
-} */
 .image {
     padding: 1.3rem 1rem;
 }
@@ -180,7 +176,6 @@ body {
     text-decoration: none;
 }
 
-
 .img-frame .eye {
     width: 2rem;
     position: absolute;
@@ -188,6 +183,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Media */
 @media screen and (max-width:786px) and (min-width: 375px) {
     .details h2 {
         font-size: 1.3rem;
@@ -210,22 +207,22 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .modal-content {
+.modal-content {
     position: relative;
     max-width: 80%;
     max-height: 80%;
     overflow: hidden;
-  }
+}
   
-  .modal-image {
+.modal-image {
     width: 100%;
     height: auto;
     border-radius: 12px;
-  }
+}
   
-  .close-btn {
+.close-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -233,5 +230,5 @@ body {
     color: var(--White);
     cursor: pointer;
     z-index: 1;
-  }
+}
 
