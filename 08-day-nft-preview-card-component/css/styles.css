@@ -167,7 +167,18 @@ body {
     margin-left: .4rem;
 
 }
+.creation .flex .creator a {
+    color: var(--White);
+    margin-left: .4rem;
+    text-decoration: none;
+    transition: all ease .5s;
+}
 
+.creation .flex .creator a:hover {
+    color: var(--Cyan);
+    margin-left: .4rem;
+    text-decoration: none;
+}
 
 
 .img-frame .eye {
@@ -224,4 +235,3 @@ body {
     z-index: 1;
   }
 
-  

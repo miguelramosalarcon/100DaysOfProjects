@@ -18,12 +18,6 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Archivo de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./images/favicon-32x32.png"
-      type="image/x-icon"
-    />
     <title>NFT Preview Card Component</title>
   </head>
 
@@ -32,9 +26,7 @@
       <div class="card">
         <div class="image">
           <div class="img-frame">
-            <!-- <img src="./images/image-equilibrium.jpg" alt="Equilibrium" /> -->
-            <img src="./images/image-equilibrium.jpg" alt="Equilibrium" onclick="openModal()" />
-
+            <img src="./images/image-equilibrium.jpg" alt="Equilibrium" />
             <div class="overlay">
               <img src="./images/icon-view.svg" alt="view-icon" class="eye" />
             </div>
@@ -60,7 +52,8 @@
             <div class="avatar">
               <img src="./images/GithubMramos.png" alt="avatar" />
             </div>
-            <div class="creator"><span>Creation of</span> Miguel Ramos</div>
+            <div class="creator"><span>Creation of</span>
+              <a href="https://github.com/miguelramosalarcon">Miguel Ramos</a></div>
           </div>
         </div>
       </div>
@@ -74,17 +67,6 @@
     </div>
 
 
-    <script>
-      // Función para abrir el modal
-      function openModal() {
-        document.getElementById('modalContainer').style.display = 'flex';
-      }
     
-      // Función para cerrar el modal
-      function closeModal() {
-        document.getElementById('modalContainer').style.display = 'none';
-      }
-    </script>
-
   </body>
 </html>
