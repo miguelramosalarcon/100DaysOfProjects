@@ -98,14 +98,15 @@ Desarrollo: Frontend Club🔥
 	background-color: #1F1E1E;
     display: flex;
     justify-content: space-around;
+    align-items: center; 
     padding-top: 1rem;
-	padding-bottom: 1rem;
-    width: 400px;
-    height: 100px;
-	cursor: pointer;
-	font-size: 1.4rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.4rem;
 	
 }
+
 
 .fa-twitter{
 	color: var(--li-bg-color);
