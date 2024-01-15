@@ -1,0 +1,193 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    
+    --Cyan: hsl(178, 100%, 50%);
+    
+    --neutral1: hsl(217, 54%, 11%);
+    /* Very dark blue (main BG) */
+    --neutral2: hsl(216, 50%, 16%);
+    /* Very dark blue (card BG) */
+    --neutral3: hsl(215, 32%, 27%);
+    /* Very dark blue (line) */
+    --neutral4: hsl(0, 0%, 100%);
+    /* White */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--neutral1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.card {
+    /*  border:1px solid #ccc; */
+    width: 20rem;
+    height: 33.2rem;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+}
+
+/* .card > div{
+    border:1px solid red;
+} */
+.image {
+    padding: 1.3rem 1rem;
+}
+
+.img-frame {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.img-frame img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.overlay {
+    --overlay-bg: hsl(178, 100%, 50%, .3);
+    position: absolute;
+    bottom: 0;
+    background-color: var(--overlay-bg);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.img-frame:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.details {
+    padding: 0 1rem;
+}
+
+.details h2 {
+    color: var(--neutral4);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    transition: all ease .5s;
+}
+
+.details p {
+    color: var(--Soft-blue);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.details .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+
+.details .flex .left {
+    color: var(--Cyan);
+    display: inline-block;
+}
+
+.details .flex .right {
+    color: var(--Soft-blue);
+    display: inline-block;
+}
+
+.details .flex .left span:nth-of-type(2),
+.details .flex .right span:nth-of-type(2) {
+    margin-left: .5rem;
+    
+}
+
+.card hr {
+    width: calc(20rem - 3.2rem);
+    background-color: var(--Soft-blue);
+    margin: 1.2rem auto;
+    opacity: .3;
+
+}
+
+.creation .flex {
+    display: flex;
+    margin: -.5rem auto;
+    align-items: center;
+    justify-content: flex-start;
+    width: 16rem;
+
+}
+
+.creation .flex .avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--neutral4)
+}
+
+.creation .flex .avatar img {
+    width: 100%;
+}
+
+.creation .flex .creator {
+    font-size: .9rem;
+    color: var(--neutral4);
+}
+
+.creation .flex .creator:hover,
+.details h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.creation .flex .creator span {
+    color: var(--Soft-blue);
+    margin-left: .4rem;
+
+}
+
+
+
+.img-frame .eye {
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width:786px) and (min-width: 375px) {
+    .details h2 {
+        font-size: 1.3rem;
+    }
+
+    .details .flex {
+        font-size: 1.1rem;
+    }
+}
