@@ -15,17 +15,12 @@ Tabla de contenidos:
 /* ----- Variables ----- */
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
-    
     --Cyan: hsl(178, 100%, 50%);
-    
-    --neutral1: hsl(217, 54%, 11%);
-    /* Very dark blue (main BG) */
-    --neutral2: hsl(216, 50%, 16%);
-    /* Very dark blue (card BG) */
-    --neutral3: hsl(215, 32%, 27%);
-    /* Very dark blue (line) */
-    --neutral4: hsl(0, 0%, 100%);
-    /* White */
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-ln: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --overlay-bg: hsl(178, 100%, 50%, .3);
 }
 
 
@@ -34,7 +29,7 @@ Tabla de contenidos:
 /* ----------------------------- */
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--neutral1);
+    background-color: var(--Very-dark-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +42,7 @@ body {
     /*  border:1px solid #ccc; */
     width: 20rem;
     height: 33.2rem;
-    background-color: var(--neutral2);
+    background-color: var(--Very-dark-blue-bg);
     border-radius: 10px;
 }
 
@@ -72,14 +67,13 @@ body {
 }
 
 .overlay {
-    --overlay-bg: hsl(178, 100%, 50%, .3);
     position: absolute;
     bottom: 0;
     background-color: var(--overlay-bg);
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    transition: all .5s ease;
+    transition: all ease .5s;
     opacity: 0;
 }
 
@@ -93,7 +87,7 @@ body {
 }
 
 .details h2 {
-    color: var(--neutral4);
+    color: var(--White);
     font-size: 1.1rem;
     margin-bottom: 1rem;
     transition: all ease .5s;
@@ -149,7 +143,7 @@ body {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    border: 2px solid var(--neutral4)
+    border: 2px solid var(--White)
 }
 
 .creation .flex .avatar img {
@@ -158,7 +152,8 @@ body {
 
 .creation .flex .creator {
     font-size: .9rem;
-    color: var(--neutral4);
+    color: var(--White);
+    transition: all ease .5s;
 }
 
 .creation .flex .creator:hover,
@@ -191,3 +186,42 @@ body {
         font-size: 1.1rem;
     }
 }
+
+
+/* Modal */
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--White);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  

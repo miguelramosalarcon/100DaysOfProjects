@@ -32,7 +32,9 @@
       <div class="card">
         <div class="image">
           <div class="img-frame">
-            <img src="./images/image-equilibrium.jpg" alt="Equilibrium" />
+            <!-- <img src="./images/image-equilibrium.jpg" alt="Equilibrium" /> -->
+            <img src="./images/image-equilibrium.jpg" alt="Equilibrium" onclick="openModal()" />
+
             <div class="overlay">
               <img src="./images/icon-view.svg" alt="view-icon" class="eye" />
             </div>
@@ -63,5 +65,26 @@
         </div>
       </div>
     </main>
+    <!-- Modal Container -->
+    <div class="modal-container" id="modalContainer">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="modal-image" />
+      </div>
+    </div>
+
+
+    <script>
+      // Función para abrir el modal
+      function openModal() {
+        document.getElementById('modalContainer').style.display = 'flex';
+      }
+    
+      // Función para cerrar el modal
+      function closeModal() {
+        document.getElementById('modalContainer').style.display = 'none';
+      }
+    </script>
+
   </body>
 </html>
