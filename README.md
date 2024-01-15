@@ -18,7 +18,6 @@
 ## <p align="center">🛠️<b> Dinamica realizada por: </b> 🛠️</p>
 
 # <p align="center"> **https://frontend-club.bullet.site**
-# <p align="center"> **https://www.facebook.com/frontendclubfb**
 
 
 - Diseñado Por: <b> Miguel Ramos Alarcón
