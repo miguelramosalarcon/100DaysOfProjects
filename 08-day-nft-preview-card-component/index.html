@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-pe">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,11 @@
       <div class="card">
         <div class="image">
           <div class="img-frame">
-            <img src="./images/image-equilibrium.jpg" alt="Equilibrium" onclick="openModal()" />
+            <img
+              src="./images/image-equilibrium.jpg"
+              alt="Equilibrium"
+              onclick="openModal()"
+            />
             <div class="overlay">
               <img src="./images/icon-view.svg" alt="view-icon" class="eye" />
             </div>
@@ -52,8 +56,12 @@
             <div class="avatar">
               <img src="./images/GithubMramos.png" alt="avatar" />
             </div>
-            <div class="creator"><span>Creation of</span>
-              <a href="https://github.com/miguelramosalarcon" target="_blank">Miguel Ramos</a></div>
+            <div class="creator">
+              <span>Creation of</span>
+              <a href="https://github.com/miguelramosalarcon" target="_blank"
+                >Miguel Ramos</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -62,22 +70,23 @@
     <div class="modal-container" id="modalContainer">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal()">&times;</span>
-        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="modal-image" />
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium"
+          class="modal-image"
+        />
       </div>
     </div>
-    
+
     <script>
-    
       function openModal() {
-        document.getElementById('modalContainer').style.display = 'flex';
+        console.log("Clic en la imagen");
+        document.getElementById("modalContainer").style.display = "flex";
       }
-    
- 
+
       function closeModal() {
-        document.getElementById('modalContainer').style.display = 'none';
+        document.getElementById("modalContainer").style.display = "none";
       }
     </script>
-
-    
   </body>
 </html>
