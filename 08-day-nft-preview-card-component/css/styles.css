@@ -43,6 +43,7 @@ body {
     height: 33.2rem;
     background-color: var(--Very-dark-blue-bg);
     border-radius: 10px;
+    box-shadow: 0px 1px 5px rgb(34, 34, 34);
 }
 
 .image {
