@@ -1,0 +1,187 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* ###Colores primarios */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Colores neutrales */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --shadow: rgba(135, 153, 207, 0.3);
+  /* ### Tipografía */
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+  font-family: "Red Hat Display";
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 85%;
+  max-width: 400px;
+  background-color: #fff;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: auto;
+  box-shadow: 0px 6px 31px -1px rgba(135, 153, 207, 0.3);
+}
+
+.hero {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  line-height: 30px;
+  color: var(--Dark-blue);
+  font-weight: 900;
+  margin: 0px;
+}
+
+p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: var(--Desaturated-blue);
+}
+
+.pricing {
+  display: flex;
+  align-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: var(--Very-pale-blue);
+  width: 85%;
+  border-radius: 15px;
+}
+
+.icon {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1rem;
+  color: var(--Dark-blue);
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.price {
+  color: var(--Desaturated-blue);
+  margin-top: -10px;
+  margin-bottom: auto;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  text-align: right;
+  margin: auto;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: all ease 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 50%;
+}
+
+button {
+  font-weight: 700;
+  font-size: 16px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.button1 {
+  background: var(--Bright-blue);
+  color: #fff;
+  box-shadow: 0px 18px 30px -8px rgba(56, 41, 224, 0.24);
+}
+
+.button2 {
+  background-color: transparent;
+  color:var(--Desaturated-blue);
+}
+
+.button1:hover,
+.button2:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 980px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+  }
+  h2 {
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .icon {
+    padding: 12px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+}
