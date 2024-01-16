@@ -33,8 +33,8 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![](./images/mobile.png)
-![](./images/desktop.png)
+![](./images/desktop.avif)
+![](./images/movil.webp)
 
 ### Enlaces
 
