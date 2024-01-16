@@ -67,7 +67,7 @@ main {
 
 h2 {
   text-align: center;
-  line-height: 30px;
+  line-height: 80px;
   color: var(--Dark-blue);
   font-weight: 900;
   margin: 0px;
@@ -145,6 +145,7 @@ button {
   border-radius: 10px;
   border: none;
   margin-bottom: 10px;
+  transition: all ease 0.5s;
 }
 
 .button1 {
@@ -161,12 +162,12 @@ button {
 .button1:hover,
 .button2:hover {
   cursor: pointer;
-  opacity: 90%;
+  opacity: 70%;
 }
 
 /* Media queries */
 
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 980px) {
   body {
     background-image: url(images/pattern-background-desktop.svg);
     background-size: contain;
@@ -180,8 +181,13 @@ button {
   .icon {
     padding: 12px;
   }
-
+  h2 {
+    line-height: 80px;
+  }
   a {
     font-size: 15px;
+  }
+  .pricing{
+    width: 100%;
   }
 }
