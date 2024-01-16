@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> <b>100DaysOfProjects</b> <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80"></h1>
 
-<picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture><b><img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47fh789hnq44eu4tvg6f8c8fecuaj2y7xpycqs52as&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="50px"><a> SOBRE EL RETO:</a></b>
+<picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture><b><a> SOBRE EL RETO:</a></b>
 
 <br>
 
