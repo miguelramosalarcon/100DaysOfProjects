@@ -52,11 +52,20 @@ body{
     background-color: var(--Dark-desaturated-blue-cardbg);
     border-radius: 10px;
     overflow: hidden;
+    transition: all ease .5s;
+    
+}
+
+.container:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 35px -5px rgb(176, 176, 63);
 }
 
 .card_image_container{
     width: auto;
     height: 247px;
+    border-radius: 10px;
+
 }
 
 .card_img{
@@ -110,14 +119,15 @@ body{
     font-family: 'Lexend Deca';
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:750px) {
     .container{
         display:flex;
         flex-direction:row-reverse;
     }
     .card_image_container{
-        height: 450px;
+        height: 460px;
         width: 100%;
+        
     }
     .card_image{
         background-size: 100%;
