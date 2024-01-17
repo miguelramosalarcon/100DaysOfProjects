@@ -38,7 +38,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### Enlaces
 
-El proyecto se encuentra alojado en mi repositorio de GitHub:
+### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
 - [Pagina web]()
 - [Codigo fuente]()
