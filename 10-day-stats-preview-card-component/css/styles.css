@@ -1,0 +1,56 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* ----- Fuente ----- */
+*{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* ----- Variables ----- */
+
+:root{
+    /* Colores primarios */
+    --Very-dark-blue-mainbg: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue-cardbg: hsl(244, 38%, 16%);
+    --Soft-violet-accent: hsl(277, 64%, 61%);
+
+/* Colores neutrales */
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-parag: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body{
+    font-size: 15px;
+    font-family:'Inter',sans-serif;
+    background-color:var(--Very-dark-blue-mainbg);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 60%;
+    height: auto;
+    background-color: var(--Dark-desaturated-blue-cardbg);
+}
+
+.card_img{
+    background-image: url('../images/image-header-desktop.jpg');
+}
