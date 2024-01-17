@@ -1,8 +1,8 @@
-# Project Name - Solution
+# Order Summary Component - Solution
 
 ![](./images/design.png)
 
-Esta es una solución del proyecto **Order Summary Component** como parte del reto de codificación #100DaysOfProjects [link]FrontEndClub. La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Order Summary Component** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 ## Tabla de contenidos
 
@@ -38,7 +38,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### Enlaces
 
-El proyecto se encuentra alojado en mi repositorio de GitHub:
+### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
 - [Pagina web]()
 - [Codigo fuente]()
