@@ -46,11 +46,106 @@ body{
 }
 
 .container{
-    width: 60%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
     background-color: var(--Dark-desaturated-blue-cardbg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card_image_container{
+    width: auto;
+    height: 247px;
 }
 
 .card_img{
-    background-image: url('../images/image-header-desktop.jpg');
+    background-image: url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.image_overlay{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    /* z-index: 100; */
+    opacity: .6;
+    background-color: var(--Soft-violet-accent);
+}
+
+.card_text_container{
+    text-align: center;
+    padding: 15px;
+}
+
+.card_text_header{
+    font-size: .8rem;
+}
+
+.insights{
+    color: var(--Soft-violet-accent);
+}
+
+.text{
+    line-height: 1.5;
+    color: var(--Slightly-transparent-white-parag);
+    padding-bottom: 20px;
+}
+
+.stats_item{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.stats_item span{
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--Slightly-transparent-white-parag);
+    font-family: 'Lexend Deca';
+}
+
+@media only screen and (min-width:800px) {
+    .container{
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .card_image_container{
+        height: 450px;
+        width: 100%;
+    }
+    .card_image{
+        background-size: 100%;
+        background-image: url(../images/image-header-desktop.jpg) no-repeat center center;
+
+    }
+    .card_text_container{
+        text-align: left;
+        padding:50px 65px;
+        
+    }
+    .card_text_header h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .text{
+        width: 90%;
+        font-size: .9rem;
+        line-height: 2;
+        padding-top: 10px;
+    }
+    .card_stats{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        width: 90%;
+    }
+    .stats_item span{
+        font-size: .9rem;
+    }
 }
