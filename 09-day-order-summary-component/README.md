@@ -1,4 +1,4 @@
-# Project Name - Solution
+# Order Summary Component - Solution
 
 ![](./images/design.png)
 
