@@ -48,7 +48,9 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    /* max-width: 60%; */
+    width: 100%;
+    
     background-color: var(--Dark-desaturated-blue-cardbg);
     border-radius: 10px;
     overflow: hidden;
@@ -123,6 +125,7 @@ body{
     .container{
         display:flex;
         flex-direction:row-reverse;
+        max-width: 60%
     }
     .card_image_container{
         height: 460px;
