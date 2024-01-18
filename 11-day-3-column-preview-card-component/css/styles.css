@@ -1,0 +1,65 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+/* ----- Fuente ----- */
+
+
+/* ----- Variables ----- */
+:root{
+    /* ### Colores primarios */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Colores neutrales */
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-bg-headings-buttons: hsl(0, 0%, 95%);
+
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body{
+    font-family: 'Big Shoulders Display',Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: var(--Transparent-white-paragraphs);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: var(--Transparent-white-paragraphs); */
+}
+
+.container{
+    padding: 4rem 2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-1{
+    background-color: var(--Bright-orange);
+}
+
+.card-2{
+    background-color: var(--Dark-cyan);
+}
+
+.card-3{
+    background-color: var(--Very-dark-cyan);
+}
