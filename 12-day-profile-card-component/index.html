@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="es-pe">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miguel Ramos Alarcón">
-    <meta name="description" content="Profile Card Component">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos Alarcón" />
+    <meta name="description" content="Profile Card Component" />
     <!-- Biblioteca de íconos Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Archivo reset Normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Archivo de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Profile Card Component</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main class="container">
-        <div class="card_header">
-            <img src="./images/bg-pattern-card.svg" alt="image">
-        </div>
+      <div class="card">
+        <div class="card_header"></div>
         <div class="card_body">
-            <img src="./images/GithubMramos.png" alt="Foto Migguel Ramos">
-            <h1>Miguel Ramos</h1> <span>42</span> <span>Lima</span>
+            <img src="images/GithubMramos.png" alt="Foto Miguel Ramos" class="foto">
+            <h1>Miguel Ramos <span class="age">42</span> </h1> 
+            <span class="location">Lima - Perú</span>
         </div>
-        <hr>
-        <div class="stats">
-            <div class="number-1">
-                <h2>80K</h2> <span>Followes</span>
+
+        <div class="card_footer">
+            <div class="card_stats">
+                <h2>80k</h2> <span>Followers</span>
             </div>
-            <div class="number-2">
-                <h2>803K</h2> <span>Likes</span>
+            <div class="card_stats">
+                <h2>803k</h2> <span>Likes</span>
             </div>
-            <div class="number-3">
-                <h2>1.4K</h2> <span>Photos</span>
+            <div class="card_stats">
+                <h2>1.4k</h2><span>Photos</span>
             </div>
         </div>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
