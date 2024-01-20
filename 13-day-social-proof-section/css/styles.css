@@ -12,6 +12,7 @@ Tabla de contenidos:
 *{
     font-size: 15px;
     font-family: 'League Spartan',sans-serif;
+    list-style: none;
 }
 
 /* ----- Variables ----- */
@@ -44,6 +45,20 @@ body{
     background-position:top 0 left 0, bottom 0 right 0;
 }
 
+.card-top-left{
+    text-align: center;
+}
+
 h1{
-    
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    line-height:35px;
+}
+
+.card-top-left p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--Dark-Grayish-Magenta);
 }
