@@ -34,11 +34,23 @@ body{
 }
 
 .container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* position: relative; */
+    overflow: hidden;
+}
+.bg-bottom {
+    position: absolute;
+    bottom: -425px;
+    right: -820px;
+  }
+  
+.bg-top {
+    position: absolute;
+    top: -420px;
+    left: -820px;
 }
 
 .card_header{
@@ -52,6 +64,7 @@ body{
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
 }
 
 .foto{
@@ -85,7 +98,7 @@ h1{
     justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 20px;
-    border-top: 1px solid var(--Dark-grayish-blue);
+    border-top: 1px solid rgb(188, 187, 187);
     padding-top: 20px;
 }
 .card_stats{
@@ -107,4 +120,24 @@ h2{
     letter-spacing: 2px;
 }
 
-
+@media screen and (min-width: 1440px){
+    .bg-bottom {
+        position: absolute;
+        bottom: -525px;
+        right: -250px;
+      }
+      
+    .bg-top {
+        position: absolute;
+        top: -523px;
+        left: -270px;
+    }
+    .card{
+        width: 400px;
+     }
+    
+    .foto{
+         top: 100px;
+        left: 140px;    
+     }
+}
