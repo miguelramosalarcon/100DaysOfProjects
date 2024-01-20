@@ -1,0 +1,49 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+/* ----- Fuente ----- */
+*{
+    font-size: 15px;
+    font-family: 'League Spartan',sans-serif;
+}
+
+/* ----- Variables ----- */
+:root{
+
+/* ### Colores primarios */
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+/* ### Colores neutrales */
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body{
+    min-height: 100vh;
+    padding: 30px;
+    display: grid;
+    place-content: center;
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    background-position:top 0 left 0, bottom 0 right 0;
+}
+
+h1{
+    
+}
