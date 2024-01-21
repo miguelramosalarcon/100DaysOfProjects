@@ -174,7 +174,7 @@ ul li span{
     .title{
         grid-area: title;
         max-width: 72rem;
-        padding: 11.8rem 12.6rem 0 16.4rem;
+        padding: 10rem 12rem 0 16rem;
     }
 
     .title h1{
@@ -186,15 +186,61 @@ ul li span{
 
     .title p{
         text-align: left;
-        margin: 0;
     }
-
 
     ul{
         grid-area: rated;
+        max-width: 72rem;
+        margin: 0;
+        padding-top: 15rem;
+    }
+
+    li{
+        min-height: 3rem;
+    }
+
+    ul li{
+        display:flex;
+        align-items: center;
+        gap: 3.2rem;
+        padding: 1.9rem 3.2rem;
+    }
+    ul li span{
+        margin-bottom: 0;
+    }
+    
+
+    ul li:nth-child(2){
+        margin-left: 6rem;
+    }
+
+    ul li:nth-child(3){
+        margin-left: 12rem;
     }
 
     .reviews{
         grid-area:reviews;
+        display: flex;
+        gap: 3rem;
+        padding-left: 16rem;
     }
+
+    .review{
+        max-height: 17rem;
+        max-width: 33rem;
+        padding: 4rem 3rem;
+    }
+
+    .review p{
+        line-height: 2.4rem;
+    }
+
+    .review:nth-child(2){
+        margin-top: 3rem;
+    }
+
+    .review:nth-child(3){
+        margin-top: 9rem;
+    }
+    
 }
