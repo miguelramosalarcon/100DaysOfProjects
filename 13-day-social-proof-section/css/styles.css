@@ -45,10 +45,12 @@ body{
 
 main{
     margin-top: 5.8rem;
+    /* border: 3px dashed red; */
 }
 
 .title{
     max-width: 44.4rem;
+    /* border: 3px dashed blue; */
 }
 
 .title h1{
@@ -76,6 +78,7 @@ ul{
     margin-bottom: 4.5rem;
     margin: 0;
     padding: 0;
+    /* border: 3px dashed black; */
 }
 
 li{
@@ -101,10 +104,6 @@ ul li span{
 }
 
 /* reviews */
-
-.reviews{
-
-}
 
 .review{
     max-width: 44.4rem;
@@ -150,4 +149,52 @@ ul li span{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1000px){
+    body{
+        padding: 0;
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+        place-content: inherit;
+    }
+
+    main{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 44.4rem auto;
+        grid-template-areas: 
+            "title rated"
+            "reviews reviews";
+        margin: 0;
+    }
+
+    .title{
+        grid-area: title;
+        max-width: 72rem;
+        padding: 11.8rem 12.6rem 0 16.4rem;
+    }
+
+    .title h1{
+        text-align: left;
+        font-size: 5.5rem;
+        line-height: 4.8rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .title p{
+        text-align: left;
+        margin: 0;
+    }
+
+
+    ul{
+        grid-area: rated;
+    }
+
+    .reviews{
+        grid-area:reviews;
+    }
 }
