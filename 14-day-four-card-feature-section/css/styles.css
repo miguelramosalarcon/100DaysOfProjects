@@ -38,4 +38,73 @@ Tabla de contenidos:
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+header {
+    padding-top: 70px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header h1{
+    font-size: 27px;
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+}
+
+header h2 {
+    font-size: 27px;
+    color: var(--Very-Dark-Blue);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: var(--Grayish-Blue);
+    font-size: 17px;
+    font-weight: 300;
+    width: 100%;
+    max-width: 555px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.cards {
+    margin-top: 70px;
+}
+
+.card{
+    background-color: white;
+    padding: 29px 25px;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+    box-shadow: 0px 0px 20px -10px var(--Very-Dark-Blue);
+}
+
+.card:nth-child(1) {
+    border-color: var(--Cyan);
+}
+
+.card:nth-child(2) {
+    border-color:var(--Red);
+}
+
+.card:nth-child(3) {
+    border-color: var(--Orange);
+}
+
+.card:nth-child(4) {
+    border-color: var(--Blue);
 }
