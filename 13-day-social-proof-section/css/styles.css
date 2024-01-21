@@ -9,11 +9,6 @@ Tabla de contenidos:
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 /* ----- Fuente ----- */
-*{
-    font-size: 15px;
-    font-family: 'League Spartan',sans-serif;
-    list-style: none;
-}
 
 /* ----- Variables ----- */
 :root{
@@ -27,6 +22,7 @@ Tabla de contenidos:
 --Light-Grayish-Magenta: hsl(300, 24%, 96%);
 --White: hsl(0, 0%, 100%);
 
+font-size: 62.5%;
 }
 
 
@@ -36,7 +32,9 @@ Tabla de contenidos:
 
 body{
     min-height: 100vh;
-    padding: 30px;
+    font-size: 1.5rem;
+    font-family: 'League Spartan', sans-serif;
+    padding: 2.4rem;
     display: grid;
     place-content: center;
     background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
@@ -45,94 +43,40 @@ body{
     background-position:top 0 left 0, bottom 0 right 0;
 }
 
-.container{
-    margin-top: 3rem;
-}
-.card-top-left{
-    text-align: center;
+main{
+
 }
 
-h1{
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--Very-Dark-Magenta);
-    line-height:35px;
+.title{
+    max-width: 44.4rem;
 }
 
-.card-top-left p{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    color: var(--Dark-Grayish-Magenta);
-}
-
-.bg-review{
-    background-color: var(--Light-Grayish-Magenta);
-    padding: 5px;
-    border-radius:10px;
-    
-}
-
-.bg-review li{
+.title h1{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 3.2rem;
     text-align: center;
     color: var(--Very-Dark-Magenta);
-    font-weight: 700;
-    padding: 15px;
-    font-size: 1.3rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: -0.03rem;
 }
 
-.bg-review span{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-/* Cards reviews */
-.card{
-    background-color: var(--Very-Dark-Magenta);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: star;
-    margin-top: 40px;
-}
-
-.card-header{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.card-header img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.names {
-   text-align: start;
-}
-
-.first-name{
-    display: block;
-    font-size: 20px;
-    color:var(--White);
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.job{
-   font-size: 20px;
-   color: var(--Soft-Pink);
-   font-weight: 400;
-}
-
-.card p{
-    color: var(--White);
-    text-align: left;
+.title p{
+    font-size: 2rem;
     font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    letter-spacing: -0.03rem;
+    color: var(--Dark-Grayish-Magenta);
+    margin-bottom: 3.8rem;
+}
+
+ul{
+
+}
+
+li{
+    list-style: none;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 1.5rem;
 }
