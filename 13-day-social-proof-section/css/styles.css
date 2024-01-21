@@ -100,3 +100,54 @@ ul li span{
 
 }
 
+/* reviews */
+
+.reviews{
+
+}
+
+.review{
+    max-width: 44.4rem;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 2.8rem;
+}
+
+.profile img{
+    width: 5rem;
+    border-radius:50%;
+
+}
+
+.name span{
+    display: block;
+}
+
+.name span:nth-child(1){
+    font-size: 2rem;
+    color:var(--White);
+    font-weight: 700;
+    margin-bottom: .4rem;
+}
+
+.name span:nth-child(2){
+    font-size: 1.9rem;
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.review p{
+    color: var(--White);
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
