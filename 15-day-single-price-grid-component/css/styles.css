@@ -1,0 +1,92 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+/* ----- Variables ----- */
+:root{
+    /* ### Colores primarios */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    
+    /* ### Colores neutrales */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --white: #FFFFFF;
+    /* ### Tipografia */
+    --fz: 16px;
+    /* --Weights: 400, 700 */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body{
+    font-family: 'Karla', sans-serif;
+    font-size:var(--fz);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray);
+}
+
+.container{
+    border: 1px solid red;
+    padding: 40px;
+    background-color: var(--white);
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px var(--Grayish-Blue);
+}
+
+/* Titles h2, h3 and p */
+.card_titles{
+    border: 1px solid blue;
+}
+
+.card_titles h2{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.card_titles h3{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card_titles p{
+    color: var(--Grayish-Blue);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (min-width:390px) {
+    .card_titles{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card_titles{
+        text-align: left;
+    }
+}
