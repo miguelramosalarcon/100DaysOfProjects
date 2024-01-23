@@ -12,7 +12,7 @@
 - Los tres primeros lugares ganan certificados JS 
 - Para unirte puedes usar el siguiente [link](https://www.facebook.com/groups/100daysofprojects)
 - Tambien puedes unirte a su Telegram [link](https://t.me/+CPUTcoSDvLtkM2Ix)
-- Es una iniciativa sin animo de lucro, solo echa con el fin de practicar y mejorar las habilidades con desarolladores.
+- Es una iniciativa sin animo de lucro, solo echa con el fin de practicar y mejorar las habilidades con desarrolladores.
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## <p align="center">🛠️<b> Dinamica realizada por: </b> 🛠️</p>
