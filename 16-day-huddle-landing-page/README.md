@@ -4,7 +4,7 @@
 <img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
 
 ![Pantallas pequeñas] 
-<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="700" height="400"/>
+<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="300" height="700"/>
 
 
 Esta es una solución del proyecto **Huddle Landing Page With a Single Introductory Section** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
