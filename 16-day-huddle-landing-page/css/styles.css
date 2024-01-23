@@ -34,24 +34,92 @@ Tabla de contenidos:
 /* ----------------------------- */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url(../images/bg-desktop.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    
 }
 
-/* SECCION 1 */
-.section1{
-    height: 730px;
-    background-color: antiquewhite;
+.container{
+    width: 300px;
+    height:100%;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
+/* SECTION 1 */
+.logo img{
+    width: 120px;
+    margin-bottom: 50px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+/* SECTION 2 */
+.section2{
+    
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+   
+}
 h1{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
-
-
-
-.section2{
-    background-color: aquamarine;
+p{
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: .8;
+    line-height: 2;
 }
-  
-  
+
+button{
+    width: 80%;
+    border-radius: 15px;
+    padding: 10px 60px;
+    font-size: .8rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px -5px #000;
+    color: var(--Violet);
+    font-weight: 400;
+    transition: all ease .5s;
+}
+
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+
+/* social */
+.social-container{
+    text-align: center;
+}
+
+.redes a{
+    border: 2px solid #fff;
+    border-radius:50%;
+    width: 30px;
+    height: 20px;
+    font-size: .8rem;
+    padding-top: 9px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.redes a:hover{
+    border: 2px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
