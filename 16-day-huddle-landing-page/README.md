@@ -33,13 +33,13 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![Desktop](./screen/desktop-preview.jpg)
+![Desktop](<img src="./screen/desktop-preview.jpg" alt="Desktop" width="400"/>)
 ![Mobile](./screen/mobile-design.jpg)
 
 ### Enlaces
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
-[!NOTE]
+
 - [Pagina web]()
 - [Codigo fuente]()
 
@@ -47,7 +47,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 Primero realice la maquetación de acuerdo a lo que se puede observar en la imagen de referencia, posteriormente se dio estilos CSS para pantallas de PC, no fue necesario darle estilos para movil porque se hizo desde un principio responsivo, con Grid.
 
 ### Desarrollo
-[!TIP]
+
 - Marcado HTML
 - Propiedades CSS
 - Propiedad `grid`
