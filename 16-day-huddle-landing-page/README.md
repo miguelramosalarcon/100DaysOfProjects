@@ -33,8 +33,11 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![Desktop] <img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
-![Mobile](./screen/mobile-design.jpg)
+![Desktop] <br> 
+<img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
+<br>
+![Mobile] <br>
+<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="700"/>
 
 ### Enlaces
 
