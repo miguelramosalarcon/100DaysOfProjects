@@ -1,11 +1,6 @@
 # Huddle Landing Page With a Single Introductory Section - Solution
 
-![Desktop preview] 
-<img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
-
-![Pantallas pequeñas] 
-<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="700" height="400"/>
-
+<img src="./screen/desktop-preview.jpg" alt="Desktop preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **Huddle Landing Page With a Single Introductory Section** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -38,8 +33,11 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![Desktop](../screen/desktop-previw.jpg)
-![Mobile](../images/mobile-design.jpg)
+![Desktop] <br> 
+<img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
+<br>
+![Mobile] <br>
+<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="700"/>
 
 ### Enlaces
 
@@ -97,8 +95,9 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [UI Design Daily](https://www.uidesigndaily.com/) - contiene diseños UI de excelente calidad para codificar.
 - [Google Fonts](https://fonts.google.com/) - contiene fuentes que podemos descargar y usar para nuestros proyectos.
 - [BEM Methodology In CSS: A Quick Start Guide](https://scalablecss.com/bem-quickstart-guide/) - una guía corta pero precisa para comprender la metología BEM. Puedes descargar la guía en PDF.
+- [Responsively App](https://responsively.app/) - es una app que nos muestra como va quedando nuestro diseño en distintos dispositivos ya sean desktops,tablets, celulares, etc.
 
-## Autor
+## Autor del reto
 
 FrontEndClub, quien a menudo creo artículos y publico contenido sobre desarrollo, puedes seguirme estar al tanto de las publicaciones.
 
@@ -114,4 +113,5 @@ Agradecemos a los miembros de la comunidad **Frontend Club**, que nos inspiran a
 
 2024, nuestro año.🔥
 
-> “Yo puedo hacer cosas que tú no puedes, tú puedes hacer cosas que yo no puedo; juntos podemos hacer grandes cosas”. — Madre Teresa de Calcuta.
+> [!IMPORTANT]
+> **“En medio de la dificultad reside la oportunidad."** No dejemos de practicar, esforcémonos por lo que nos apasiona.
