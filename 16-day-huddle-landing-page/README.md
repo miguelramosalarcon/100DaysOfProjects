@@ -1,6 +1,6 @@
 # Huddle Landing Page With a Single Introductory Section - Solution
 
-![Desktop preview] <img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
+<img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
 
 Esta es una solución del proyecto **Huddle Landing Page With a Single Introductory Section** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
