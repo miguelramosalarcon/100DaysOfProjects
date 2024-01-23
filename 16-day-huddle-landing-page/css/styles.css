@@ -33,8 +33,25 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../images/bg-desktop.svg);
+}
 
-  }
-  
+/* SECCION 1 */
+.section1{
+    height: 730px;
+    background-color: antiquewhite;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.section2{
+    background-color: aquamarine;
+}
   
   
