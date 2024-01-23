@@ -10,10 +10,31 @@ Tabla de contenidos:
 
 /* ----- Fuente ----- */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&display=swap');
 
 /* ----- Variables ----- */
+:root{
+    /* ### Colores primarios */
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
 
+/* ### Tipografia */
+/* ### Headings */
+/* - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600 */
+
+/* ### Body
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400 */
+}
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body {
+
+  }
+  
+  
+  
