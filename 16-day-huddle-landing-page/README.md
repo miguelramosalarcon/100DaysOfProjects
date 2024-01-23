@@ -46,7 +46,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web]()
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects//16-day-huddle-landing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
