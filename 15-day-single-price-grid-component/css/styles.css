@@ -163,8 +163,8 @@ button:hover{
         font-size: 18px;
     }
     .card_footer {
-       display: grid;
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .card_login{
