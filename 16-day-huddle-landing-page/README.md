@@ -110,4 +110,4 @@ Agradecemos a los miembros de la comunidad **Frontend Club**, que nos inspiran a
 
 2024, nuestro año.🔥
 
-> “Yo puedo hacer cosas que tú no puedes, tú puedes hacer cosas que yo no puedo; juntos podemos hacer grandes cosas”. — Madre Teresa de Calcuta.
+> [!IMPORTANT]“En medio de la dificultad reside la oportunidad." No dejemos de practicar, esforcémonos por lo que nos apasiona.
