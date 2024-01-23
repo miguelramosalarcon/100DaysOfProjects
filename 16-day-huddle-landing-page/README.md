@@ -33,7 +33,7 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![Desktop](<img src="./screen/desktop-preview.jpg" alt="Desktop" width="400"/>)
+![Desktop] <img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="700" height="400"/>
 ![Mobile](./screen/mobile-design.jpg)
 
 ### Enlaces
