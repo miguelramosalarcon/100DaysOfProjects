@@ -160,7 +160,7 @@ header p {
 
 /** Media Queries **/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
     .feature-cards,
     .grid-center-container {
       display: flex;
