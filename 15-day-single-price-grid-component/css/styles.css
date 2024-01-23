@@ -34,17 +34,19 @@ body{
     font-family: 'Karla', sans-serif;
     font-size:var(--fz);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--Light-Gray);
+    
 }
 
 .container{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 100%;
     overflow: hidden;
     box-shadow: 0px 10px 20px -10px var(--Grayish-Blue);
 }
@@ -53,38 +55,33 @@ body{
 .card_titles{
     background-color: var(--white);
     padding: 20px 40px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card_titles h2{
     color: var(--Cyan);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .card_titles h3{
     color: var(--Bright-Yellow);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .card_titles p{
     color: var(--Grayish-Blue);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 400;
 }
 
-/* Card Login */
-.card_footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-
+/* Card Footer */
 .card_login{
     padding: 20px 40px;
     background-color: var(--Cyan);
-    border-radius: 0px 0px 0px 10px;
+    
     color: var(--white);
 }
 
@@ -102,6 +99,10 @@ body{
 .card_login span:nth-child(3){
     font-size: 15px;
     font-weight: 400;
+    opacity: .5;
+}
+
+.card_login p{
     opacity: .8;
 }
 
@@ -130,7 +131,7 @@ button:hover{
 .card_whyus{
     padding: 20px 40px;
     background-color: var(--bg-card-whyus);
-    border-radius: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;
     color: var(--white);
     overflow: hidden;
 }
@@ -142,19 +143,35 @@ button:hover{
     width: 80%;
     line-height: 25px;
     color: var(--Light-Gray);
-    
+    opacity: .8;
 }
-
 
 /* Media Queries */
-@media screen and (min-width:390px) {
-    .card_titles{
-        text-align: center;
+@media only screen and (min-width: 1439px) {
+    .container{
+        width: 50%;
     }
-}
 
-@media screen and (min-width:768px) {
-    .card_titles{
-        text-align: left;
+    .card_titles h2{
+        font-size:30px;
+    }
+    .card_titles h3{
+        font-size:25px;
+    }
+
+    .card_titles p{
+        font-size: 18px;
+    }
+    .card_footer {
+       display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .card_login{
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .card_whyus{
+        border-radius: 0px 0px 10px 0px;
     }
 }
