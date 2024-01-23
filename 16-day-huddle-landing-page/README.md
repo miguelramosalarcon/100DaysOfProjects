@@ -114,4 +114,4 @@ Agradecemos a los miembros de la comunidad **Frontend Club**, que nos inspiran a
 2024, nuestro año.🔥
 
 > [!IMPORTANT]
-> “En medio de la dificultad reside la oportunidad." No dejemos de practicar, esforcémonos por lo que nos apasiona.
+> **“En medio de la dificultad reside la oportunidad."** No dejemos de practicar, esforcémonos por lo que nos apasiona.
