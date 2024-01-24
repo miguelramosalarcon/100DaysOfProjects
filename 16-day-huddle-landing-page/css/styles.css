@@ -148,22 +148,22 @@ body {
 
 @media only screen and (max-width: 1080px) {
   .hero-img img {
-    width: 500px;
-  }
+    width: 300px;
+}
 
   .social{
     margin-right: 50px;
   }
 }
 
+
 @media only screen and (max-width: 768px) {
   body {
     background-image: url(../images/bg-mobile.svg);
   }
 
-
-
   .main {
+    justify-content: center;
     flex-direction: column;
     text-align: center;
   }
