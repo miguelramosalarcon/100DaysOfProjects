@@ -146,9 +146,9 @@ body {
 
 /* Medias queries */
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1080px) {
   .hero-img img {
-    width: 100%;
+    width: 500px;
   }
 
   .social{
@@ -160,6 +160,8 @@ body {
   body {
     background-image: url(../images/bg-mobile.svg);
   }
+
+
 
   .main {
     flex-direction: column;
