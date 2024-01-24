@@ -148,7 +148,7 @@ body {
 
 @media only screen and (max-width: 1080px) {
   .hero-img img {
-    width: 300px;
+    width: 500px;
 }
 
   .social{
@@ -157,13 +157,16 @@ body {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and  (min-width: 374px) and (max-width: 768px) {
   body {
     background-image: url(../images/bg-mobile.svg);
   }
 
+  .hero-img img {
+    width: 300px;
+    height: auto;
+    }
   .main {
-    justify-content: center;
     flex-direction: column;
     text-align: center;
   }
