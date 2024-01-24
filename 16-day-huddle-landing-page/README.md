@@ -38,6 +38,9 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <br>
 ![Mobile] <br>
 <img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="700"/>
+<br>
+![Hover] <br>
+<img src="./screen/active-states.jpg" alt="Hover preview" width="350" height="200"/>
 
 ### Enlaces
 
