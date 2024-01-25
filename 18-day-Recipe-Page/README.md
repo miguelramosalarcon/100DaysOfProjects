@@ -37,10 +37,10 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <img src="./screen/desktop-design.jpg" alt="Desktop preview" width="700" height="900"/>
 <br>
 ![Mobile] <br>
-<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="900"/>
+<img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="1100"/>
 <br>
 ![Animación] <br>
-<img src="./screen/mobile.gif" alt="Animacion" width="350" height="500"/>
+<img src="./screen/mobile.gif" alt="Animacion" width="350" height="700"/>
 
 ### Enlaces
 
