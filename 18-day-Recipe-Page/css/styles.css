@@ -71,9 +71,14 @@ body {
   /* padding: 0px 30px; */
   width: 85%;
 }
+h1,h2{
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: var(--Nutmeg);
+}
 
 h1{
-  font-weight: 400;
+  font-size: 35px;
   color: var(--Dark-Charcoal);
   margin-top: 45px;
 }
@@ -95,11 +100,11 @@ p{
   background-color: var(--Rose-White);
   padding: 10px 20px;
   border-radius: 15px;
-  line-height: 1.5;
+  line-height: 1.3;
   font-family: 'Outfit', sans-serif;
 }
 
-h2{
+h3{
   font-size: 20px;
   font-weight: 700;
   color: var(--Dark-Raspberry);
@@ -116,6 +121,39 @@ li{
   color: var(--Wenge-Brown);
   font-weight: 400;
 }
+
+/* centra el texto de las listas respecto al <li> solo cuando hay
+dos lineas de texto  */
+li>div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* CARD INGREDIENTS */
+
+.card_ingredients{
+  margin-top: 20px;
+  width: 85%;
+  text-align: left;
+  background-color: var(--White);
+  padding: 10px 20px;
+  border-radius: 15px;
+  line-height: 1.3;
+  font-family: 'Outfit', sans-serif;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+
+
+
+
+
+
+
+
 
 
 /* Media Queries */
