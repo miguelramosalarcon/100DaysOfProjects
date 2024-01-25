@@ -7,132 +7,152 @@ Tabla de contenidos:
 -------------------- 
 */
 
-
 /* ----- Fuente ----- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 /* ----- Variables ----- */
-:root{
-    /* ### Colores primarios */
---Green: hsl(75, 94%, 57%);
+:root {
+  /* ### Colores primarios */
+  --Green: hsl(75, 94%, 57%);
 
-/* ### Colores neutrales */
---White: hsl(0, 0%, 100%);
---Grey: hsl(0, 0%, 20%);
---Dark-Grey: hsl(0, 0%, 12%);
---Off-Black: hsl(0, 0%, 8%);
+  /* ### Colores neutrales */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
 
-/* ### Tipografia
+  /* ### Tipografia
 - Font size (paragraph): 14px
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 400, 600, 700 */
 }
 
-
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
-body{
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--Off-Black);
-    color: var(--White);
-    font-family: 'Inter', sans-serif;
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Off-Black);
+  color: var(--White);
+  font-family: "Inter", sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.card{
-    width: 300px; 
-    background-color: var(--Dark-Grey);
-    border-radius: 15px;
-    overflow: hidden;
+.card {
+  width: 300px;
+  background-color: var(--Dark-Grey);
+  border-radius: 15px;
+  overflow: hidden;
 }
-
-
 
 /* CARD NAMES */
-.card_names{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 40px;
+.card_names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
 }
-.card_names img{
-    width: 100px;
-}
-
-.card_names h2{
-    font-weight: 700;
+.card_names img {
+  width: 100px;
 }
 
-.card_names span{
-    color: var(--Green);
-    font-weight: 600;
+.card_names h2 {
+  font-weight: 700;
 }
 
-.card_names p{
-    width: 90%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
+.card_names span {
+  color: var(--Green);
+  font-weight: 600;
+}
+
+.card_names p {
+  width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* Social */
-.card_social{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 40px;
+.card_social {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
 }
 
-button{
-    width: 250px;
-    font-size: 12px;
-    padding: 15px 30px;
-    border: none;
-    background-color: var(--Grey);
-    border-radius: 10px;
-    font-weight: 600;
-    color: var(--White);
-    cursor: pointer;
-    transition: all ease .5s;
-    position: relative;
+/* Efect social button */
+button {
+  width: 250px;
+  font-size: 12px;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--Grey);
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--White);
+  cursor: pointer;
+  transition: all ease 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
 }
 
+button:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
 
-button:hover{
-    background-color: var(--Green);
-    color: var(--Off-Black);
-    
-    
+button::after {
+  content: "";
+  background: var(--Green); /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+button:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 /* Media queries */
 
-@media only screen and (min-width: 768px){
-    .card{
-        width: 350px;
-    }
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
 
-    button{
-        width: 300px;
-       
-    }
+  button {
+    width: 300px;
+  }
 }
