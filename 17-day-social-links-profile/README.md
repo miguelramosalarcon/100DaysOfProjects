@@ -1,6 +1,6 @@
 # Social Links Profile - Solution
 
-<img src="./screen/desktop-design.jpg" alt="Desktop preview" style="max-width: 100%; height: auto;">
+<img src="./screen/solucion_reto17.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **Social Links Profile** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -34,7 +34,7 @@ Los usuarios deberían poder:
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ![Desktop] <br> 
-<img src="./screen/desktop-design.jpg" alt="Desktop preview" width="700" height="400"/>
+<img src="./screen/destkop-design.jpg" alt="Desktop preview" width="700" height="400"/>
 <br>
 ![Mobile] <br>
 <img src="./screen/mobile-design.jpg" alt="Mobile preview" width="350" height="700"/>
