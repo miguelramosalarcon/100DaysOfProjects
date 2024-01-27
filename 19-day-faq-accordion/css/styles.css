@@ -69,11 +69,13 @@ button{
     gap: 1rem;
     border: 0;
     transition: all ease-in-out .5s;
+    
 }
 
 button:hover{
     color: var(--purple);
     font-weight: 700;
+    
 }
 
 .faq{
@@ -97,4 +99,36 @@ button:hover{
 
 .accordion_item .icons .minus-icon{
     display: none;
+}
+
+.accordion_description{
+    background-color: var(--White);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+    
+}
+
+.accordion_description p{
+    color: var(--Grayish-purple);
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    
+}
+
+
+
+@media (max-width:540px){
+    body{
+        background-image: url(../images/background-pattern-mobile.svg);
+
+    }
+
+    .accordion_description p{
+        
+        font-size: .9rem;
+    }
+
+    
 }
