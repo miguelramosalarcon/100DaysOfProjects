@@ -19,7 +19,7 @@ Tabla de contenidos:
 --Light-pink: hsl(275, 100%, 97%);
 --Grayish-purple: hsl(292, 16%, 49%);
 --Dark-purple: hsl(292, 42%, 14%);
-
+--purple: purple;
 /* ### Tipografia
 - Font size (paragraphs): 16px
 
@@ -31,3 +31,70 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body {
+    background-color: var(--Light-pink);
+    background-image: url(../images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Work Sans',sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container{
+    background-color: var(--White);
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+img, svg{
+    max-width: 100%;
+    display: block;
+
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 0;
+    transition: all ease-in-out .5s;
+}
+
+button:hover{
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.faq{
+    display: flex;
+    gap: 2rem;
+}
+
+.faq h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.accordion, .accordion_item:not(:last-child){
+    border-bottom: 2px solid var(--Light-pink);
+
+}
+
+.accordion_item .icons img{
+    min-width: 30px;
+}
+
+.accordion_item .icons .minus-icon{
+    display: none;
+}
