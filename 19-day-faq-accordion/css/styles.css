@@ -107,14 +107,14 @@ button:hover{
     overflow: hidden;
     transition: max-height 200ms ease;
     
-}
+}   
 
 .accordion_description p{
     color: var(--Grayish-purple);
     padding: 1.5rem 0;
     font-size: 1.3rem;
     line-height: 1.5;
-    
+    margin-top: -10px;
 }
 
 
