@@ -88,9 +88,13 @@ button:hover{
     font-weight: 700;
 }
 
-.accordion, .accordion_item:not(:last-child){
+/* .accordion, .accordion_item:not(:last-child){
     border-bottom: 2px solid var(--Light-pink);
+} */
 
+hr{
+    border-bottom: 2px solid var(--Light-pink);
+    opacity: .3;
 }
 
 .accordion_item .icons img{
