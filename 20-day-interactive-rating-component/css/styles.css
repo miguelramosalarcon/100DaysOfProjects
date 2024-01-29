@@ -1,0 +1,263 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+/* ----- Variables ----- */
+:root{
+    /* ### Colores primarios */
+--Orange: #fb7413;
+
+/* ### Colores neutrales */
+--White: #ffffff;
+--Light-Grey: #959eac;
+--Medium-Grey: #7c8798;
+--Dark-Blue: #252d37;
+--Very-Dark-Blue: #121417;
+
+/* ### Tipografia
+- Font size (paragraph): 15px
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    font-family: 'Overpass', sans-serif;
+    background: var(--Very-Dark-Blue);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: var(--White);
+}
+
+.d-none {
+    display: none;
+}
+
+div.star {
+    width: 50px;
+    height: 50px;
+    background: var(--Dark-Blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+  }
+  
+  .container {
+    max-width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: var(--Very-Dark-Blue);
+    border-radius: 30px;
+    padding: 35px;
+  }
+  
+  .container p {
+    color: var(--Light-Grey);
+  }
+  
+  .container .box-body {
+    margin-top: 15px;
+  }
+  
+  .container .box-body img {
+    display: block;
+    margin: auto;
+  }
+  
+  .container .box-body h1 {
+    margin-top: 2rem;
+  }
+  
+  .container .box-body p {
+    color: var(--Light-Grey);
+  }
+  
+  .container .box-body p.msg {
+    margin-bottom: 20px;
+  }
+  
+  .container .box-body p.error-msg {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    text-align: center;
+    color: darkred;
+
+  }
+  
+  .container .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .container .buttons button {
+    font-size: 1.2rem;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  
+  .container .buttons button:hover {
+    background: var(--Orange);
+    color:var(--White);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 0;
+  } 
+  
+  .container .buttons button.selected {
+    background: var(--Light-Grey);
+    color: white;
+  }
+  
+  .container .buttons button.error {
+    border: 1px solid red;
+  }
+  
+  .container .submit {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    background: var(--Orange);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .container .submit:hover {
+    background: var(--White);
+    color:var(--Orange);
+  }
+  
+  .container #box-2 {
+    text-align: center;
+  }
+  
+  .container .selection-msg {
+    padding: 10px 15px;
+    color: var(--Orange);
+    background: #3a4655;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 3rem;
+    margin-bottom: 1.1rem;
+    border-radius: 50px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    div.star {
+      width: 30px;
+      height: 30px;
+    }
+    .container {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 15px;
+      font-size: .9rem;
+      line-height: 1.3;
+    }
+    .container h1 {
+      font-size: 1.2;
+    }
+    .container .box-body {
+      margin-top: 15px;
+    }
+    .container .box-body img {
+      display: block;
+      margin: auto;
+    }
+    .container .box-body h1 {
+      margin-top: 1rem;
+    }
+    .container .box-body p.msg {
+      margin-bottom: 20px;
+    }
+    .container .box-body p.error-msg {
+      position: absolute;
+      left: 50%;
+      top: 56%;
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+    }
+    .container .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    .container .buttons button {
+      font-size: 1rem;
+      width: 40px;
+      height: 40px;
+    }
+    .container .submit {
+      font-size: 1rem;
+      padding: 8px;
+      font-weight: 400;
+      font-family: 'Overpass', sans-serif;
+    }
+    .container #box-2 h1 {
+      margin-top: 0;
+    }
+    .container #box-2 .selection-msg {
+      font-size: .8rem;
+      padding: 5px 13px;
+      margin-top: 1.3rem;
+      border-radius: 50px;
+    }
+    .container #box-2 img {
+      width: 100px;
+    }
+  }
