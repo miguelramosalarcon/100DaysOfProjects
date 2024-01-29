@@ -70,7 +70,8 @@ div.star {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background: var(--Very-Dark-Blue);
+            background: rgb(23,31,39);
+            background: linear-gradient(90deg, rgba(23,31,39,1) 24%, rgba(33,41,49,1) 95%);
     border-radius: 30px;
     padding: 35px;
   }
@@ -129,7 +130,7 @@ div.star {
     width: 70px;
     height: 70px;
     border: none;
-    background: var(--Dark-Blue);
+    background: #262F38;
     color: var(--Light-Grey);
     border-radius: 50%;
     cursor: pointer;
