@@ -108,7 +108,9 @@ div.star {
             transform: translate(-50%, 0%);
     text-align: center;
     color: darkred;
-
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 10px;
   }
   
   .container .buttons {
@@ -150,6 +152,7 @@ div.star {
   
   .container .buttons button.error {
     border: 1px solid red;
+
   }
   
   .container .submit {
