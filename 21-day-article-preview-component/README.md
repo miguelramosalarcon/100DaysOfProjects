@@ -33,15 +33,17 @@ Los usuarios deberían poder:
 
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
-![Desktop] <br> 
-<img src="./screen/desktop-preview.jpg" alt="Desktop preview" width="900" height="700"/>
-<br>
-![Mobile] <br>
-<img src="./screen/mobile-preview.jpg" alt="Mobile preview" width="375" height="667"/>
-<br>
-![Hover] <br>
-<img src="./screen/js-preview.jpg" alt="Hover" width="900" height="700"/>
-<br>
+<details>
+    <summary>🖥 Desktop version</summary>
+
+![](./images/example/desktop-preview.jpg)
+</details>
+
+<details>
+    <summary>📱 Mobile version</summary>
+
+![](./images/example/mobile-preview.jpg)
+</details>
 
 ### Enlaces
 
