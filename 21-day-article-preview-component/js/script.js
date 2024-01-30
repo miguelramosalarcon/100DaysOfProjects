@@ -1,13 +1,6 @@
-const shareButton = document.getElementById('share-button');
-const shareMedia = document.getElementById('social-media');
-const returnButton = document.getElementById('return-button')
+const shareOption = document.querySelector('.share-option');
 
-shareButton.addEventListener('click', () => {
-	shareMedia.classList.toggle('active')
-});
-
-returnButton.addEventListener('click', () => {
-	if (shareMedia.classList.contains('active')) {
-		shareMedia.classList.remove('active')
-	}
+document.querySelector('.share-button').addEventListener('click', function () {
+  this.classList.toggle('active');
+  shareOption.classList.toggle('active');
 });

@@ -28,47 +28,68 @@
   </head>
 
   <body>
-    <main>
-      <div class="card">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <div class="card-title">
-            Shift the overall look and feel by adding these wonderful touches to furniture in your home
-          </div>
-          <div class="card-text">
-            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
-          </div>
-          <div class="card-footer">
-            <div class="card-footer-image">
-              <img src="./images/avatar-michelle.jpg" alt="Image-avatar">
+    <article class="article-card">
+      <div class="img-box">
+        <img src="./images/drawers.jpg" alt="" class="article-banner" />
+      </div>
+
+      <div class="article-content">
+        <a href="#">
+          <h3 class="article-title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h3>
+        </a>
+
+        <p class="article-text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="acticle-content-footer">
+          <div class="author">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt=""
+              class="author-avater"
+            />
+
+            <div class="author-info">
+              <a href="#">
+                <h4 class="author-name">Michelle Appleton</h4>
+              </a>
+              <div class="publish-date">28 Jun 2020</div>
             </div>
-            <div class="card-footer-info">
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p>
-            </div>
-            <div class="card-footer-share">
-              <div class="card-footer-share--light" id="share-button">
-                <i class="fas fa-share"></i>
-              </div>
+          </div>
+
+          <div class="share">
+            <button class="share-button">
+              <ion-icon name="arrow-redo"></ion-icon>
+            </button>
+
+            <div class="share-option">
+              <span>Share</span>
+
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="content-footer" id="social-media">
-        <div class="social-media">
-          <span>SHARE</span>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-pinterest"></i>
-        </div>
-        <div class="card-footer-share">
-          <div class="card-footer-share--dark" id="return-button">
-            <i class="fas fa-share"></i>
-          </div>
-        </div>
-      </div>
-    </main>
+    </article>
 
     <script src="./js/script.js"></script>
+     
+    <!--- ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
