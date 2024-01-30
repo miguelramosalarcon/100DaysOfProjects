@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos" />
+    <meta name="description" content="Reto 23" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Intro Component With Sign-Up Form</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="content">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="signup">
+        <div class="signup__pricing">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+        
+        <form action="#" class="signup__form">
+          <input
+            type="text" name="first-name" id="first-name" aria-label="First Name" placeholder="First Name"
+            required
+          />
+          <input
+            type="text" name="last-name" id="last-name" aria-label="Last Name" placeholder="Last Name"
+            required
+          />
+          <input
+            type="email" name="email" id="email" aria-label="Email Address" placeholder="Email Address"
+            required
+          />
+          <input
+            type="password" name="password" id="password" aria-label="Password" placeholder="Password"
+            required
+          />
+          <input type="submit" value="Claim your free trial"
+            aria-label="Submit"
+          />
+          <span class="terms-notice"
+            >By clicking the button, you are agreeing to our
+            <span>Terms and Services</span></span
+          >
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
