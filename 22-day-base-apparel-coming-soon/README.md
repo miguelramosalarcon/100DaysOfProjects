@@ -42,7 +42,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile-preview.jpg)
+![](./screen/mobile-peview.jpg)
 </details>
 
 <details>
