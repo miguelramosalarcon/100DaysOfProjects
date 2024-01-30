@@ -46,9 +46,9 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 </details>
 
 <details>
-    <summary>👆 Hover JS effects </summary>
+    <summary>👆 Validation with JS </summary>
 
-![](./screen/hover.avif)
+![](./screen/retoMramos23.jpgs)
 </details>
 
 ### Enlaces
