@@ -34,15 +34,21 @@ Los usuarios deberían poder:
 Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 <details>
-    <summary>🖥 Desktop version</summary>
+    <summary>🖥️ Desktop version</summary>
 
-![](./images/example/desktop-preview.jpg)
+![](./screen/desktop-preview.jpg)
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./images/example/mobile-preview.jpg)
+![](./screen/mobile-preview.jpg)
+</details>
+
+<details>
+    <summary>👆 Hover JS effects </summary>
+
+![](./screen/hover-js.jpg)
 </details>
 
 ### Enlaces
