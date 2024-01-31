@@ -53,6 +53,8 @@ main {
   margin-right: auto;
 }
 
+/* ------------Main----------------- */
+
 .content {
   color: var(--White);
   text-align: center;
@@ -65,6 +67,8 @@ main {
 .content p {
   line-height: 1.7em;
 }
+
+/* ------------SignUp----------------- */
 
 .signup {
   padding: 1em;
@@ -131,6 +135,8 @@ main {
   border: 2px solid var(--Red);
 }
 
+/* ------------Inputs----------------- */
+
 input[type="submit"] {
   box-shadow: 0px 0.3em 0px 0px var(--Green);
   border: none;
@@ -156,6 +162,7 @@ input[type="submit"]:hover {
     opacity: .7;
 }
 
+/* ------------Terms----------------- */
 .terms-notice {
   display: block;
   margin-top: 1em;
