@@ -1,6 +1,6 @@
 # Intro component signup form - Solution
 
-<img src="./screen/desktop-preview.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **Intro component signup form** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -42,13 +42,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.webp)
+![](./screen/movil.webp)
 </details>
 
 <details>
     <summary>👆 Validation with JS </summary>
 
-![](./screen/retoMramos23.jpgs)
+![](./screen/reto23Mramos.jpg)
 </details>
 
 ### Enlaces
