@@ -1,35 +1,53 @@
-const form = document.querySelector("form");
-const input = document.querySelector("input");
-const alertInfo = document.querySelector("header form span");
+const form = document.getElementById('emailForm');
+const emailInput = document.getElementById('emailInput');
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-  if (input.value == "") {
-    alertMsg();
-    return (alertInfo.innerHTML =
-      "Whoops! It looks like you forgot to add your email");
+emailInput.addEventListener('input', function () {
+  const email = emailInput.value.trim();
+  if (email === '') {
+    showError('¡Vaya! Parece que olvidaste agregar tu correo electrónico');
+  } else if (!validateEmail(email)) {
+    showError('Proporcione una dirección de correo electrónico válida');
+  } else {
+    hideError();
   }
-
-  if (!input.value.match(pattern)) {
-    alertMsg();
-    return (alertInfo.innerHTML = "Please provide a valid email address");
-  }
-
-  return alert("Thank you for filling in your email address.");
 });
 
-function alertMsg() {
-  input.style.borderColor = "hsl(354, 100%, 66%)";
-  alertInfo.style.display = "block";
-}
+form.addEventListener('submit', function (e) {
+  e.preventDefault(); 
 
-function clearAlert() {
-  input.style.borderColor = "hsla(0, 0%, 59%, 50%)";
-  alertInfo.style.display = "none";
-}
+  const email = emailInput.value.trim();
 
-input.addEventListener("keypress", () => {
-  clearAlert();
+  if (email === '') {
+    showError('¡Vaya! Parece que olvidaste agregar tu correo electrónico');
+  } else if (!validateEmail(email)) {
+    showError('Proporcione una dirección de correo electrónico válida');
+  } else {
+    hideError();
+    
+  }
 });
+
+function validateEmail(email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+function showError(errorMessage) {
+  hideError(); 
+  
+  const error = document.createElement('p');
+  error.classList.add('error_text');
+  error.textContent = errorMessage;
+
+  form.appendChild(error);
+  form.classList.add('error');
+}
+
+function hideError() {
+  const error = form.querySelector('.error_text');
+  if (error) {
+    form.removeChild(error);
+    form.classList.remove('error');
+  }
+}

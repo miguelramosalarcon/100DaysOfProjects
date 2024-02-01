@@ -28,39 +28,30 @@
   </head>
 
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" aria-hidden="true" />
-      <h1>We are launching <span>soon!</span></h1>
-      <p>Subscribe and get notified</p>
-      <form action="#" method="post">
-        <div>
-          <input type="text"
-            name="email"
-            id="email"
-            placeholder="Your email address..."
-            autocomplete="off"
-          />
-          <br>
-          <span>Provide a valid email address</span>
-        
+    <body>
+      <section class="container">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+        <h1 class="heading"> We are launching <span>soon!</span></h1>
+        <p class="sub-heading">Subscribe and get notified</p>
+    
+        <form id="emailForm" action="#">
+          <input type="email" id="emailInput" placeholder="Your email address...">
+          <button type="submit">Notify Me</button>
+        </form>
+    
+        <img src="./images/illustration-dashboard.png" alt="hero-img" class="hero-img">
+    
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <button type="submit">Notify Me</button>
-      </form>
-    </header>
-    <main>
-      <img src="./images/illustration-dashboard.png" alt="dashborard" aria-hidden="true"/>
-    </main>
-    <footer>
-      <ul>
-        <li><ion-icon name="logo-facebook"></ion-icon></li>
-        <li><ion-icon name="logo-twitter"></ion-icon></li>
-        <li><ion-icon name="logo-instagram"></ion-icon></li>
-      </ul>
-      <span>&copy; Copyright Ping. All rights reserved.</span>
-    </footer>
-    <!-- Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </section>
+      <!-- JS validation -->
+      <script src="./js/script.js"></script>
+    </body>
+    
     <!-- JS validation -->
     <script src="./js/script.js"></script>
   </body>
