@@ -188,7 +188,7 @@ h1 span {
 
   .img-section{
     background-image: url(../images/hero-mobile.jpg);
-    background-position: 0%;
+    background-position: 5% 95%;
   }
 
   .main-container {
@@ -230,17 +230,5 @@ h1 span {
   }
 }
 
-@media screen and (width:768px){
-    .info-section {
-        display: flex;
-        
-      }
 
-      .img-section{
-        background-image: url(../images/hero-mobile.jpg);
-      }
-      .info-section p{
-        font-size: ;
-      }
-  }
   
