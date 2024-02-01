@@ -91,6 +91,12 @@ main {
   text-align: inherit;
   color: var(--White);
   font-size: 0.8em;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.signup__pricing:hover{
+  filter: brightness(1.2); 
 }
 
 .signup__form {
