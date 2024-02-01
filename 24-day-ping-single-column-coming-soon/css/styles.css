@@ -1,0 +1,118 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+  
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+}
+
+/* Header */
+header {
+  border: 1px solid red;
+  text-align: center;
+  width: 80%;
+}
+
+header img {
+  width: 50px;
+  padding: 20px 0px;
+  margin-top: 50px;
+}
+
+header h1 {
+  color: var(--Gray);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+header p{
+  font-size: 14px;
+  padding: 10px 0px 20px 0px;
+}
+
+form{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form input{
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 30px;
+  height: 40px;
+}
+
+::placeholder{
+  font-size: 14px;
+  text-align: center;
+}
+
+form span{
+  display: none;
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--Light-Red);
+  margin: 10px;
+}
+
+/* Main */
+main {
+  border: 1px dashed black;
+  width: 80%;
+}
+
+main img {
+  width: 300px;
+}
+
+
+
+
+/* Media queries */
+
+@media only screen and (min-width:1200px){
+  header img{
+    width: 70px;
+  }
+
+}
