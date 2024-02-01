@@ -42,13 +42,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.webp)
+![](./screen/movil.webp)
 </details>
 
 <details>
     <summary>👆 Validation with JS </summary>
 
-![](./screen/retoMramos23.jpgs)
+![](./screen/retoMramos23.jpg)
 </details>
 
 ### Enlaces
