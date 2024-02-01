@@ -161,7 +161,6 @@ form button:hover{
   color: var(--Blue);
   font-size: 14px;
   transition: all ease .5s;
-
 }
 
 .fa-brands:hover{
