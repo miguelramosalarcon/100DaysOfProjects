@@ -186,6 +186,11 @@ h1 span {
     display: initial;
   }
 
+  .img-section{
+    background-image: url(../images/hero-mobile.jpg);
+    background-position: 0%;
+  }
+
   .main-container {
     grid-template-columns: 1fr;
     grid-template-rows: 15% 60% 1fr;
@@ -231,6 +236,9 @@ h1 span {
         
       }
 
+      .img-section{
+        background-image: url(../images/hero-mobile.jpg);
+      }
       .info-section p{
         font-size: ;
       }
