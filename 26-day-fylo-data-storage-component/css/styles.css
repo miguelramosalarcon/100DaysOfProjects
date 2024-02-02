@@ -141,6 +141,8 @@ img {
   border-radius: 0.8rem;
   width: 80%;
   cursor: pointer;
+  animation: loadingBar 4s ease;
+  transition: all ease 2s
 }
 .progress-bar::after {
   content: "";
@@ -247,3 +249,15 @@ img {
     transform: translateX(0);
   }
 }
+
+@keyframes loadingBar {
+    0% {
+      width: 0;
+      opacity: 0
+    }
+  
+    100% {
+      width: 80%;
+      opacity: 1
+    }
+  }
