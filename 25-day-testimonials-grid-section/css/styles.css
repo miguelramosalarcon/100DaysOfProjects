@@ -49,10 +49,10 @@ body {
 .container:hover article{
     opacity: .5;
     filter: blur(3px);
-    box-shadow: none;
+
 }
 article{
-    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all ease .5s;
 }
@@ -61,7 +61,7 @@ article{
     transform: scale(1.1);
     opacity: 1;
     filter: blur(0);
-    box-shadow: none;
+
 }
 
 /* card daniel */
