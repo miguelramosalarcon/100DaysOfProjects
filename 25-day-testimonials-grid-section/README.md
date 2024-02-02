@@ -46,9 +46,21 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 </details>
 
 <details>
-    <summary>👆 Efect with JS </summary>
+    <summary> Solution </summary>
 
-![](./screen/reto23Mramos.jpg)
+![](./screen/reto25Mramos.jpg)
+</details>
+
+<details>
+    <summary> Efect Blur </summary>
+
+![](./screen/reto25Mramos-blur.jpg)
+</details>
+
+<details>
+    <summary> Efect Dark Mode JS </summary>
+
+![](./screen/reto25Mramos-dark-mode.jpg)
 </details>
 
 ### Enlaces
