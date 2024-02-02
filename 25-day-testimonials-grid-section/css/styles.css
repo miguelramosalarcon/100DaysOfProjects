@@ -153,24 +153,24 @@ img {
     max-width: 1250px;
   }
   .daniel {
-    grid-template-area: one;
+    grid-template-areas: one;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
   .jonathan {
-    grid-template-area: two;
+    grid-template-areas: two;
     grid-column: 3 / span 1;
   }
   .harmon {
-    grid-template-area: three;
+    grid-template-areas: three;
     grid-column: 1 / span 1;
   }
   .patrick {
-    grid-template-area: four;
+    grid-template-areas: four;
     grid-column: 2 / span 2;
   }
   .kira {
-    grid-template-area: five;
+    grid-template-areas: five;
     grid-column: 4 / span 1;
     grid-row: 1 / span 2;
   }
