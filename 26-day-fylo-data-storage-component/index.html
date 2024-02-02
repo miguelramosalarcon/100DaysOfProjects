@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="es-pe">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miguel Ramos">
-    <meta name="description" content="Dia 26">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos" />
+    <meta name="description" content="Dia 26" />
     <!-- Biblioteca de íconos Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Archivo reset Normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Archivo de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Fylo Data Storage Component</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="flex-container">
 
-    
-
-</body>
-
+        <div class="left-component">
+          <div class="fylo-logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <div class="icons">
+            <div class="img-background">
+              <img src="./images/icon-document.svg" alt="" />
+            </div>
+            <div class="img-background">
+              <img src="./images/icon-folder.svg" alt="" />
+            </div>
+            <div class="img-background">
+              <img src="./images/icon-upload.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="right-component">
+          <p>You've used <b>815 GB</b> of your storage</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="progress-bar-range">
+            <span class="storage-value">0 GB</span>
+            <span class="storage-value">1000 GB</span>
+          </div>
+          <div class="storage-left">
+            <p><span class="space-left">185</span> GB Left</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -7,15 +7,243 @@ Tabla de contenidos:
 -------------------- 
 */
 
-
 /* ----- Fuente ----- */
-
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 /* ----- Variables ----- */
+:root {
+  /* ### Colores primarios */
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
 
-
+  /* ### Colores neutrales */
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body,
+html {
+  height: 100%;
+  background: var(--Very-Dark-Blue);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.container {
+  height: 100%;
+  background: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  width: 1000px;
+}
+
+/* LEFT COMPONENT */
+.left-component {
+  background-color: var(--Dark-Blue);
+  width: 35%;
+  border-radius: 1rem 5rem 1rem 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 10px black;
+  animation: fadeFromTop 1s ease-in-out;
+}
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+img {
+  object-fit: contain;
+}
+.img-background {
+  padding: 1rem;
+  background: var(--Very-Dark-Blue);
+  border-radius: 0.6rem;
+  display: flex;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.img-background:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 8px violet;
+}
+
+/* RIGHT COMPONENT */
+.right-component {
+  width: 50%;
+  background-color: var(--Dark-Blue);
+  margin-top: 5.3rem;
+  position: relative;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 10px black;
+  animation: fadeFromRight 1s ease-in-out;
+}
+.storage-left {
+  position: absolute;
+  background-color: white;
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  top: -40%;
+  right: 8%;
+  border-radius: 0.6rem 0.6rem 0 0.6rem;
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  /* animacion */
+  animation: bubbleHop 1.75s ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.storage-left::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  border-right: 20px solid white;
+  border-bottom: 20px solid transparent;
+  top: 100%;
+  right: 0%;
+}
+.space-left {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  color: black;
+}
+.right-component > p {
+  color: white;
+  opacity: 0.8;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+.progress-bar-container {
+  margin: 0 2rem;
+  width: 80%;
+  height: 0.8rem;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 0.8rem;
+  display: flex;
+}
+.progress-bar {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 0.8rem;
+  border-radius: 0.8rem;
+  width: 80%;
+  cursor: pointer;
+}
+.progress-bar::after {
+  content: "";
+  display: inline-block;
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: white;
+  position: relative;
+  left: 99.5%;
+  bottom: 28%;
+  border-radius: 100%;
+  transform: translate(-100%);
+}
+.progress-bar-range {
+  display: flex;
+  width: 80%;
+  margin: 0.2rem 2rem;
+  justify-content: space-between;
+  color: white;
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+  .container {
+    background: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .left-component {
+    width: 80%;
+  }
+  .right-component {
+    width: 90%;
+  }
+  .storage-left {
+    top: 85%;
+    border-radius: 0.6rem;
+    left: 20%;
+    /* transform: translateX(-50%); */
+    width: 60%;
+    text-align: center;
+    padding: 1rem 0rem;
+    animation: bubbleHop 1.75s ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  .storage-left span {
+    font-size: 50px;
+  }
+
+  .storage-left p {
+    font-weight: 600;
+  }
+  .right-component {
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+  .storage-left::after {
+    display: none;
+  }
+}
+
+/* Keyframes */
+@keyframes bubbleHop {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.3rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes fadeFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
