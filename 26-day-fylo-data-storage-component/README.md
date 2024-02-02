@@ -97,6 +97,23 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
+Usamos `animacion` para adaptar animar un poco el diseño:
+
+```css
+/* ----- Keyframes ----- */
+@keyframes loadingBar {
+    0% {
+      width: 0;
+      opacity: 0
+    }
+  
+    100% {
+      width: 80%;
+      opacity: 1
+    }
+  }
+```
+
 ### Lo que aprenderemos
 
 Aprenderemos más sobre el concepto _mobile-first_ para usar correctamente las propiedades CSS.
