@@ -172,4 +172,44 @@ padding: 0;
     flex-direction: column;
     line-height: 2.5rem;
 }
-/* Section two */
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    margin: auto;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+@media screen and (min-width:992px){
+    html{
+        background-image: url(../images/bg-header-desktop.png);
+
+    }
+
+    .head{
+        width: 55%;
+        margin: auto;
+    }
+
+    h1,h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size:  1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .buttons{
+        flex-direction: row;
+    }
+}
