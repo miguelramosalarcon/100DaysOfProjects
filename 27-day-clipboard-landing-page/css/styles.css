@@ -33,7 +33,6 @@ html{
     background-repeat: no-repeat;
     background-position: top center;
     font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 18px;
 }
 
 main{
@@ -44,9 +43,133 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .computer, .devices{
     width: 100%;
+    margin-top: 2rem;
+}
+
+
+section{
+    width: 90%;
+    margin: auto;
 
 }
+
+/* Section one */
+
+.logo{
+    margin-top: 5rem;
+}
+
+h1, h2, h3{
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 1rem 0rem;
+    margin: 0px -15px;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    padding: 1rem 0rem;
+    border-radius: 50px;
+    width: 80%;
+    font-size: 12rem;
+    border-bottom: 4px solid;
+    transition: all ease .3s;
+}
+
+.btn-ios{
+    background: var(--Strong-Cyan);
+    font-size: 1rem;
+    border-color:  rgb(25, 118, 104);
+    box-shadow: 0px 10px 20px rgba(38, 186, 164, .35);
+}
+
+.btn-mac{
+    background: var(--Light-Blue);
+    font-size: 1rem;
+    border-color:   rgb(61, 75, 184);
+    box-shadow: 0px 10px 20px rgba(61, 75, 184, 0.371);
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.info{
+    margin: 1.5rem 0rem;
+}
+
+.section-four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+footer{
+    background-color: #F5F6F8;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border:1px solid darkred;
+
+}
+
+.logo-footer{
+    width: 30%;
+}
+ul{
+padding: 0;  
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+/* Section two */
