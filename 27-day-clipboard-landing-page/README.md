@@ -103,7 +103,7 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para adaptar el diseño a pantallas pequeñas:
+Usamos `Javascript` para añadir scroll to top:
 
 ```javascript
 /* ----- JS ----- */
