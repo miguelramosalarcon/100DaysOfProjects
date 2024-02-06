@@ -97,6 +97,33 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
+Usamos `Javascript` para adaptar el diseño a pantallas pequeñas:
+
+```javascript
+/* ----- JS ----- */
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.onscroll = function () {
+  var scrollToTopContainer = document.getElementById('scrollToTopContainer');
+
+  var totalHeight = document.body.scrollHeight - window.innerHeight;
+
+  scrollToTopContainer.style.opacity = (window.scrollY > totalHeight * 0.2) ? '1' : '0';
+};
+```
+
+
+
+
+
+
+
+
 ### Lo que aprenderemos
 
 Aprenderemos más sobre el concepto _mobile-first_ para usar correctamente las propiedades CSS.
