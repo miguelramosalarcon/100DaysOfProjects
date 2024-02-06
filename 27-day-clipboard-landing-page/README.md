@@ -5,7 +5,7 @@
 Esta es una solución del proyecto **Clipboard Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 [![Nivel - Junior](https://img.shields.io/badge/Nivel-Junior-2ea44f?style=for-the-badge)](#)
-[![FrontEnd - HTML + CSS](https://img.shields.io/badge/Tecnología-HTML_%2B_CSS-2ea44f?style=for-the-badge)](#)
+[![FrontEnd - HTML + CSS](https://img.shields.io/badge/FrontEnd-HTML_%2B_CSS-?style=for-the-badge#FFC300)](#)
 [![BackEnd - Javascript](https://img.shields.io/badge/BackEnd-Javascript-2ea44f?style=for-the-badge)](#)
 
 ## Tabla de contenidos
