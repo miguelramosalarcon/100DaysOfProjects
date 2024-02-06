@@ -8,7 +8,12 @@ Esta es una solución del proyecto **Clipboard Landing Page** como parte del ret
 [![Nivel - Junior](https://img.shields.io/badge/Nivel-Junior-2ea44f?style=for-the-badge)](#)
 [![FrontEnd - HTML+CSS](https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow)](#)
 [![BackEnd - Javascript](https://img.shields.io/badge/BackEnd-Javascript-orange)](#)
-  
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Nivel-Junior-2ea44f?style=for-the-badge" alt="Nivel - Junior">
+  <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
+  <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
 
 ## Tabla de contenidos
