@@ -57,7 +57,7 @@ li {
 a {
   text-decoration: none;
   color: var(--Dark-Grayish-Blue);
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -217,6 +217,7 @@ a img:hover {
   p {
     font-size: 1.1rem;
     line-height: 1.8rem;
+    padding-left: 15px;
   }
 
   .buttons {
