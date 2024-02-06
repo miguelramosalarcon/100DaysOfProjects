@@ -109,6 +109,8 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [Google Fonts](https://fonts.google.com/) - contiene fuentes que podemos descargar y usar para nuestros proyectos.
 - [BEM Methodology In CSS: A Quick Start Guide](https://scalablecss.com/bem-quickstart-guide/) - una guía corta pero precisa para comprender la metología BEM. Puedes descargar la guía en PDF.
 - [Responsively App](https://responsively.app/) - es una app que nos muestra como va quedando nuestro diseño en distintos dispositivos ya sean desktops,tablets, celulares, etc.
+ [NOTE]
+- [CodePen](https://codepen.io/sosuke/pen/Pjoqqp) - Modificar el color de un SVG
 
 ## Autor del reto
 

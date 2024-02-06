@@ -31,7 +31,7 @@
     <main>
       <!-- Section one -->
       <section class="section-one">
-        <img src="./images/logo.svg" alt="Logo" class="logo"/>
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
         <head>
           <h1>A history of everything you copy</h1>
           <p>
@@ -87,25 +87,26 @@
 
       <!-- Section three -->
       <section class="section-three">
+        <div class="head">
+          <h2>Access Clipboard anywhere</h2>
+          <p>
+            Whether you’re on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks.
+          </p>
+        </div>
+
+        <img
+          src="./images/image-devices.png"
+          alt="img devices"
+          class="devices"
+        />
+
+        <div class="head">
+          <h2>Supercharge your workflow</h2>
+          <p>We’ve got the tools to boost your productivity.</p>
+        </div>
+
         <div class="infos">
-          <div class="head">
-            <h2>Access Clipboard anywhere</h2>
-            <p>
-              Whether you’re on the go, or at your computer, you can access all
-              your Clipboard snippets in a few simple clicks.
-            </p>
-          </div>
-          <img
-            src="./images/image-devices.png"
-            alt="img devices"
-            class="devices"
-          />
-
-          <div class="head">
-            <h2>Supercharge your workflow</h2>
-            <p>We’ve got the tools to boost your productivity.</p>
-          </div>
-
           <div class="info">
             <img src="./images/icon-blacklist.svg" alt="icon-blacklist" />
             <h3>Create blacklists</h3>
@@ -161,7 +162,7 @@
     <!-- Footer-->
     <footer>
       <div>
-        <img src="./images/logo.svg" alt="logo" class="logo-footer"/>
+        <img src="./images/logo.svg" alt="logo" class="logo-footer" />
       </div>
 
       <ul class="links">
@@ -184,5 +185,13 @@
         /></a>
       </div>
     </footer>
+
+    <div id="scrollToTopContainer">
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -6,7 +6,9 @@ Tabla de contenidos:
 3. Estilos generales ..... 32
 -------------------- 
 */
-
+*:hover {
+  transition: all ease 0.5s;
+}
 
 /* ----- Fuente ----- */
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
@@ -25,191 +27,324 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
-html{
-    min-width: 375px;
-    max-width: 1440px;
-    margin: auto;
-    background-image: url(../images/bg-header-mobile.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    font-family: 'Bai Jamjuree', sans-serif;
-}
-
-main{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: var(--Dark-Grayish-Blue);
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.computer, .devices{
-    width: 100%;
-    margin-top: 2rem;
+html {
+  min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 
-section{
-    width: 90%;
-    margin: auto;
+main {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.computer,
+.devices {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+section {
+  width: 90%;
+  margin: auto;
 }
 
 /* Section one */
 
-.logo{
-    margin-top: 5rem;
+.logo {
+  margin-top: 5rem;
 }
 
-h1, h2, h3{
-    color: var(--Dark-Grayish-Blue);
-    font-weight: 600;
+h1,
+h2,
+h3 {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
 }
-p{
-    color: var(--Grayish-Blue);
-    font-weight: 400;
-    line-height: 1.5rem;
-    padding: 1rem 0rem;
-    margin: 0px -15px;
-    font-size: 1rem;
-}
-
-h1{
-    font-size: 1.7rem;
-    margin-top: 1.5rem;
+p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1rem 0rem;
+  margin: 0px -15px;
+  font-size: 1rem;
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.3rem;
-    margin-top: 2rem;
+h1 {
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
 }
 
-button{
-    border: none;
-    cursor: pointer;
-    background: none;
-    color: white;
-    padding: 1rem 0rem;
-    border-radius: 50px;
-    width: 80%;
-    font-size: 12rem;
-    border-bottom: 4px solid;
-    transition: all ease .3s;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin-top: 2rem;
 }
 
-.btn-ios{
-    background: var(--Strong-Cyan);
-    font-size: 1rem;
-    border-color:  rgb(25, 118, 104);
-    box-shadow: 0px 10px 20px rgba(38, 186, 164, .35);
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  padding: 1rem 0rem;
+  border-radius: 50px;
+  width: 80%;
+  font-size: 12rem;
+  border-bottom: 4px solid;
 }
 
-.btn-mac{
-    background: var(--Light-Blue);
-    font-size: 1rem;
-    border-color:   rgb(61, 75, 184);
-    box-shadow: 0px 10px 20px rgba(61, 75, 184, 0.371);
+.btn-ios {
+  background: var(--Strong-Cyan);
+  font-size: 1rem;
+  border-color: rgb(25, 118, 104);
+  box-shadow: 0px 10px 20px rgba(38, 186, 164, 0.35);
 }
 
-button:hover{
-    opacity: .8;
+.btn-mac {
+  background: var(--Light-Blue);
+  font-size: 1rem;
+  border-color: rgb(61, 75, 184);
+  box-shadow: 0px 10px 20px rgba(61, 75, 184, 0.371);
 }
 
-.info{
-    margin: 1.5rem 0rem;
+.info {
+  margin: 1.5rem 0rem;
 }
 
-.section-four{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-
+.section-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
 
-footer{
-    background-color: #F5F6F8;
-    text-align: center;
-    margin-top: 5rem;
-    padding: 1rem 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    border:1px solid darkred;
-
+footer {
+  background-color: #f5f6f8;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.logo-footer{
-    width: 30%;
+.logo-footer {
+  width: 30%;
 }
-ul{
-padding: 0;  
+ul {
+  padding: 0;
 }
-.links{
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5rem;
+.links {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
 }
 
-.social-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 50%;
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* hovers */
+button:hover {
+  opacity: 0.8;
+}
+
+a:hover {
+  color: var(--Strong-Cyan);
+}
+
+a img:hover {
+  filter: invert(57%) sepia(74%) saturate(431%) hue-rotate(122deg)
+    brightness(94%) contrast(86%);
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    background-image: url(../images/bg-header-desktop.png);
+    overflow-x: hidden;
+  }
+
+  .head {
+    width: 55%;
     margin: auto;
-    border: 1px solid red;
-    cursor: pointer;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    width: 60%;
+    margin: 2rem auto 0;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 1rem 0rem;
+  }
+
+  .section-two {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+
+  .section-two .head {
+    grid-column: 1/3;
+    margin-bottom: 2rem;
+  }
+
+  .computer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 110%;
+    margin-left: -13rem;
+  }
+
+  .section-two .infos {
+    text-align: start;
+    width: 75%;
+  }
+
+  .devices {
+    width: 60%;
+  }
+
+  .section-three .infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+
+  .info img {
+    margin-bottom: 1rem;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
+
+  .section-three .info {
+    align-items: start;
+  }
+
+  .section-four {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 1rem;
+  }
+
+  .logo-footer {
+    grid-column: 1/2;
+    width: 20%;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    font-size: 1.2rem;
+    align-self: start;
+    text-align: start;
+  }
+
+  .social-icons {
+    width: 70%;
+    margin: 0;
+  }
 }
 
-@media screen and (min-width:992px){
-    html{
-        background-image: url(../images/bg-header-desktop.png);
-
-    }
-
-    .head{
-        width: 55%;
-        margin: auto;
-    }
-
-    h1,h2{
-        font-size: 2.5rem;
-    }
-
-    h3{
-        font-size: 1.8rem;
-    }
-
-    p{
-        font-size:  1.1rem;
-        line-height: 1.8rem;
-    }
-
-    .buttons{
-        flex-direction: row;
-    }
+/* Scroll to top */
+#scrollToTopContainer {
+  position: fixed;
+  right: 20px; 
+  bottom: 20px; 
+  z-index: 999; 
+  width: 50px; 
+  height: 50px; 
+  background-color: var(--Grayish-Blue); 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  opacity: 0;
+  transition: opacity .3s ease;
 }
+
+#scrollToTopContainer:hover {
+  opacity: 1;
+}
+
+#scrollToTopBtn {
+  background: none;
+  border: none;
+  color: white; 
+  font-size: 24px;
+  transition: all ease .3s;
+}
+
+@media screen and (min-width: 1441px) {
+    html {
+      max-width: none; 
+    }
+  
+
+  }
+  
+
+  @media screen and (max-width: 767px) {
+    #scrollToTopContainer {
+      display: none;
+    }
+  }
