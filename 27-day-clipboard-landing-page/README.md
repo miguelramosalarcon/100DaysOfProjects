@@ -5,7 +5,7 @@
 Esta es una solución del proyecto **Clipboard Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Nivel-Junior-2ea44f?style=for-the-badge" alt="Nivel - Junior">
+  <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
   <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
