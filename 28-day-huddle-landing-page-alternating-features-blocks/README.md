@@ -7,7 +7,6 @@ Esta es una solución del proyecto **Huddle Landing Page Alternating features bl
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
-  <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
 
 ## Tabla de contenidos
