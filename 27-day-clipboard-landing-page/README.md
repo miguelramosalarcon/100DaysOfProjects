@@ -4,6 +4,8 @@
 
 Esta es una solución del proyecto **Clipboard Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
+[![Nivel - Junior](https://img.shields.io/badge/Nivel-Junior-2ea44f)](#) 
+
 ## Tabla de contenidos
 
 - [Visión general](#visión-general)
