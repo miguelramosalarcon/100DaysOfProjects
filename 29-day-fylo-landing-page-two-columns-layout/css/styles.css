@@ -7,14 +7,659 @@ Tabla de contenidos:
 -------------------- 
 */
 
-
 /* ----- Fuente ----- */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* ----- Variables ----- */
+:root {
+    --margin-inline:auto;
+    --width:90vw;
 
+    --very-dark: hsl(243, 87%, 12%);
+    --desaturated: hsl(238, 22%, 44%);
 
+    --bright: hsl(224, 93%, 58%);
+    --moderate: hsl(170, 45%, 43%);
+
+    --light-grayish: hsl(240, 75%, 98%);
+    --light: hsl(0, 0%, 75%);
+}
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+body{
+    font-family: 'Open sans',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.nav-bar{
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: var(--margin-inline);
+    width: var(--width);
+    margin-top: 4rem;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.nav-image{
+    width: 16vw;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+}
+
+li{
+    list-style: none;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+.log-in{
+    margin-inline: var(--margin-inline);
+    width: var(--width);
+
+    display: flex;
+
+    margin-top: 3rem;
+}
+
+
+button:hover{
+    opacity: .8;
+}
+.left-log-in{
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.left-log-in-heading{
+    width: 25ch;
+    font-family: 'Raleway',sans-serif;
+    font-size: 2.5rem;
+}
+
+.left-log-in-para{
+    width: 58ch;
+    font-weight: 500;
+}
+
+.input-email{
+    padding: 1rem 7rem 1rem 0.8rem;
+    font-size: 0.8em;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 4px;
+}
+
+::placeholder{
+    color: hsl(0, 0%, 75%);
+}
+.get-started-btn{
+    padding: 1rem 3.8rem;
+    border: none;
+    background-color:  var(--bright);
+    color: hsl(240, 75%, 98%);
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.right-log-in{
+    flex: 1;
+}
+
+.right-log-in-image{
+    width: 40vw;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+
+.productive-background{
+    background: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: cover;
+    background-position: center;
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.productive-main{
+    margin-inline: var(--margin-inline);
+    width: var(--width);
+
+    display: flex;
+}
+
+.left-productive{
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.left-productive-heading{
+    font-family: 'Raleway',sans-serif;
+    font-size: 2.5rem;
+}
+
+.left-productive-para{
+    width: 58ch;
+    font-weight: 500;
+}
+
+.fylo{
+    color: hsl(170, 45%, 43%);
+    display: inline-block;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+}
+
+
+.arrow-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.working{
+    display: inline-block;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.ceo{
+    background-color: white;
+    width: 33ch;
+    padding: 2rem 3.5rem 2rem 2rem ;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ceo-para{
+    width: 36ch;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-profile-pic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ceo-name{
+    margin: 0;
+    font-weight: 900;
+    font-size: 0.7em;
+}
+
+.ceo-info{
+   margin: 0;
+   font-size: 0.7em;
+}
+
+.ceo-inline{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+
+.right-productive{
+    margin-top: 8rem;
+}
+
+.right-productive-image{
+    width: 40vw;
+}
+
+
+.sign-up-background{
+    background-color:  hsl(238, 22%, 44%);
+    padding: 4rem;
+}
+
+.sign-up-main{
+    color: white;
+
+    margin-inline: var(--margin-inline);
+    width: var(--width);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left-sign-up{
+    width: 55ch;
+}
+
+.right-sign-up{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 5rem;
+}
+
+.sign-up-email{
+    padding: 1rem 26rem 1rem 0.8rem;
+    font-size: 0.8em;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.get-started-for-free{
+    padding: 1rem 3.8rem;
+    border: none;
+    background-color:   var(--bright);
+    color: hsl(240, 75%, 98%);
+    font-size: 0.8em;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* Footer */
+.footer-background{
+    background-color:  hsl(243, 87%, 12%);
+    padding: 9rem;
+}
+
+.footer-main{
+    color: hsl(240, 75%, 98%);
+    margin-inline: var(--margin-inline);
+    width: var(--width);
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9em;
+
+    margin-bottom: -2rem;
+}
+
+.fylo-social{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: -24.5rem;
+    margin-top: -5rem;
+    line-height: 2rem;
+}
+.footer-logo{
+    background-color: transparent;
+    color: hsl(240, 75%, 98%);
+    width: 16vw;
+    margin-bottom: 1rem;
+  
+}
+
+.phone-icon{
+    width: 1vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.email-icon{
+    width: 1vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.phone{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.email-div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-us{
+    list-style: none;
+    margin-left: -25rem;
+    line-height: 2rem;
+}
+
+.contact-us{
+    list-style: none;
+    margin-left: -25rem;
+    line-height: 2rem;
+}
+
+.facebook-icon,
+.twitter-icon,
+.insta-icon{
+    width: 2vw;
+    margin-left: 0.2rem;
+}
+
+.social-icons{
+    margin-left: -30rem;
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+
+.about-us a,
+.contact-us a,
+.phone a,
+.email-div a{
+    color: hsl(240, 75%, 98%);
+}
+
+.about-us a :hover,
+.contact-us a :hover,
+.phone a :hover,
+.email-div a :hover{
+    text-decoration: underline;
+}
+
+/* media */
+
+@media only screen and (max-width:426px){
+
+    body{
+        margin: 0;
+        padding: 0;    
+    }
+
+   .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2rem 0rem 2rem 1rem;
+    }
+
+   .nav-image{
+    width: 28vw;
+    margin: 0;
+    padding: 0;
+    }
+
+   ul{
+    font-size: 0.7em;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 0 0;
+    padding: 0;
+   }
+
+   .log-in{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    margin: 0 ;
+    padding: 0;
+    text-align: center;
+   }
+
+   .left-log-in-heading{
+    width: 22ch;
+    font-size: 1.5em;
+    margin: 2rem 0rem 2rem 2.5rem;
+    padding: 0;
+   }
+
+   .left-log-in-para{
+    width: 36ch;
+    margin: 2rem -2.8rem 2rem 2.5rem;
+    padding: 0;
+   }
+
+   .input-email{
+    padding: 0.8rem 11rem 0.8rem 0.5rem;
+    margin: 1rem 1rem 1rem 3rem; 
+    font-size: 0.7em;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 4px;
+    }
+
+    ::placeholder{
+        color: hsl(0, 0%, 75%);
+    }
+    .get-started-btn{
+        padding: 0.8rem 8rem;
+        border: none;
+        background-color:   var(--bright);
+        color: hsl(240, 75%, 98%);
+        font-size: 0.8em;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+   .right-log-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .right-log-in-image{
+        width: 70vw;
+        margin: 2rem -2rem 0 0;
+        padding: 0;
+    }
+
+   .productive-background{
+        margin: 0;
+        padding: 0;
+    }
+
+   .productive-main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 5rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .left-productive-heading{
+        width: 40ch;
+        font-size: 1em;
+        margin: 0 0 2rem 1rem;
+        padding: 0;
+    }
+
+    .left-productive-para{
+        text-align: start;
+        font-size: 0.9em;
+        width: 40ch;
+        margin: 1rem -2rem 1rem 4rem;
+        padding: 0;
+    }
+
+    .working{
+        margin: 0.5rem 0 3rem 0;
+    }
+
+    .ceo{
+        text-align: start;
+        margin: 0.5rem 1rem 1rem 3.5rem;
+        padding: 1rem;
+    }
+
+    .ceo-para{
+        width: 39ch;
+        font-size: 0.8em;
+        margin: 0.5rem 0 1rem 0;
+        padding: 0;
+    }
+
+    .right-productive{
+        margin-top: 8rem;
+    }
+    
+    .right-productive-image{
+        width: 80vw;
+        margin-right: -2rem;
+    }
+
+    .sign-up-background{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sign-up-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0 3rem 0rem;
+    }
+
+    .right-sign-up{
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-sign-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        width: 50ch;
+        font-size: 0.7em;
+    }
+
+    .left-sign-up-heading{
+        margin: 0 0 0 1.5rem;
+    }
+
+    .left-sign-up-para{
+        width: 34ch;
+        font-size: 1.4em;
+        margin: 1rem 0 1rem 1.8rem;
+        padding: 0;
+    }
+
+    .sign-up-email{
+        width: 40vw;
+        padding: 0.5rem 3.1rem 0.5rem 0.5rem;
+    }
+
+    .get-started-for-free{
+        padding: 0.5rem 2.8rem;
+        margin: -1.5rem 0 0 0;
+    }
+
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 2rem 0 2rem 3rem;
+        gap: 3rem;
+        line-height: 1rem;
+    }
+
+    .fylo-social{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-logo{
+        width: 28vw;
+        margin: 0 0 1rem 0;
+        padding: 0;
+    }
+
+    .phone-icon{
+        width: 3vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .email-icon{
+        width: 3vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-us{
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-us{
+        margin: 0;
+        padding: 0;
+    }
+
+    .facebook-icon,
+    .twitter-icon,
+    .insta-icon{
+        width: 6vw;
+        margin: 0;
+        padding: 0 0.2rem 0 0.2rem;
+    }
+
+    .social-icons{
+        margin: 0 0 0 6rem;
+        padding: 0;
+    }
+
+    .footer-background{
+        margin: 0;
+        padding: 0;
+    }
+
+}
