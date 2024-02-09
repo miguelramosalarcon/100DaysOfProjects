@@ -1,0 +1,466 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* ----- Variables ----- */
+:root {
+     /* Primary Colors  */
+
+     --pink: hsl(322, 100%, 66%);
+     --light-pink: hsl(321, 100%, 78%);
+     --light-red: hsl(0, 100%, 63%);
+ 
+ 
+     /* Neutral Colors  */
+ 
+     --very-dark-cyan: hsl(192, 100%, 9%);
+     --very-pale-blue: hsl(207, 100%, 98%);
+ 
+     /* Padding  */
+ 
+     --padding-container: 60px 20px;
+ 
+     /* Waves  */
+ 
+     --wave-bottom: url(../images/bg-section-top-mobile-1.svg);
+     --wave-top: url(../images/bg-section-bottom-mobile-1.svg);
+     --wave-top2: url(../images/bg-section-top-mobile-2.svg);
+     --wave-bottom2: url(../images/bg-section-bottom-mobile-2.svg);
+     --wave-footer: url(../images/bg-footer-top-mobile.svg);
+ 
+     /* Fonts  */
+ 
+     --poppins: 'Poppins', sans-serif;
+     --open-sans: 'Open Sans', sans-serif;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: var(--padding-container);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero__nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.hero__picture {
+    width: 45%;
+    max-width: 150px;
+}
+
+.hero__logo {
+    width: 100%;
+    display: block;
+}
+
+
+.hero__cta {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-pink);
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px -2px black;
+}
+
+.hero__cta:hover{
+    opacity: .7;
+}
+
+.hero__content {
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+    padding: 10px 30px;
+}
+
+.hero__title,
+.main__subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: var(--very-dark-cyan);
+}
+
+.footer__title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.hero__paragraph {
+    margin: 30px auto;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.footer__media{
+    line-height:2.5;
+}
+
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 32px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px unset;
+    color: #fff;
+    background-color: var(--pink);
+    font-weight: 600;
+    transition: all ease .5s;
+    box-shadow: 0px 0px 5px -2px black;
+}
+
+.cta:hover {
+    opacity: .7;
+}
+
+
+.hero__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 70px;
+}
+
+.hero__item {
+    overflow: hidden;
+}
+
+.hero__mockup {
+    width: 90%;
+    max-width: 850px;
+    margin: 100px auto;
+}
+
+.hero__img {
+    width: 100%;
+    display: block;
+}
+
+.hero__img__logo {
+    display: block;
+}
+
+.hero__subtitle {
+    font-size: 4rem;
+    color: var(--very-dark-cyan);
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave--bottom {
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--bottom2 {
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom2);
+    background-color: #fff;
+}
+
+.main {
+    position: relative;
+}
+
+.main__content {
+    text-align: center;
+    position: relative;
+}
+
+.main__content--grow,
+.main__content--users {
+    background-color: var(--very-pale-blue);
+    position: relative;
+}
+
+.main__picture {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.main__img {
+    width: 100%;
+    display: block;
+}
+
+.main__content__texts {
+    margin: 70px auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.main__paragraph {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.wave--top {
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    background-image: var(--wave-top);
+}
+
+.wave--top2 {
+    background-image: var(--wave-top2);
+    left: 0;
+    bottom: 0;
+}
+
+.wave--bottom3 {
+    background-image: var(--wave-footer);
+    background-color: #fff;
+    left: 0;
+    top: 0;
+}
+
+.wave--top3 {
+    background-image: var(--wave-bottom);
+    left: 0;
+    top: 0;
+}
+
+.section__texts {
+    margin: 200px auto;
+    padding: 0px 30px;
+}
+
+.cta--section {
+    margin-top: 30px;
+    padding: 20px 10px;
+    width: 300px;
+    box-shadow: 0px 0px 5px -2px black;
+}
+
+.footer {
+    background-color: var(--very-dark-cyan);
+    color: #fff;
+    position: relative;
+    padding: 120px 40px 60px;
+}
+
+.footer__section {
+    width: 90%;
+}
+
+.footer__contact {
+    width: 90%;
+}
+
+.footer__paragraph {
+    line-height: 1.5;
+    margin: 30px auto;
+}
+
+.footer__form {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__input {
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: var(--open-sans);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footer__button {
+    font-size: 16px;
+    font-family: var(--open-sans);
+    background-color: var(--pink);
+    border: none;
+    font-weight: 600;
+    margin-left: auto;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.footer__button:hover{
+    background-color: #FF8DD7;
+}
+
+.footer__media__item::after {
+    content: "Phone: +1-543-123-4567";
+    margin-left: 10px;
+    
+}
+
+.footer__media__item--email::after {
+    content: "example@huddle.com";
+}
+
+.footer__logo {
+    max-width: 200px;
+}
+
+.footer__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer__social {
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer__link {
+    background-color: white; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    width: 30px; /* Tamaño del icono */
+    height: 30px; /* Tamaño del icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+}
+
+.footer__link:hover{
+    background-color: #06C5F7;
+}
+
+.footer__social__icon {
+    width: 100%;
+    display: block;
+}
+
+.footer__social i{
+    color: var(--very-dark-cyan);
+    font-size: 20px;
+}
+
+
+
+@media (min-width: 800px){
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .footer__contact {
+        position: relative;
+        width: 30%;
+    }
+
+    .footer__social {
+        position: absolute;
+        left: 0;
+    }
+
+    .footer__section {
+        width: 30%;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__numbers {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .wave--bottom {
+        background-image: url(../images/bg-section-top-desktop-1.svg);
+        background-color: #fff;
+    }
+
+    .main__content--grow {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main__content--flowing {
+        display: flex;
+    }
+
+    .main__content--users {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main__subtitle {
+        font-size: 2rem;
+    }
+
+    .main__content__texts {
+        text-align: start;
+        margin: 100px auto;
+    }
+
+    .wave--top {
+        
+    }
+
+    .wave--top2 {
+        background-image: url(../images/bg-section-top-desktop-2.svg);
+    }
+
+    .wave--bottom2 {
+        background-image: url(../images/bg-section-bottom-desktop-1.svg);
+    }
+
+}
