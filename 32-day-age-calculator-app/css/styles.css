@@ -1,0 +1,232 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  width: 342px;
+  border-radius: 25px 25px 100px 25px;
+  padding: 48px 24px;
+  position: relative;
+  cursor: pointer;
+  transition: all ease-in .5s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 7px var(--purple);
+}
+
+.error-card {
+    box-shadow: 0px 0px 7px var(--light-red) !important;
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.input-container label {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--smokey-grey);
+}
+
+.input-container input {
+  color: var(--off-black) !important;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+#input-day,
+#input-month,
+#input-year 
+{
+    cursor: pointer;
+}
+
+
+.sub-label {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+  display: none;
+}
+
+.error {
+  display: block;
+  color: var(--light-red) !important;
+  border-color: var(--light-red) !important;
+}
+
+.btn-container {
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+}
+
+#btn {
+  background-color: var(--purple);
+  border: 0;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  position: relative;
+  transition: all ease .5s;
+}
+
+#btn:hover {
+  background-color: var(--off-black);
+  cursor: pointer;
+}
+
+#btn:active {
+  background-color: var(--purple);
+}
+
+#btn > img {
+  width: 25px;
+  height: 25px;
+}
+
+hr {
+  border: 1px solid var(--off-white);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 32px;
+}
+
+.output-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  font-size: 54px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 62px;
+}
+
+.amounts {
+  color: var(--purple);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 25px;
+  font-size: 11px;
+  text-align: center;
+  font-style: italic;
+}
+.attribution a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 860px) {
+  .card {
+    width: 840px;
+    padding: 56px;
+    border-radius: 25px 25px 200px 25px;
+  }
+
+  .input-container {
+    width: 544px;
+    gap: 32px;
+  }
+
+  .input-container label {
+    font-size: 14px;
+  }
+
+  .input-container input {
+    margin-top: 8px;
+    font-size: 35px;
+    padding: 15px 24px;
+  }
+
+  .btn-container {
+    margin-top: 0;
+  }
+
+  #btn {
+    margin: 0 0 0 auto;
+    width: 96px;
+    height: 96px;
+  }
+
+  #btn > img {
+    width: 46px;
+    height: 46px;
+  }
+
+  hr {
+    top: 47px;
+  }
+
+  .output-container {
+    margin-top: 0;
+    font-size: 102px;
+    line-height: 114px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0;
+  }
+}

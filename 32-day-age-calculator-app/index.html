@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Reto 32">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Age Calculator App</title>
+</head>
+
+<body>
+
+    <main class="card">
+        <div class="input-container">
+          <label for="day" id="label-day"
+            >D A Y
+            <input type="number" name="day" id="input-day" placeholder="DD" />
+            <span class="sub-label" id="error-day">This field is required</span>
+          </label>
+  
+          <label for="month" id="label-month"
+            >M O N T H
+            <input type="number" name="month" id="input-month" placeholder="MM" />
+            <span class="sub-label" id="error-month">This field is required</span>
+          </label>
+  
+          <label for="year" id="label-year"
+            >Y E A R
+            <input type="number" name="year" id="input-year" placeholder="YYYY" />
+            <span class="sub-label" id="error-year">This field is required</span>
+          </label>
+        </div>
+        <div class="btn-container">
+          <button id="btn">
+            <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+          </button>
+          <hr />
+        </div>
+  
+        <div class="output-container">
+          <p>
+            <span id="output-year" class="amounts">--</span>
+            <span id="output-label-year">years</span>
+          </p>
+          <p>
+            <span id="output-month" class="amounts">--</span>
+            <span id="output-label-month">months</span>
+          </p>
+          <p>
+            <span id="output-day" class="amounts">--</span>
+            <span id="output-label-day">days</span>
+          </p>
+        </div>
+      </main>
+
+      <script src="./js/script.js"></script>
+</body>
+
+</html>
