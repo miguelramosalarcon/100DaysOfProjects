@@ -7,7 +7,7 @@ Esta es una solución del proyecto **Newsletter Sign-Up Form With Success Messag
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
-  <img src="https://img.shields.io/badge/Javascript-orange" alt="Javascript">
+  <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
 
 ## Tabla de contenidos
