@@ -1,0 +1,376 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ----- Variables ----- */
+:root {
+   /* PRIMARY */
+   --tomato: hsl(4, 100%, 67%);
+   --tomato-light: hsl(4, 100%, 95%);
+   /* NEUTRAL */
+   --dark-slate-grey: hsl(234, 29%, 20%);
+   --charcoal-grey: hsl(235, 18%, 26%);
+   --grey: hsl(231, 7%, 60%);
+   --white: hsl(0, 0%, 100%);
+   /* GRADIENT */
+   --gradient-pink: #ff3e83;
+   --gradient-orange: #fd634a;
+   --gradient-shadow: #ff3e8355;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  overflow: hidden;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--charcoal-grey);
+    min-width: 29rem;
+  }
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Main */
+  main {
+    min-height: calc(100vh - 5rem);
+  }
+  
+  .card {
+    background-color: var(--white);
+    color: var(--dark-slate-grey);
+    box-shadow: 0 0 7rem 1rem #00000055;
+    width: 100%;
+    max-width: 48rem;
+    min-height: calc(100vh - 5rem);
+    margin: auto;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  p,
+  li {
+    line-height: 1.5;
+  }
+
+ 
+  .btn {
+    cursor: pointer;
+    padding: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--dark-slate-grey);
+    border-radius: 0.7rem;
+    border: none;
+    transition: transform 0.4s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(
+      90deg,
+      var(--gradient-pink),
+      var(--gradient-orange)
+    );
+    box-shadow: 0 1rem 1.5rem var(--gradient-shadow);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+  
+  .btn:focus {
+    outline: 0.2rem dotted var(--dark-slate-grey);
+  }
+  
+  /* sign-up card */
+  .sign-up-img {
+    width: 100%;
+  }
+  
+  .sign-up-text {
+    padding: 3rem 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .sign-up-list {
+    padding: 0 3rem;
+    list-style-image: url("../images/icon-list.svg");
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sign-up-list li {
+    padding-left: 1rem;
+  }
+  
+  .sign-up-form {
+    position: relative;
+    margin-top: 1rem;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sign-up-form label {
+    font-weight: 700;
+  }
+  
+  .sign-up-form input {
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid var(--grey);
+    border-radius: 0.7rem;
+  }
+  
+  .sign-up-form input:focus {
+    outline: 0.2rem dotted var(--dark-slate-grey);
+  }
+  
+  .sign-up-form .error-message {
+    color: var(--tomato);
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    display: none;
+  }
+  
+  .sign-up-form.error input {
+    background-color: var(--tomato-light);
+    border-color: var(--tomato);
+    color: var(--tomato);
+  }
+  
+  .sign-up-form.error .error-message {
+    display: block;
+  }
+  
+  .submit-btn {
+    margin-top: 1rem;
+  }
+  
+  /* success card */
+  .success-card {
+    padding: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .success-card img {
+    margin-top: auto;
+  }
+  
+  .submitted-email {
+    font-weight: 700;
+  }
+  
+  .dismiss-btn {
+    align-self: stretch;
+    margin-top: auto;
+  }
+  
+  /* Footer */
+  footer {
+    height: 5rem;
+    min-width: 17rem;
+    color: var(--white);
+    background-color: transparent;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  
+    gap: 1rem;
+  }
+  
+  .attribution {
+    font-size: 1.1rem;
+  }
+  
+  .attribution a:link,
+  .attribution a:visited {
+    color: var(--white);
+    padding: 0.1rem;
+    text-decoration: none;
+  }
+  
+  .attribution a:hover,
+  .attribution a:active {
+    color: var(--tomato);
+    border-bottom: 0.1rem solid var(--tomato);
+  }
+  
+  .attribution a:focus {
+    outline: 0.2rem dotted var(--tomato);
+  }
+
+
+  /**********************/
+/*     over 480px     */
+/**********************/
+@media only screen and (min-width: 30em) {
+    .card {
+      border-radius: 0 0 3rem 3rem;
+      min-height: fit-content;
+    }
+  }
+  
+  /**********************/
+  /*     over 640px     */
+  /**********************/
+  @media only screen and (min-width: 43em) {
+  }
+  
+  /**********************/
+  /*     over 928px     */
+  /**********************/
+  @media only screen and (min-width: 58em) {
+  }
+  
+  /***********************/
+  /*     over 1120px     */
+  /***********************/
+  @media only screen and (min-width: 70em) {
+    /* Main */
+    main {
+      min-height: calc(100vh - 5rem);
+      display: grid;
+      place-content: center;
+    }
+  
+    .card {
+      border-radius: 3rem;
+    }
+  
+    h2 {
+      font-size: 5.6rem;
+    }
+  
+    p{
+        width: 90%;
+    }
+    /* sign-up card */
+    .sign-up-card {
+        margin-top: 20px;
+        
+      max-width: 100rem;
+      padding: 3rem;
+  
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+    }
+  
+    .sign-up-img {
+      grid-column: -1 / -2;
+      content: url(../images/illustration-sign-up-desktop.svg);
+    }
+  
+    .sign-up-text {
+      grid-row: 1;
+      padding: 0 6.5rem;
+  
+      justify-content: center;
+      gap: 2.5rem;
+    }
+  
+    /* success card */
+    .success-card {
+      max-width: 55rem;
+      padding: 7rem 9rem;
+        margin-top: 100px;
+      gap: 4rem;
+    }
+  }
+  
+  /**********************/
+  /* Very small screens */
+  /*     under 368px    */
+  /**********************/
+  @media (max-width: 23em) {
+  }
+  
+  /**********************/
+  /* Footer media query */
+  /**********************/
+  @media (max-width: 23em) {
+    footer {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .boxv {
+      display: none;
+    }
+  }

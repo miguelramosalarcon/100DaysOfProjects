@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Dia 31">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Newsletter Sign-Up Form With Success Message</title>
+</head>
+
+<body>
+
+     <!-- Sign-up form start -->
+     <div class="card sign-up-card">
+        <img
+          class="sign-up-img"
+          src="./images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+        <div class="sign-up-text">
+          <h2>Stay updated!</h2>
+
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="sign-up-list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+
+          <form class="sign-up-form">
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="email@company.com" />
+            <span class="error-message">Valid email required</span>
+            <button class="btn submit-btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <div class="card success-card hidden">
+        <img src="./images/icon-success.svg" alt="" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span class="submitted-email">ash@loremcompany.com</span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+        <button class="btn dismiss-btn">Dismiss message</button>
+      </div>
+
+      <!-- Success message end -->
+    </main>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
