@@ -171,7 +171,7 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [Responsively App](https://responsively.app/) - es una app que nos muestra como va quedando nuestro diseño en distintos dispositivos ya sean desktops,tablets, celulares, etc.
  [NOTE]
 - [CodePen](https://codepen.io/sosuke/pen/Pjoqqp) - Modificar el color de un SVG
-- [Boxy-SVG] (https://boxy-svg.com/) - Modificar o crear un SVG
+- [Boxy-SVG](https://boxy-svg.com/) - Modificar o crear un SVG
 
 ## Autor del reto
 
