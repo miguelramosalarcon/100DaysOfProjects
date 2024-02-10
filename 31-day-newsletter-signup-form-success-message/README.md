@@ -54,7 +54,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary> Solution </summary>
 
-![](./screen/reto30Mramos.jpg)
+![](./screen/reto31Mramos.jpg)
 </details>
 
 
