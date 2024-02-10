@@ -103,24 +103,25 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para validar el form Suscribe Newsletter:
+Usamos `Javascript` para validar el día, mes y año:
 
 ```javascript
 /* ----- Javascript ----- */
-function validarCorreo() {
-    var emailInput = document.getElementById("email");
-    var errorMsg = document.getElementById("error-msg");
-    var email = emailInput.value;
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-        errorMsg.style.display = "inline";
-        return false; // Evita que el formulario se envíe
-    } else {
-        errorMsg.style.display = "none";
-        return true; // Permite que el formulario se envíe
-    }
+function resetAll(input, domLabel, domSubLabel) {
+  input.classList.remove("error");
+  domLabel.classList.remove("error");
+  domSubLabel.classList.remove("error");
+  card.classList.remove("error-card");
 }
+
+function markInvalid(input, domLabel, domSubLabel, message) {
+  input.classList.add("error");
+  domLabel.classList.add("error");
+  domSubLabel.classList.add("error");
+  domSubLabel.innerText = message;
+  card.classList.add("error-card");
+}
+.....
 
 ```
 
