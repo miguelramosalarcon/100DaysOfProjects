@@ -67,6 +67,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: var(--Off-white);
 }
 
   
@@ -261,7 +262,11 @@ main picture img {
     background: linear-gradient(to bottom, var(--Grayish-blue), var(--Very-dark-blue));
   }
   
-
+  body.menu-open {
+    
+    background-color: rgba(0, 0, 0, 0.7);
+   
+  }
 
 @media screen and (min-width: 580px) {
   nav .menu {
