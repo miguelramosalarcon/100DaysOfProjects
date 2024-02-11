@@ -1,0 +1,375 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* ### Paleta de colores */
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 100vh;
+  background-color: #fdfdf8;
+}
+
+nav,
+main {
+  max-width: 114.2rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  line-height: 1.73em;
+}
+
+nav {
+  height: 8.4rem;
+  padding: 2.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+  
+
+nav .logo {
+  display: inline-block;
+  height: 100%;
+}
+
+nav .logo img {
+  height: 100%;
+}
+
+nav .menu {
+  display: inline-block;
+  height: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .close {
+  display: inline-block;
+  height: 3.1rem;
+  position: absolute;
+  top: 2.8rem;
+  right: 1.6rem;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+  position: absolute;
+  list-style: none;
+  top: 2.8rem;
+  right: 0;
+  background: var(--Off-white);
+  height: 100vh;
+  width: 25.6rem;
+  margin-top: 2.8rem;
+  padding: 9rem 0 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  transition: all 0.5s ease-in-out;
+  transform-origin: 100% 0%;
+}
+
+nav ul li a {
+  font-size: 1.8rem;
+  color: var(--Very-dark-blue);
+}
+
+nav ul li a:hover {
+  color: var(--Soft-red);
+}
+
+.hide {
+  transform: scale(0);
+}
+
+main {
+  margin-top: 8.8rem;
+}
+
+main picture {
+  display: block;
+  height: 30rem;
+  overflow: hidden;
+}
+
+main picture img {
+  height: 100%;
+}
+
+.news h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  margin-top: 0.6em;
+  color: var(--Very-dark-blue);
+}
+
+.news .article p {
+  color: var(--Dark-grayish-blue);
+  margin-top: 1.6rem;
+}
+
+.news .article a {
+  background: var(--Soft-red);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+  padding: 1.7rem 3.4rem;
+  color: var(--Off-white);
+}
+
+.news .article a:hover {
+  background: var(--Very-dark-blue);
+}
+
+.new {
+  background: var(--Very-dark-blue);
+  margin-top: 6.4rem;
+  padding: 2.4rem 2rem;
+}
+
+.new h2 {
+  color: var(--Soft-orange);
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 3.8rem;
+}
+
+.new .new-article a {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.005em;
+  color: var(--Off-white);
+}
+
+.new .new-article a:hover {
+  color: var(--Soft-orange);
+}
+
+.new .new-article p {
+  color: var(--Grayish-blue);
+  margin-top: 1rem;
+}
+
+.new hr {
+  margin: 3rem 0;
+  border: 1px solid var(--Dark-grayish-blue);
+}
+
+.popular {
+  margin-top: 6.4rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.popular .popular-article {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.popular .popular-article img {
+  width: 10rem;
+}
+
+.popular .popular-article h3 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--Grayish-blue);
+  margin-bottom: 1.5rem;
+}
+
+.popular .popular-article a {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--Very-dark-blue);
+  margin-bottom: 1.2rem;
+}
+
+.popular .popular-article a:hover {
+  color: var(--Soft-red);
+}
+
+.popular .popular-article p {
+  color: var(--Dark-grayish-blue);
+}
+
+/* Cambiar el color de fondo de la barra de desplazamiento */
+/* Cambiar el color de fondo de la barra de desplazamiento con gradiente */
+::-webkit-scrollbar {
+    width: 12px;
+    background: linear-gradient(to bottom, white);
+    transition: all ease .5s;
+  }
+  
+  /* Cambiar el color de la manija (thumb) de la barra de desplazamiento con gradiente */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--Soft-orange), var(--Soft-red));
+    border-radius: 6px;
+  }
+  
+  /* Cambiar el color al pasar el cursor sobre la manija (thumb) de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--Grayish-blue), var(--Very-dark-blue));
+  }
+  
+
+
+@media screen and (min-width: 580px) {
+  nav .menu {
+    display: none;
+  }
+
+  nav .close {
+    display: none;
+  }
+
+  nav ul {
+    transform: scale(1) !important;
+    position: static;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 3.8rem;
+  }
+
+  nav ul li a {
+    font-size: 1.6rem;
+    color: var(--Dark-grayish-blue);
+  }
+}
+
+@media screen and (min-width: 762px) {
+  nav {
+    position: initial;
+    height: 13rem;
+    padding: 9rem 1.6rem 0;
+  }
+
+  main {
+    margin-top: 5.4rem;
+    display: grid;
+    grid-template-columns: minmax(350px, 730px) auto;
+    grid-template-rows: max-content max-content max-content;
+    gap: 3rem;
+    grid-template-areas:
+      "picture new"
+      "news new"
+      "popular popular";
+  }
+
+  picture {
+    grid-area: picture;
+  }
+
+  .news {
+    grid-area: news;
+  }
+
+  .new {
+    grid-area: new;
+    margin: 0;
+    max-width: 34.8rem;
+  }
+
+  .popular {
+    grid-area: popular;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    margin-top: -30px;
+  }
+  .news {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .news h1 {
+    font-size: 5.6rem;
+    margin-top: 0.3rem;
+  }
+
+  .news .article {
+    max-width: 35rem;
+  }
+
+  .news .article p {
+    margin-top: 0;
+    line-height: 1.6em;
+  }
+
+  .news .article a {
+    margin-top: 3.6rem;
+  }
+
+  .new {
+    padding: 3.2rem 2.4rem;
+  }
+
+  .new h2 {
+    font-size: 4rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .popular {
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 4.2rem;
+  }
+
+  .popular .popular-article {
+    max-width: 35rem;
+  }
+}

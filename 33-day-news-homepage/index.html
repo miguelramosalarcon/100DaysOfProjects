@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nombre del autor" />
+    <meta name="description" content="Descripcion del proyecto" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>News Homepage</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+        <a class="logo" href="#">
+          <img src="./images/logo.svg" alt="News homepage" />
+        </a>
+        <div class="menu">
+          <img src="./images/icon-menu.svg" alt="" aria-hidden="true" />
+        </div>
+        <div class="close hide">
+          <img
+            src="./images/icon-menu-close.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <ul class="hide">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#new">New</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        <picture id="home">
+          <source
+            media="(min-width:376px )"
+            srcset="./images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="./images/image-web-3-mobile.jpg"
+            alt="Future of Web 3.0"
+          />
+        </picture>
+        <div class="news">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="article">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is it
+              really fulfilling its promise?
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div id="new" class="new">
+          <h2>New</h2>
+          <div class="new-article">
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr />
+          <div class="new-article">
+            <a href="#">The Downsides of AI Artistry</a>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr />
+          <div class="new-article">
+            <a href="#">Is VC Funding Drying Up?</a>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at what
+              that means.
+            </p>
+          </div>
+        </div>
+        <div id="popular" class="popular">
+          <div class="popular-article">
+            <img
+              src="./images/image-retro-pcs.jpg"
+              alt="Reviving Retro PCs"
+            />
+            <div class="content">
+              <h3>01</h3>
+              <a href="#">Reviving Retro PCs</a>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="popular-article">
+            <img
+              src="./images/image-top-laptops.jpg"
+              alt="Laptops of 2022"
+            />
+            <div class="content">
+              <h3>02</h3>
+              <a href="#">Top 10 Laptops of 2022</a>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="popular-article">
+            <img
+              src="./images/image-gaming-growth.jpg"
+              alt="The Growth of Gaming"
+            />
+            <div class="content">
+              <h3>03</h3>
+              <a href="#">The Growth of Gaming</a>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
