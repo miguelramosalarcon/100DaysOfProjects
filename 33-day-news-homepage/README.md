@@ -103,23 +103,52 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para validar el día, mes y año:
+Y asimismo utilice CSS para cambiar el color del scroll en Y
+```css
+/* Cambiar el color de fondo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px;
+    background: linear-gradient(to bottom, white);
+    transition: all ease .5s;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--Soft-orange), var(--Soft-red));
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--Grayish-blue), var(--Very-dark-blue));
+  }
+```
+
+Usamos `Javascript` para el menu hamburguesa:
 
 ```javascript
 /* ----- Javascript ----- */
-function resetAll(input, domLabel, domSubLabel) {
-  input.classList.remove("error");
-  domLabel.classList.remove("error");
-  domSubLabel.classList.remove("error");
-  card.classList.remove("error-card");
-}
+const iconMenu = document.querySelector(".menu");
+const closeMenu = document.querySelector(".close");
+const menu = document.querySelector("ul");
+const menuItem = document.querySelectorAll("ul li a");
 
-function markInvalid(input, domLabel, domSubLabel, message) {
-  input.classList.add("error");
-  domLabel.classList.add("error");
-  domSubLabel.classList.add("error");
-  domSubLabel.innerText = message;
-  card.classList.add("error-card");
+iconMenu.addEventListener("click", () => {
+  iconMenu.classList.toggle("hide");
+  closeMenu.classList.toggle("hide");
+  menu.classList.toggle("hide");
+});
+
+closeMenu.addEventListener("click", () => {
+  iconMenu.classList.toggle("hide");
+  closeMenu.classList.toggle("hide");
+  menu.classList.toggle("hide");
+});
+
+for (let i = 0; i < menuItem.length; i++) {
+  menuItem[i].addEventListener("click", () => {
+    iconMenu.classList.toggle("hide");
+    closeMenu.classList.toggle("hide");
+    menu.classList.toggle("hide");
+  });
 }
 .....
 

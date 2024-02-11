@@ -243,7 +243,7 @@ main picture img {
 }
 
 /* Cambiar el color de fondo de la barra de desplazamiento */
-/* Cambiar el color de fondo de la barra de desplazamiento con gradiente */
+
 ::-webkit-scrollbar {
     width: 12px;
     background: linear-gradient(to bottom, white);
