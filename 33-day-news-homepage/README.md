@@ -103,7 +103,7 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Y asimismo utilice CSS para cambiar el color del scroll en Y
+Y asimismo utilice CSS para cambiar el color la barra de desplazamiento
 ```css
 /* Cambiar el color de fondo de la barra de desplazamiento */
 ::-webkit-scrollbar {
