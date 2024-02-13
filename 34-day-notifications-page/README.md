@@ -1,13 +1,12 @@
-# News Homepage - Solution
+# Notifications Page - Solution
 
 <img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **News Homepage** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Notifications Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
-  <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
 
 ## Tabla de contenidos
@@ -48,13 +47,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.jpeg)
+![](./screen/mobile.webp)
 </details>
 
 <details>
     <summary> Solution </summary>
 
-![](./screen/reto33Mramos.jpg)
+![](./screen/reto34Mramos.jpg)
 </details>
 
 
@@ -101,57 +100,6 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
     grid-template-columns: 1fr;
   }
 }
-```
-
-Y asimismo utilice CSS para cambiar el color la barra de desplazamiento
-```css
-/* Cambiar el color de fondo de la barra de desplazamiento */
-::-webkit-scrollbar {
-    width: 12px;
-    background: linear-gradient(to bottom, white);
-    transition: all ease .5s;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, var(--Soft-orange), var(--Soft-red));
-    border-radius: 6px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, var(--Grayish-blue), var(--Very-dark-blue));
-  }
-```
-
-Usamos `Javascript` para el menu hamburguesa:
-
-```javascript
-/* ----- Javascript ----- */
-const iconMenu = document.querySelector(".menu");
-const closeMenu = document.querySelector(".close");
-const menu = document.querySelector("ul");
-const menuItem = document.querySelectorAll("ul li a");
-
-iconMenu.addEventListener("click", () => {
-  iconMenu.classList.toggle("hide");
-  closeMenu.classList.toggle("hide");
-  menu.classList.toggle("hide");
-});
-
-closeMenu.addEventListener("click", () => {
-  iconMenu.classList.toggle("hide");
-  closeMenu.classList.toggle("hide");
-  menu.classList.toggle("hide");
-});
-
-for (let i = 0; i < menuItem.length; i++) {
-  menuItem[i].addEventListener("click", () => {
-    iconMenu.classList.toggle("hide");
-    closeMenu.classList.toggle("hide");
-    menu.classList.toggle("hide");
-  });
-}
-.....
-
 ```
 
 ### Lo que aprenderemos
