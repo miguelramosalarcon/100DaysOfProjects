@@ -7,6 +7,7 @@ Esta es una solución del proyecto **Notifications Page** como parte del reto de
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
+  <img src="https://img.shields.io/badge/BackEnd-Javascript-orange" alt="BackEnd - Javascript">
 </div>
 
 ## Tabla de contenidos
@@ -101,7 +102,23 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
   }
 }
 ```
+Usamos `Javascript` para marcar todo como leído y el contador ponerlo en cero:
 
+```javascript
+/* ----- Javascript ----- */
+document.getElementById("mark-read").addEventListener("click", function() {
+    var unreadNotifications = document.querySelectorAll(".notification.unread");
+    unreadNotifications.forEach(function(notification) {
+      notification.classList.remove("unread");
+      notification.style.backgroundColor = "hsl(210, 60%, 98%)";
+    });
+
+
+    document.getElementById("notification-count").textContent = "0";
+  });
+.....
+
+```
 ### Lo que aprenderemos
 
 Aprenderemos más sobre el concepto _mobile-first_ para usar correctamente las propiedades CSS.
