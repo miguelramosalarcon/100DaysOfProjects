@@ -47,7 +47,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.webp)
+![](./screen/mobil.webp)
 </details>
 
 <details>
