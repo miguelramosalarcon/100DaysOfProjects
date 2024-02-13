@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Reto 34">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Notifications Page</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <header class="header">
+          <p>Notifications <span>3</span></p>
+          <p id="mark-read">Mark all as read</p>
+        </header>
+    
+        <div class="notification unread">
+          <img src="./images/avatar-mark-webber.webp" alt="Mark's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Mark Webber</span> reacted to your recent post <span class="events">My first tournament today!</span> <span class="unread-dot"></span></p>
+            <p class="timestamp">1m ago</p>
+          </div>
+        </div>
+    
+        <div class="notification unread">
+          <img src="./images/avatar-angela-gray.webp" alt="Angela's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Angela Gray</span> followed you <span class="unread-dot"></span></p>
+            <p class="timestamp">5m ago</p>
+          </div>
+        </div>
+    
+        <div class="notification unread">
+          <img src="./images/avatar-jacob-thompson.webp" alt="Jacob's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Jacob Thompson</span> has joined your group <span class="chess-event">Chess Club</span> <span class="unread-dot"></span></p>
+            <p class="timestamp">1 day ago</p>
+          </div>
+        </div>
+    
+        <div class="notification">
+          <img src="./images/avatar-rizky-hasanuddin.webp" alt="Rizky's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Rizky Hasanuddin</span> sent you a private message</p>
+            <p class="timestamp">5 days ago</p>
+            <p class="message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+    
+        <div class="notification two-img">
+          <img src="./images/avatar-kimberly-smith.webp" alt="Kimberly's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Kimberly Smith</span> commented on your picture</p>
+            <p class="timestamp">1 week ago</p>
+          </div>
+          <img class="chess-girl" src="./images/image-chess.webp" alt="A girl playing chess">
+        </div>
+    
+        <div class="notification">
+          <img src="./images/avatar-nathan-peterson.webp" alt="Nathan's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Nathan Peterson</span> reacted to your recent post <span class="events">5 end-game strategies to increase your win rate</span></p>
+            <p class="timestamp">2 weeks ago</p>
+          </div>
+        </div>
+    
+        <div class="notification">
+          <img src="./images/avatar-anna-kim.webp" alt="Anna's profile picture" class="user-img">
+          <div>
+            <p><span class="user">Anna Kim</span> left the group <span class="chess-event">Chess Club</span></p>
+            <p class="timestamp">2 weeks ago</p>
+          </div>
+        </div>
+    
+      </section>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+html {
+    font-size: 62.5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 1.4rem;
+    background-color: var(--white);
+}
+
+.container {
+    width: 90%;
+    max-width: 696px;
+    margin: 20px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.header p {
+    margin: 0;
+}
+
+.header p:first-child {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+
+.header span {
+    display: inline-block;
+    width: 28px;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.header p:last-child {
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+}
+
+.header p:last-child:hover {
+    color: var(--blue);
+}
+
+.notification {
+    display: flex;
+    column-gap: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem;
+    color: var(--dark-grayish-blue);
+    background-color: var(--very-light-grayish-blue);
+    border-radius: 0.5rem;
+}
+
+.notification.unread {
+    background-color: var(--light-grayish-blue-1);
+}
+
+.notification.unread .unread-dot{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.4rem;
+    vertical-align: center;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+.notification p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.timestamp {
+    padding-top: 0.2rem;
+}
+
+.notification img {
+    height: 3.4rem;
+}
+
+.notification .chess-girl {
+    justify-self: flex-end;
+}
+
+.notification .user {
+    padding-right: 0.4rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+.notification .user:hover {
+    color: var(--blue);
+}
+
+.notification .events {
+    padding-left: 0.4rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+}
+
+.notification .chess-event {
+    padding-left: 0.4rem;
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.notification .timestamp {
+    color: var(--grayish-blue);
+}
+
+.notification .message {
+    margin-top: 1rem;
+    padding: 1.4rem;
+    border: 1px solid var(--light-grayish-blue-2);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.notification .message:hover {
+    background-color: var(--light-grayish-blue-1);
+}
+
+.notification .chess-girl {
+    cursor: pointer;
+}
+
+@media (min-width: 630px) {
+    body {
+        font-size: 1.6rem;
+    }
+    .two-img {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    body {
+        background-color: var(--light-grayish-blue-1);
+    }
+    .container {
+        padding: 4rem 3rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+    }
+}
