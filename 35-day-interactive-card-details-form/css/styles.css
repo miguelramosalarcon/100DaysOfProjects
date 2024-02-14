@@ -1,0 +1,512 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+/* ----- Variables ----- */
+:root {
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); /*(active input border)*/
+    --Red: hsl(0, 100%, 66%); /*(input errors)*/
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+  }
+
+  
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", serif;
+    background-color: var(--White);
+  }
+  
+  main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+  }
+  
+  .occult {
+    display: none;
+  }
+  
+  .error {
+    border: 1px solid red;
+  }
+  
+  form span {
+    display: block;
+    font-size: 0.8rem;
+    color: red;
+  }
+  
+  .card {
+    margin: 0 auto;
+    width: 400px;
+    height: 210px;
+    border-radius: 0.4rem;
+    color: var(--White);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.3);
+  }
+  
+  .front {
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 1.2rem;
+    padding-left: 1.8rem;
+    margin-right: 10rem;
+  }
+  
+  .front img {
+    width: 70px;
+    margin-top: 0.3rem;
+  }
+  
+  .num-card {
+    height: 1rem;
+    font-size: 1.52rem;
+    letter-spacing: 0.2rem;
+    padding-top: 1.4rem;
+  }
+  
+  .name-card {
+    position: absolute;
+    margin-top: 1.1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  /* span  */
+  .card-type-message {
+    font-size: 0.8rem;
+    color: darkblue; 
+    margin-top: 0.5rem; 
+    display: block; 
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  
+  .front-card-date {
+    margin-top: 2.5rem;
+    margin-left: 18.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .front-card-date span {
+    margin: -1.7px;
+    letter-spacing: 1px;
+  }
+  
+  .back {
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    margin-top: 2rem;
+  }
+  
+  .cvc-card {
+    position: absolute;
+    margin-top: 5.8rem;
+    margin-left: 314px;
+  }
+  
+  form {
+    width: 370px;
+    animation: fade 1s;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1.4rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    color: var(--Very-dark-violet);
+    font-weight: 700;
+  }
+  
+  form input {
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgba(151, 151, 151, 0.37);
+    border-radius: 0.4rem;
+    font-family: "Space Grotesk", serif;
+    font-size: 1rem;
+    color: var(--Very-dark-violet);
+    padding: 0 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  form input:focus {
+    border: none;
+    border: 1px solid hsl(278, 94%, 30%);
+    background-color:  rgb(232, 240, 254);
+  }
+  
+  ::placeholder {
+    font-size: 1rem;
+    color: rgba(151, 151, 151, 0.61);
+    font-family: "Space Grotesk", serif;
+  }
+  
+  .bottom-inputs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date-inputs-container input {
+    width: 40px;
+  }
+  
+  #YY {
+    margin-left: 0.3rem;
+  }
+  
+  .cvc-container input {
+    width: 160px;
+  }
+  
+  #btn-confirm {
+    width: 100%;
+    height: 44px;
+    margin-top: 2.4rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-size: 0.95rem;
+    font-family: "Space Grotesk", serif;
+    font-weight: 500px;
+    letter-spacing: 0.01rem;
+    transition: all 0.6s;
+  }
+  
+  #btn-confirm:hover {
+    cursor: pointer;
+    background-color: rgb(83, 52, 223);
+  }
+  
+  .submitted-status {
+    width: 370px;
+    text-align: center;
+    animation: fade 1s;
+  }
+
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .submitted-status h2 {
+    color: var(--Very-dark-violet);
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    font-size: 1.6rem;
+  }
+  
+  .submitted-status p {
+    color: var(--Dark-grayish-violet);
+    letter-spacing: 0.05rem;
+  }
+  
+  #btn-continue {
+    width: 100%;
+    height: 46px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-size: 0.95rem;
+    font-family: "Space Grotesk", serif;
+    font-weight: 500px;
+    letter-spacing: 0.01rem;
+    transition: all 0.6s;
+  }
+  
+  #btn-continue:hover {
+    cursor: pointer;
+    background-color: rgb(83, 52, 223);
+  }
+  
+  .bg-mobile {
+    display: none;
+  }
+  
+  @media(max-width: 1000px) {
+    main {
+      gap: 0;
+      justify-content: space-between;
+      background-size:  320px;
+    }
+  
+    .submitted-status {
+      margin-right: 1.5rem;
+    }
+  
+    .cards-container {
+      margin: 0 1rem;
+    }
+  
+    .front {
+      margin-right: 4rem;
+    }
+  
+    form {
+      margin: 0 1rem;
+    }
+  }
+  
+  @media(max-width: 890px) {
+    main {
+      margin: 2rem 0;
+      margin-bottom: 3rem;
+      height: auto;
+      flex-direction: column;
+      background-image: none;
+    }
+  
+    .submitted-status {
+      margin-right: 0;
+      margin-top: 180px;
+    }
+  
+    .bg-mobile {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+  
+    .back {
+      margin-left: 84px;
+      margin-top: 0;
+    }
+  
+    .front {
+      position: absolute;
+      margin-top: 120px;
+    }
+  
+    .cards-container {
+      margin-top: -300px;
+      top: 0;
+    }
+  
+    form {
+      margin-top: 160px;
+      width: 480px;
+    }
+  
+    form input {
+      width: 93%;
+    }
+  
+    .date-inputs-container input {
+      width: 50px;
+    }
+    
+    #YY {
+      margin-left: 0.3rem;
+    }
+    
+    .cvc-container input {
+      width: 220px;
+    }
+  }
+  
+  @media(max-width: 530px) {
+    main {
+      margin: 1rem 0;
+      margin-bottom: 2.5rem;
+    }
+  
+    .bg-mobile {
+      height: 270px;
+    }
+  
+    .cards-container {
+      margin-top: -270px;
+    }
+  
+    .card {
+      width: 320px;
+      height: 180px;
+    }
+  
+    .front {
+      background-size: 330px;
+      padding: 1.1rem;
+    }
+  
+    .front img {
+      width: 55px;
+    }
+    
+    .num-card {
+      height: 1rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.15rem;
+      padding-top: 1.4rem;
+    }
+    
+    .front span {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .front-card-date {
+      margin-top: 1.65rem;
+      margin-left: 14.5rem;
+    }
+  
+    .back {
+      background-size: 330px;
+      padding: 0;
+      margin-left: 64px;
+      margin-top: 1.1rem;
+    }
+  
+    .cvc-card {
+      position: absolute;
+      margin-top: 4.9rem;
+      margin-left: 252px;
+    }
+    
+    form {
+      width: 390px;
+      margin-top: 130px;
+    }
+  
+    form label {
+      font-size: 0.8rem;
+    }
+  
+    form input {
+      width: 91%;
+    }
+  
+    .date-inputs-container input {
+      width: 40px;
+    }
+    
+    .cvc-container input {
+      width: 180px;
+    }
+  }
+  
+  @media(max-width: 410px) {
+    .bg-mobile {
+      height: 244px;
+    }
+  
+    .submitted-status {
+      max-width: 100%;
+      margin-top: 160px;
+    }
+  
+    .cards-container {
+      margin-top: -244px;
+    }
+    
+    .card {
+      width: 270px;
+      height: 150px;
+    }
+  
+    .front {
+      background-size: 275px;
+    }
+  
+    .front img {
+      width: 50px;
+    }
+    
+    .num-card {
+      height: 0.9rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      padding-top: 0.7rem;
+    }
+    
+    .front span {
+      margin-top: 0.1rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .front-card-date {
+      width: 4rem;
+      margin-top: 1rem;
+      margin-left: 12rem;
+    }
+  
+    .back {
+      background-size: 275px;
+      padding: 0;
+      margin-left: 34px;
+      margin-top: 1.1rem;
+    }
+  
+    .cvc-card {
+      position: absolute;
+      margin-top: 4rem;
+      margin-left: 208px;
+      font-size: 0.9rem;
+    }
+    
+    form {
+      width: 300px;
+      margin-top: 130px;
+    }
+  
+    form label {
+      font-size: 0.75rem;
+    }
+  
+    form input {
+      width: 90%;
+    }
+  
+    .date-inputs-container input {
+      width: 32px;
+    }
+    
+    #YY {
+      margin-left: 0.3rem;
+    }
+    
+    .cvc-container input {
+      width: 110px;
+    }
+  }

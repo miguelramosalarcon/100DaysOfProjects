@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="reto 35">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Interactive Card Details Form</title>
+</head>
+
+<body>
+    <img class="bg-mobile" src="./images/bg-main-mobile.png" alt="background image mobile">
+  <main>
+    <div class="cards-container">
+      <div class="front card">
+        <img src="./images/card-logo.svg" alt="circles logo">
+        <p class="num-card">0000 0000 0000 0000</p>
+        <span class="name-card">JANE APPLESEED</span>
+        <div class="front-card-date">
+          <span class="MM-date">00</span>
+          <span>/</span>
+          <span class="YY-date">00</span>
+        </div>
+      </div>
+
+      <div class="back card">
+        <p class="cvc-card">000</p>
+      </div>
+    </div>
+
+    <form id="card-form">
+      <label for="name">CARDHOLDER NAME</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" autocomplete="off">
+      <span id="nameError" class="text-error"></span>
+
+      <label for="card-number">CARD NUMBER</label>
+      <span id="cardTypeMessage" class="card-type-message"></span>
+      <input type="text" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" autocomplete="off">
+      <span id="cardNumberError" class="text-error"></span>
+
+      <div class="bottom-inputs-container">
+        <div class="date-inputs-container">
+          <label>EXP. DATE (MM/YY)</label>
+          <input id="MM" type="text" name="MM" placeholder="MM" maxlength="2" autocomplete="off">
+          <input id="YY" type="text" name="YY" placeholder="YY" maxlength="2" autocomplete="off">
+          <span id="MMerror" class="text-error"></span>
+          <span id="YYerror" class="text-error"></span>
+        </div>
+        <div class="cvc-container">
+          <label for="CVC">CVC</label>
+          <input type="text" id="CVC" name="CVC" placeholder="e.g. 123" maxlength="3" autocomplete="off">
+          <span id="cvcError" class="text-error"></span>
+        </div>
+      </div>
+      <button id="btn-confirm">Confirm</button>
+    </form>
+
+    <!-- Completed state start -->
+
+    <div class="submitted-status occult">
+      <img src="./images/icon-complete.svg" alt="complete icon">
+      <h2>THANK YOU!</h2>
+      <p>We've added your card details</p>
+      <button id="btn-continue">Continue</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
