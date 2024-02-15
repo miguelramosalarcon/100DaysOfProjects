@@ -1,0 +1,301 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* ----- Variables ----- */
+:root{
+/* ### Paleta de colores */
+--Soft-red: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+--Dark-brown: hsl(25, 47%, 15%);
+--Medium-brown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very-pale-orange: hsl(33, 100%, 98%);
+--White: #fff;
+
+/* ### Tipografia
+- Fuente: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Peso: 400, 700
+- Font size: 18px */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Cream);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.head-container {
+    background-color: var(--Soft-red);
+    color: white;
+}
+
+.head-container h1 {
+    font-weight: 400;
+}
+
+.head-container span {
+    font-weight: 700;
+}
+
+.head-container::after {
+    content: url(../images/logo.svg);
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+    transform: translate(0, -50%);
+}
+
+.dashboard-container {
+    background-color: var(--Very-pale-orange);
+    color: var(--Medium-brown);
+}
+
+.dashboard-column:hover {
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+.hover-stats {
+    display: none;
+}
+
+
+.dashboard-column:hover .hover-stats {
+    display: block;
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    color: var(--Very-pale-orange);
+    font-weight: 600;
+    background-color: var(--Dark-brown);
+    border-radius: 0.2em;
+}
+
+.dashboard-container .line {
+    height: 1px;
+    width: 100%;
+    background-color: hsla(28, 10%, 53%, 0.3);
+}
+
+.dashboard-container h1,
+.total-container span,
+.variation-container span {
+    color: var(--Dark-brown);
+    font-weight: 700;
+}
+
+.attribution {
+    margin-top: 3em;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 500px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        height: max-content;
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+
+    .container .head-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 2em;
+        border-radius: 1em;
+    }
+
+    .head-container h1 {
+        font-size: 1.2em;
+    }
+
+    .head-container span {
+        font-size: 2em;
+    }
+
+
+    .container .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 1.5em;
+        border-radius: 1em;
+    }
+
+    .dashboard-container .dashboard {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .dashboard span {
+        position: relative;
+        width: 3em;
+        text-align: center;
+    }
+
+    .dashboard-column {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        width: 3em;
+        background-color: var(--Soft-red);
+        border-radius: 0.4em;
+    }   
+
+    .dashboard-container .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 1.1em;
+    }
+
+    .stats .total-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .total-container span {
+        font-size: 2em;
+    }
+
+    .stats .variation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .container {
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+
+    .container .head-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.2em;
+        border-radius: 1em;
+    }
+
+    .head-container h1 {
+        font-size: 1em;
+    }
+
+    .head-container span {
+        font-size: 1.5em;
+    }
+
+
+    .container .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 1.2em;
+        border-radius: 1em;
+    }
+
+    .dashboard-container h1 {
+        font-size: 1.5em;
+    }
+
+    .dashboard-container .dashboard {
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 0.8em;
+    }
+
+    .dashboard span {
+        position: relative;
+        width: 2.5em;
+        text-align: center;
+    }
+
+    .dashboard-column {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        width: 2.5em;
+        background-color: var(--Soft-red);
+        border-radius: 0.2em;
+    }   
+
+    .dashboard-container .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 0.9em;
+    }
+
+    .stats .total-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+    }
+
+    .total-container span {
+        font-size: 1.5em;
+    }
+
+    .stats .variation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
