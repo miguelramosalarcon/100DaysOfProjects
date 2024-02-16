@@ -45,6 +45,7 @@ img {
 }
 .transparent-btn {
   border: none;
+
 }
 .transparent-btn:hover {
   color: var(--Almost-Black);
@@ -267,7 +268,7 @@ body.dark .outlined-btn {
 }
 
 body.dark .transparent-btn {
-  color: var(--Almost-White);
+  color: var(--Medium-Gray);
 }
 
 body.dark .outlined-btn:hover {
