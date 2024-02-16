@@ -48,19 +48,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.webp)
+![](./screen/mobile.jpeg)
 </details>
 
 <details>
-    <summary> Hover </summary>
+    <summary> Solution + Animation</summary>
 
-![](./screen/hover.avif)
-</details>
-
-<details>
-    <summary> Solution + Dark Mode</summary>
-
-![](./screen/reto37Mramos.jpg)
+![](./screen/reto38Mramos.jpg)
 </details>
 
 
@@ -109,19 +103,15 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para dark mode:
+Usamos `Javascript` para la animación:
 
 ```javascript
-/* ----- DARK MODE ----- */
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
-
-const darkModeToggle = document.getElementById("dark-mode-toggle"); el nuevo id
-darkModeToggle.addEventListener("change", () => {
-  document.body.classList.toggle("dark");
-});
+/* ----- ANIMATION ----- */
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.querySelector('.dashboard').classList.add('mostrar');
+    }, 500);
+  });
 ```
 
 
