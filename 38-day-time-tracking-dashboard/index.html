@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos" />
+    <meta name="description" content="Reto 38" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Time Tracking Dashboard</title>
+  </head>
+
+  <body>
+    
+    <main>
+      
+      <div class="dashboard">
+        <div class="dashboard__profile">
+          <div class="dashboard__profilebanner">
+            <img src="./images/image-jeremy.png" />
+            <div class="dashboard__profilename">
+              <p class="font--small" style="margin: 0">Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="dashboard__profiledescription">
+            <p class="font--medium daily">Daily</p>
+            <p class="font--medium weekly">Weekly</p>
+            <p class="font--medium monthly">Monthly</p>
+          </div>
+        </div>
+        <div class="dashboard__work">
+          <div class="dashboard__workbanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time workcurrent">32hrs</p>
+                <p class="dashboard__previous font--small workprevious">
+                  Last Week - 36hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__play">
+          <div class="dashboard__playbanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Play</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time playcurrent">10hrs</p>
+                <p class="dashboard__previous font--small playprevious">
+                  Last Week - 8hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__study">
+          <div class="dashboard__studybanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Study</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time studycurrent">4hrs</p>
+                <p class="dashboard__previous font--small studyprevious">
+                  Last Week - 7hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__exercise">
+          <div class="dashboard__exercisebanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Exercise</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time exercisecurrent">4hrs</p>
+                <p class="dashboard__previous font--small exerciseprevious">
+                  Last Week - 5hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__social">
+          <div class="dashboard__socialbanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Social</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time socialcurrent">5hrs</p>
+                <p class="dashboard__previous font--small socialprevious">
+                  Last Week - 10hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__selfcare">
+          <div class="dashboard__selfcarebanner">
+            <div class="dashboard__description">
+              <div class="dashboard__description--header">
+                <p>Self Care</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="dashboard__ellipsis"
+                />
+              </div>
+              <div class="dashboard__description--time">
+                <p class="dashboard__time selfcarecurrent">2hrs</p>
+                <p class="dashboard__previous font--small selfcareprevious">
+                  Last Week - 2hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
