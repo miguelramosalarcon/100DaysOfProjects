@@ -52,13 +52,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 </details>
 
 <details>
-    <summary> Hover</summary>
+    <summary>👆 Hover</summary>
 
 ![](./screen/hover.avif)
 </details>
 
 <details>
-    <summary> Solution </summary>
+    <summary>💪 Solution </summary>
 
 ![](./screen/reto39Mramos.jpg)
 </details>
