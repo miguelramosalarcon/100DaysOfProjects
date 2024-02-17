@@ -109,15 +109,32 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para la animación:
+Usamos `Javascript` para los cálculos:
 
 ```javascript
 /* ----- Js ----- */
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      document.querySelector('.dashboard').classList.add('mostrar');
-    }, 500);
-  });
+function calculateTip() {
+    if (peopleValue >= 1) {
+        let tipAmount = billValue * tipValue / peopleValue;
+        let total = billValue * (tipValue + 1) / peopleValue;
+        results[0].innerHTML = '$' + tipAmount.toFixed(2);
+        results[1].innerHTML = '$' + total.toFixed(2);
+    }
+}
+
+function reset() {
+    bill.value = ''; 
+    setBillValue(); 
+
+    tipBtns[2].click(); 
+
+    people.value = ''; 
+    setPeopleValue();
+
+    results[0].innerHTML = '$4.27';
+    results[1].innerHTML = '$32.79';
+}
+
 ```
 
 
