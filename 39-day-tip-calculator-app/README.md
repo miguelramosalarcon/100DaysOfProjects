@@ -70,7 +70,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/39-day-tip-calculator-app/){:target="_blank"}
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/39-day-tip-calculator-app/)
 ## Proceso de trabajo
 Primero realice la maquetación de acuerdo a lo que se puede observar en la imagen de referencia, posteriormente se dio estilos CSS para pantallas de PC, no fue necesario darle estilos para movil porque se hizo desde un principio responsivo, con Grid.
 
