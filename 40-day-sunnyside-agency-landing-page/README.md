@@ -75,7 +75,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/40-Sunnyside-Agency-Landing-Page/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/40-day-sunnyside-agency-landing-page/)
 
 ## Proceso de trabajo
 
