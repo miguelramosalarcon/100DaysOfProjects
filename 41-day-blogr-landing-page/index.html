@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos" />
+    <meta name="description" content="Reto 41 - Blogr Landing Page" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Blogr Landing Page</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- HEADER -->
+      <header>
+        <div class="container">
+          <!-- Nav -->
+          <nav>
+            <a href="./index.html" class="nav-logo">
+              <img src="./images/logo.svg" alt="Blogr Logo" />
+            </a>
+            <button id="navToggler" class="hamburger">
+              <span class="bun"></span>
+              <span class="steak"></span>
+              <span class="bun"></span>
+            </button>
+            <div id="navList" class="nav-list">
+              <ul class="dropdowns">
+                <li class="nav_item dropdown">
+                  <a href="" class="dropdown_toggler"
+                    ><span>Product</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity="1"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="#">Overview</a></li>
+                    <li class="dropdown_item"><a href="#">Pricing</a></li>
+                    <li class="dropdown_item"><a href="#">Marketplace</a></li>
+                    <li class="dropdown_item"><a href="#">Features</a></li>
+                    <li class="dropdown_item"><a href="#">Integrations</a></li>
+                  </ul>
+                </li>
+                <li class="nav_item dropdown">
+                  <a href="" class="dropdown_toggler"
+                    ><span>Company</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity="1"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="#">About</a></li>
+                    <li class="dropdown_item"><a href="#">Team</a></li>
+                    <li class="dropdown_item"><a href="#">Blog</a></li>
+                    <li class="dropdown_item"><a href="#">Careers</a></li>
+                  </ul>
+                </li>
+                <li class="nav_item dropdown">
+                  <a href="" class="dropdown_toggler"
+                    ><span>Connect</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity="1"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="#">Contact</a></li>
+                    <li class="dropdown_item"><a href="#">Newsletter</a></li>
+                    <li class="dropdown_item"><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <hr />
+              <ul class="links">
+                <li class="nav_item"><a href="#">Login</a></li>
+                <li class="nav_item btn btn-solid btn-md-themed">
+                  <a href="#">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Hero -->
+          <div class="hero">
+            <h1 class="hero_title">
+              <span>A modern</span> publishing platform
+            </h1>
+            <p class="hero_sub">
+              Grow your audience and build your online brand
+            </p>
+            <ul class="nav-list">
+              <li class="nav_item btn btn-solid">
+                <a href="#">Start for Free</a>
+              </li>
+              <li class="nav_item btn btn-outline">
+                <a href="#">Learn More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main>
+        <!-- Section Overview -->
+        <section class="container overview">
+          <h2 class="section_title">Designed for the future</h2>
+          <div class="section_content">
+            <article>
+              <div class="group">
+                <h3 class="group_title">
+                  Introducing an <span>extensible editor</span>
+                </h3>
+                <p class="group_desc">
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div class="group">
+                <h3 class="group_title">
+                  Robust content <span>management</span>
+                </h3>
+                <p class="group_desc">
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you’re in full control.
+                </p>
+              </div>
+            </article>
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 912px)"
+                  srcset="./images/illustration-editor-mobile.svg"
+                />
+                <img
+                  src="./images/illustration-editor-desktop.svg"
+                  alt="section overview illustration"
+                />
+              </picture>
+            </figure>
+          </div>
+        </section>
+        <!-- Section Infrastructure -->
+        <section class="container-fluid infrastructure">
+          <div class="container section_content">
+            <figure>
+              <picture>
+                <img
+                  src="./images/illustration-phones.svg"
+                  alt="section infrastructure illustration"
+                />
+              </picture>
+            </figure>
+            <article>
+              <div class="group dark">
+                <h2 class="group_title sm-800 text-white">
+                  State of the Art Infrastructure
+                </h2>
+                <p class="group_desc">
+                  With reliability and speed in mind, worldwide data centers
+                  provide the backbone for ultra-fast connectivity. This ensures
+                  your site will load instantly, no matter where your readers
+                  are, keeping your site competitive.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Section More -->
+        <section class="container more">
+          <div class="section_content">
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 912px)"
+                  srcset="./images/illustration-laptop-mobile.svg"
+                />
+                <img
+                  src="./images/illustration-laptop-desktop.svg"
+                  alt="section more illustration"
+                />
+              </picture>
+            </figure>
+            <article>
+              <div class="group">
+                <h3 class="group_title">Free, open, simple</h3>
+                <p class="group_desc">
+                  Blogr is a free and open source application backed by a large
+                  community of helpful developers. It supports features such as
+                  code syntax highlighting, RSS feeds, social media integration,
+                  third-party commenting tools, and works seamlessly with Google
+                  Analytics. The architecture is clean and is relatively easy to
+                  learn.
+                </p>
+              </div>
+              <div class="group">
+                <h3 class="group_title">Powerful tooling</h3>
+                <p class="group_desc">
+                  Batteries included. We built a simple and straightforward CLI
+                  tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <!-- Nav -->
+          <nav>
+            <a href="./index.html" class="nav-logo">
+              <img src="./images/logo.svg" alt="Blogr Icon" />
+            </a>
+            <ul class="nav-list">
+              <h4 class="nav_title">Product</h4>
+              <li class="nav_item"><a href="" class="fw-400 underline">Overview</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Pricing</a></li>
+              <li class="nav_item">
+                <a href="" class="fw-400 underline">Marketplace</a>
+              </li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Features</a></li>
+              <li class="nav_item">
+                <a href="" class="fw-400 underline">Integrations</a>
+              </li>
+            </ul>
+            <ul class="nav-list">
+              <h4 class="nav_title">Company</h4>
+              <li class="nav_item"><a href="" class="fw-400 underline">About</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Team</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Blog</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Careers</a></li>
+            </ul>
+            <ul class="nav-list">
+              <h4 class="nav_title">Connect</h4>
+              <li class="nav_item"><a href="" class="fw-400 underline">Contact</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">Newsletter</a></li>
+              <li class="nav_item"><a href="" class="fw-400 underline">LinkedIn</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
