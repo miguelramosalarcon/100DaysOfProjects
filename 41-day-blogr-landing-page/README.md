@@ -1,6 +1,6 @@
 # Sunnyside Agency Landing Page - Solution
 
-<img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop-preview.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **Sunnyside Agency Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -44,7 +44,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop.avif)
+![](./screen/desktop-preview.jpg)
 
 </details>
 
@@ -58,14 +58,14 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>👆 Hover</summary>
 
-![](./screen/hover.webp)
+![](./screen/active-states.jpg)
 
 </details>
 
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto40Mramos.jpg)
+![](./screen/reto41Mramos.jpg)
 
 </details>
 
