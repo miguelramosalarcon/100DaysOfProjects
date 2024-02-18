@@ -116,7 +116,7 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para menu hamburguer:
+Usamos `Javascript` para menu hamburguer y Go to Top:
 
 ```javascript
 /* ----- Js ----- */
