@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Frontend Club">
-    <meta name="description" content="Descripcion del proyecto">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Reto 43 - Interactive Pricing Component">
     <!-- Biblioteca de íconos Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,8 +22,37 @@
 
 <body>
 
-    <!-- Marcado HTML -->
+    <main class="container">
 
+        <section class="container__main-titles">
+          <h1 class="container__main-title">Simple, traffic-based pricing</h1>
+          <p class="container__subtitle">Sign-up for our 30-day trial. No credit card required.</p>
+        </section>
+    
+        <section class="container__pricing">
+          <div class="container__1st-section">
+            <h2 class="container__page-views"><spam class="dynamic-page-views">50k</spam> Pageviews</h2>
+            <input type="range" name="price-input" id="container__price-input" min="8" max="36" value="16" step="4">
+            <h3 class="container__price"><span class="container__dynamic-price"></span>/ month</h3>
+            <div class="container__monthly-yearly">
+              <span class="container__monthly-billing">Monthly Billing</span>
+              <label class="switch">
+                <input type="checkbox" class="monthly-yearly-checkbox">
+                <span class="slider round"></span>
+              </label>
+              <span class="container__yearly-billing">Yearly Billing<span class="container__discount">-25%</span></span> 
+            </div>
+          </div>
+          <hr>
+          <div class="container__2nd-section">
+            <span class="container__benefits">Unlimited websites</span>
+            <span class="container__benefits">100% data ownership</span>
+            <span class="container__benefits">Email reports</span>
+            <button class="container__button">Start my trial</button>
+          </div>
+        </section>
+      </main>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
-# Crowdfunding Product Page - Solution
+# Interactive Pricing Component - Solution
 
 <img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Crowdfunding Product Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Interactive Pricing Component** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -44,28 +44,28 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/deskto.avif)
+![](./screen/desktop.avif)
 
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile-design.jpg)
+![](./screen/mobile.webp)
 
 </details>
 
 <details>
     <summary>👆 Hover</summary>
 
-![](./screen/hover.webp)
+![](./screen/hover.avif)
 
 </details>
 
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto42Mramos.jpg)
+![](./screen/reto43Mramos.jpg)
 
 </details>
 
