@@ -44,7 +44,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop.avif)
+![](./screen/deskto.avif)
 
 </details>
 
@@ -75,7 +75,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/42-day-crowdfunding-product-page/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/41-day-blogr-landing-page/)
 
 ## Proceso de trabajo
 
