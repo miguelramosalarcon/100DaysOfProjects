@@ -75,7 +75,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/41-day-blogr-landing-page/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/43-day-interactive-pricing-component/)
 
 ## Proceso de trabajo
 
