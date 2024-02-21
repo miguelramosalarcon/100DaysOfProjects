@@ -277,7 +277,7 @@ button,
   background-repeat: no-repeat;
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("../../images/mobile/image-hero.jpg");
+  background-image: url(../images/mobile/image-hero.jpg);
 }
 
 @media (min-width: 48rem) {
@@ -288,7 +288,7 @@ button,
 
 @media (min-width: 64rem) {
   .header {
-    background-image: url("../../images/desktop/image-hero.jpg");
+    background-image: url(../images/desktop/image-hero.jpg);
   }
 }
 
