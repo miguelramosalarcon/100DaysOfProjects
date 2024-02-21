@@ -116,36 +116,38 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para Progress bar:
+Usamos `Javascript` para toggle:
 
 ```javascript
 /* ----- Js ----- */
-const slider = document.querySelector('input[type="range"]');
-let dynamicPrice = document.querySelector(".container__dynamic-price");
-let dynamicPageViews = document.querySelector(".dynamic-page-views");
-const monthlyYearlyCheckbox = document.querySelector(".monthly-yearly-checkbox");
+(function () {
 
-monthlyYearlyCheckbox.checked = false
-dynamicPrice.innerHTML = `$${slider.value}.00`
-
-monthlyYearlyCheckbox.addEventListener('change', () => {
-    if (monthlyYearlyCheckbox.checked === true) {
-        dynamicPrice.innerHTML = `$${slider.value * .75}.00`;    
-        
-    } else {
-        dynamicPrice.innerHTML = `$${slider.value}.00`;
-           
+    function $ (element) {
+      return document.querySelector.bind(document)(element);
     }
-});
-
-slider.oninput = function () {
-    if (monthlyYearlyCheckbox.checked === true) {
-        dynamicPrice.innerHTML = `$${slider.value * .75}.00`;        
-    } else {
-        dynamicPrice.innerHTML = `$${slider.value}.00`;        
+  
+    function noScroll () {
+      document.body.classList.toggle(
+        'overflow-hidden', header.classList.contains('open')
+      );
     }
-};
-
+  
+    const [ header, headerMenu ] = ['header.header', '#header__menu'].map($);
+  
+    document.addEventListener('DOMContentLoaded', _ => {
+      headerMenu.addEventListener('click', e => {
+        e.preventDefault();
+  
+        header.classList.toggle('open');
+  
+        window.scrollTo(0, 0);
+  
+        noScroll();
+      }, false);
+  
+    }, false);
+  
+  })();
 ```
 
 ### Lo que aprenderemos
