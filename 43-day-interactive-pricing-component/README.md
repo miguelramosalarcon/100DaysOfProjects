@@ -116,32 +116,36 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para menu hamburguer y calculo de Progress bar:
+Usamos `Javascript` para Progress bar:
 
 ```javascript
 /* ----- Js ----- */
-const updateStock = () => {
-    const selector = document.querySelector(".selection.active .select input").getAttribute("value");;
-    const options = document.querySelectorAll(`.option.${selector}`);
-    const stock = document.querySelectorAll(`.option.${selector} h6`)
-    if (selector !== "noReward") {
-        const newStock = Number(stock[0].innerHTML) - 1;
-        stock.forEach(s => {
-            s.innerHTML = newStock.toString();
-        });
-        if (newStock === 0) {
-            options.forEach(o => {
-                o.classList.add("inactive");
-                document.querySelectorAll(".option.inactive button").forEach(b => b.innerHTML = "Out of Stock");
-            });
-        };
-        // Calcular el nuevo porcentaje de progreso
-        const totalRaisedAmount = parseFloat(totalRaised.innerHTML.replace(",", ""));
-        const newProgressPercentage = Math.round((totalRaisedAmount / 100000) * 100); // Suponiendo que 100000 es el objetivo
-        // Actualizar la barra de progreso
-        progressBar.style.width = `${newProgressPercentage}%`;
-    };
+const slider = document.querySelector('input[type="range"]');
+let dynamicPrice = document.querySelector(".container__dynamic-price");
+let dynamicPageViews = document.querySelector(".dynamic-page-views");
+const monthlyYearlyCheckbox = document.querySelector(".monthly-yearly-checkbox");
+
+monthlyYearlyCheckbox.checked = false
+dynamicPrice.innerHTML = `$${slider.value}.00`
+
+monthlyYearlyCheckbox.addEventListener('change', () => {
+    if (monthlyYearlyCheckbox.checked === true) {
+        dynamicPrice.innerHTML = `$${slider.value * .75}.00`;    
+        
+    } else {
+        dynamicPrice.innerHTML = `$${slider.value}.00`;
+           
+    }
+});
+
+slider.oninput = function () {
+    if (monthlyYearlyCheckbox.checked === true) {
+        dynamicPrice.innerHTML = `$${slider.value * .75}.00`;        
+    } else {
+        dynamicPrice.innerHTML = `$${slider.value}.00`;        
+    }
 };
+
 ```
 
 ### Lo que aprenderemos
