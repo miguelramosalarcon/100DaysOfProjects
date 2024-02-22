@@ -1,6 +1,6 @@
 # App List - Solution
 
-<img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/design-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **App List** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -44,14 +44,14 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop-preview.png)
+![](./screen/design-preview.png)
 
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile-design.jpg)
+![](./screen/mobile-design.jpeg)
 
 </details>
 
