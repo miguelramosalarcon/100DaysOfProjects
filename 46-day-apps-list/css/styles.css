@@ -1,0 +1,313 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700;900&display=swap');
+
+/* ----- Variables ----- */
+:root{
+/* ### Paleta de colores */
+--bg-body: #EBEBFF;
+--bg-card: #FFFFFF;
+--bg-hover: #FAF2FE;
+--bg-circle: #8598FC;
+
+/* ### Tipografia
+- Fuente body: [Merriweather](https://fonts.google.com/specimen/Merriweather)
+- Peso headings: 700
+- Peso paragraphs: 400 */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a,
+i,
+button{
+    cursor: pointer;
+    transition: all ease .3s;
+    text-decoration: none;
+}
+
+i:hover{
+    color: var(--bg-circle);
+}
+
+input{
+    border:none;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    width: 200px; 
+}
+input:focus{
+    outline:none;
+}
+
+body{
+    font-family: 'Merriweather', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-body);
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.container{
+    background-color: var(--bg-card);
+    border-radius: 30px;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 15px 20px #EDDFF0;
+}
+
+.app__container{
+    display: flex;
+    flex-direction: column;    
+    padding: 60px;
+}
+
+
+/* app__header */
+
+.app__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    border:1px solid #C5C5F8;
+    border-radius: 8px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+::placeholder{
+    font-size: 12px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+
+
+.insta{
+    background-color: var(--bg-circle);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .3s;
+}
+
+.insta span{
+    color: var(--bg-card);
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.insta:hover{
+    background-color: black;
+}
+
+
+.icons i{
+    font-size: 25px;
+}
+
+.bell-icon:hover {
+    animation: swing 0.5s ease;    
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/* app__body */
+h2{
+    font-weight: 700;
+    padding: 25px 0px;
+}
+
+.list{
+    font-size: 14px;
+    font-weight: 700;
+    color: #0E0D46;
+}
+
+.list__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-card);
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list__item:hover{
+    background-color: var(--bg-hover);
+}
+
+.list__item:hover .fa-solid.fa-ellipsis {
+    color: #0E0D46;
+}
+
+.img__container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__container img{
+    width: 60%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list__icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.list__text h3{
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.list__text a{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(14, 13, 70, 0.7);
+
+}
+
+.list__text a:hover{
+    color: var(--bg-circle);
+}
+
+.list__acounts{
+    width: 80px;
+}
+
+.list__acounts span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: start;
+    font-size: 13px;
+}
+
+.points{
+    width: 30px;
+    height: 30px;
+    background-color:var(--bg-card);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points button{
+    border: none;
+    background-color: transparent;
+}
+
+.points .fa-ellipsis{
+    color: gray;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #0E0D46;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+      width: 90%;
+      height: 80vh;
+    }
+    
+    .app__container{
+        padding: 30px;
+    }
+    .app__header{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .app__body {
+        flex-direction: column;
+    }
+
+    .list__item{
+        padding: 5px;
+        gap: 5px;
+        height: 70px;
+    }
+
+    .list__text h3{
+        font-size: 14px;
+
+    }
+
+    .list__text a{
+        font-size: 12px;
+    }
+    
+  }
