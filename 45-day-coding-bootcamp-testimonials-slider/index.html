@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Ramos" />
+    <meta
+      name="description"
+      content="Reto 45 - Coding Bootcamp Testimonials Slider"
+    />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Coding Bootcamp Testimonials Slider</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="slides-container">
+          <div class="flex-container slides">
+            <div>
+              <p>
+                “ I’ve been interested in coding for a while but never taken the
+                jump, until now. I couldn’t recommend this course enough. I’m
+                now in the job of my dreams and so excited about the future.
+                ”<br />
+              </p>
+              <p class="name">
+                Tanya Sinclair <span class="title">UX Engineer</span>
+              </p>
+            </div>
+            <div>
+              <img
+                src="./images/image-tanya.jpg"
+                class="profile-image"
+                alt="Tanya Sinclair"
+              />
+              <div class="prev-next-container">
+                <a class="prev" onclick="plusSlides(-1)"
+                  ><img src="/images/icon-prev.svg" alt="Previous Icon"
+                /></a>
+                <a class="next" onclick="plusSlides(1)"
+                  ><img src="./images/icon-next.svg" alt="Next Icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container slides">
+            <div>
+              <p>
+                “ If you want to lay the best foundation possible I’d recommend
+                taking this course. The depth the instructors go into is
+                incredible. I now feel so confident about starting up as a
+                professional developer. ”<br />
+              </p>
+              <p class="name">
+                John Tarkpor
+                <span class="title">Junior Front-end Developer</span>
+              </p>
+            </div>
+            <div>
+              <img
+                src="./images/image-john.jpg"
+                class="profile-image"
+                alt="John Tarkpor"
+              />
+              <div class="prev-next-container">
+                <a class="prev" onclick="plusSlides(-1)"
+                  ><img src="./images/icon-prev.svg" alt="Previous Icon"
+                /></a>
+                <a class="next" onclick="plusSlides(1)"
+                  ><img src="./images/icon-next.svg" alt="Next Icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
