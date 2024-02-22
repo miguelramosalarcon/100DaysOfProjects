@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/45-day-coding-bootcamp-testimonials-slider/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/46-day-apps-list/)
 
 ## Proceso de trabajo
 
