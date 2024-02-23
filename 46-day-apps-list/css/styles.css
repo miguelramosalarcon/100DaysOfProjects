@@ -19,7 +19,7 @@ Tabla de contenidos:
 --bg-body: #EBEBFF;
 --bg-card: #FFFFFF;
 --bg-hover: #FAF2FE;
---bg-circle: #8598FC;
+--bg-circle: rgb(133, 152, 252);
 
 /* ### Tipografia
 - Fuente body: [Merriweather](https://fonts.google.com/specimen/Merriweather)
@@ -264,6 +264,8 @@ h2{
     color: gray;
 }
 
+
+
 /* Footer */
 .footer {
     position: fixed;
@@ -311,3 +313,8 @@ h2{
     }
     
   }
+
+  .ghost {
+    border: 2px solid var(--bg-circle);
+    background-color: rgba(133, 153, 252, 0.2);
+}

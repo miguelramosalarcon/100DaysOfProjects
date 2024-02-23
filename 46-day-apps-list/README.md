@@ -109,6 +109,24 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
+Usamos `Javascript` para poder mover cada item y ordenarlo a nuestro gusto:
+
+```js
+/* ----- Javascript ----- */
+document.addEventListener('DOMContentLoaded', function () {
+  const list = document.getElementById('list');
+  new Sortable(list, {
+      animation: 150, 
+      ghostClass: 'ghost',
+      onEnd: function (evt) {
+          
+          console.log('Elemento movido de', evt.oldIndex, 'a', evt.newIndex);
+      }
+  });
+});
+
+```
+
 
 ### Lo que aprenderemos
 
@@ -125,6 +143,9 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
   [NOTE]
 - [CodePen](https://codepen.io/sosuke/pen/Pjoqqp) - Modificar el color de un SVG
 - [Boxy-SVG] (https://boxy-svg.com/) - Modificar o crear un SVG
+- [Sorteable-JS] (https://sortablejs.github.io/Sortable/) - Libreria para sortear items
+- [Border-Radius-Avanced] (https://9elements.github.io/fancy-border-radius/) - Border radius avanzado
+
 
 ## Autor del reto
 
