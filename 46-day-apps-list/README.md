@@ -142,9 +142,9 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [Responsively App](https://responsively.app/) - es una app que nos muestra como va quedando nuestro diseño en distintos dispositivos ya sean desktops,tablets, celulares, etc.
   [NOTE]
 - [CodePen](https://codepen.io/sosuke/pen/Pjoqqp) - Modificar el color de un SVG
-- [Boxy-SVG] (https://boxy-svg.com/) - Modificar o crear un SVG
-- [Sorteable-JS] (https://sortablejs.github.io/Sortable/) - Libreria para sortear items
-- [Border-Radius-Avanced] (https://9elements.github.io/fancy-border-radius/) - Border radius avanzado
+- [Boxy-SVG](https://boxy-svg.com/) - Modificar o crear un SVG
+- [Sorteable-JS](https://sortablejs.github.io/Sortable/) - Libreria para sortear items
+- [Border-Radius-Avanced](https://9elements.github.io/fancy-border-radius/) - Border radius avanzado
 
 
 ## Autor del reto
