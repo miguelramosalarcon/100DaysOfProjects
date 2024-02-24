@@ -69,7 +69,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](.......)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/47-day-social-media-dashboard-theme-switcher/)
 
 ## Proceso de trabajo
 
@@ -110,20 +110,19 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para poder mover cada item y ordenarlo a nuestro gusto:
+Usamos `Javascript` para poder Dark Mode:
 
 ```js
 /* ----- Javascript ----- */
-document.addEventListener('DOMContentLoaded', function () {
-  const list = document.getElementById('list');
-  new Sortable(list, {
-      animation: 150, 
-      ghostClass: 'ghost',
-      onEnd: function (evt) {
-          
-          console.log('Elemento movido de', evt.oldIndex, 'a', evt.newIndex);
-      }
-  });
+const switchButton = document.getElementById("switch");
+const body = document.body;
+let isDarkTheme = body.classList.contains('dark');
+
+switchButton.addEventListener('click', () => {
+  switchButton.classList.toggle('off');
+  isDarkTheme = !isDarkTheme;
+  body.classList.toggle('dark', isDarkTheme);
+  body.classList.toggle('light', !isDarkTheme);
 });
 
 ```
