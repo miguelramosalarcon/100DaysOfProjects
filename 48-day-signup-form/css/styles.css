@@ -1,0 +1,232 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----- Variables ----- */
+:root{
+    /* 🎨Paleta de colores */
+    --body-bg: #F1F1F1;
+    --card-bg: #FFFFFF;
+    --email-title: #6D6D6D;
+    --email-placeholder: #000000;
+    --paragrahp: #000000;
+    --text-blue: #4067F3;
+    --font-poppins: 'Poppins';
+    --font-merry: 'Merryweather';
+    --transition: all ease .3s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    font-family: var(--font-poppins);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+h1, h3, input, button {
+    font-family: var(--font-merry);
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a, input, button{
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--text-blue);
+}
+
+.container{
+    background-color: var(--card-bg);
+    width: 370px;
+    height: 450px;
+    display: grid;
+    place-items: center;
+    padding: 80px;
+    box-shadow: 5px 5px 1px #DEDEDE;
+    
+}
+
+.form__container{
+    width: 100%;
+    height: 100%;
+    color:var(--paragrahp);   
+}
+
+.form__header h1{
+    color:var(--paragrahp);
+    font-size: 42px;
+    margin: 0;
+    padding: 0;
+}
+
+.form__header h3{
+    font-size: 17px;
+    padding-top: 10px;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+}
+
+/* form + label + inputs */
+form{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.form__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.form__text label{
+    color: var(--email-title);
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.form__text input{
+    height: 50px;
+    border:2px solid var(--paragrahp);
+    padding: 0 10px;
+
+}
+
+::placeholder{
+    font-family: var(--font-poppins);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form__inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: start;
+}
+
+.form__inputs label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.terms{
+    text-decoration: none;
+    color: var(--text-blue);
+    transition: var(--transition);
+}
+
+.terms:hover{
+    color: var(--paragrahp);
+    text-decoration: underline;
+}
+
+
+/* Estilo ocultar checkbox nativo */
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Estilo personalizado para el checkbox */
+.custom-checkbox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-bg); /* Fondo en color negro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del check */
+.custom-checkbox:checked::before {
+    background-color: var(--paragrahp); /* Fondo en color negro */
+}
+
+/* Estilo del check */
+.custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 3px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+button{
+    background-color:var(--paragrahp);
+    color: var(--card-bg);
+    height: 50px;
+    border-radius: 5px; 
+    border: none;
+    transition: var(--transition);
+}
+
+
+button:hover{
+    background-color:var(--text-blue);
+}
+
+
+p{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer{
+    margin-top: 40px;
+    display: grid;
+    place-content: center;
+    color:var(--email-title);
+}
+
+footer a{
+    display: grid;
+    place-content: center;
+    color:var(--email-title);
+    font-size: 12px;
+}
