@@ -49,17 +49,9 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 </details>
 
 <details>
-    <summary>📱 Mobile version</summary>
-
-![](./screen/mobile-design-dark.jpg)
-![](./screen/mobile-design-light.jpg)
-
-</details>
-
-<details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto47Mramos.jpg)
+![](./screen/reto48Mramos.jpg)
 
 </details>
 
