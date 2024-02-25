@@ -102,19 +102,39 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para poder Dark Mode:
+Usamos `Javascript` para validación de email y mensaje con Sweet Alert2:
 
 ```js
 /* ----- Javascript ----- */
-const switchButton = document.getElementById("switch");
-const body = document.body;
-let isDarkTheme = body.classList.contains('dark');
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
 
-switchButton.addEventListener('click', () => {
-  switchButton.classList.toggle('off');
-  isDarkTheme = !isDarkTheme;
-  body.classList.toggle('dark', isDarkTheme);
-  body.classList.toggle('light', !isDarkTheme);
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe por defecto
+
+        if (!isValidEmail(emailInput.value)) {
+            emailError.style.display = 'block'; // Muestra el mensaje de error si el correo electrónico no es válido
+        } else {
+            // Muestra un mensaje de SweetAlert indicando que la descarga está en curso
+            Swal.fire({
+                icon: 'success',
+                title: 'Descarga en curso...',
+                showConfirmButton: false,
+                timer: 1500 // Duración del mensaje en milisegundos
+            }).then(() => {
+                // Una vez que el mensaje desaparece, envía el formulario
+                form.submit();
+            });
+        }
+    });
+
+    function isValidEmail(email) {
+        // Expresión regular para validar el formato de correo electrónico
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email); // Devuelve true si el correo electrónico es válido
+    }
 });
 
 ```
@@ -137,6 +157,7 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [Boxy-SVG](https://boxy-svg.com/) - Modificar o crear un SVG
 - [Sorteable-JS](https://sortablejs.github.io/Sortable/) - Libreria para sortear items
 - [Border-Radius-Avanced](https://9elements.github.io/fancy-border-radius/) - Border radius avanzado
+- [Sweet-Alert](https://sweetalert2.github.io/) - Librería JS Sweet Alert2
 
 
 ## Autor del reto
