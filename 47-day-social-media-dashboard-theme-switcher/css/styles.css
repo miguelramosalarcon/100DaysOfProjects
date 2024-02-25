@@ -45,7 +45,7 @@ Tabla de contenidos:
 /* ----------------------------- */
 body {
   background-color: var(--body-bg);
-  overflow: hidden;
+
   font-family: "Inter", sans-serif;
   font-weight: 700;
   /* transition: background 500ms ease-in-out, color 1000ms ease-in-out; */
@@ -380,7 +380,11 @@ header .switch {
 }
 
 /* small tablet styles */
+
+
+
 @media screen and (min-width: 620px) {
+
   .flex-header {
     flex-direction: row;
     justify-content: space-between;
@@ -421,6 +425,9 @@ header .switch {
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+  body{
+    overflow: hidden;
+  }
   /* font sizes */
   /* header */
   header {
@@ -444,6 +451,9 @@ header .switch {
 }
 
 @media screen and (min-width: 1440px) {
+  body{
+    overflow: hidden;
+  }
   .container {
     max-width: 1440px;
     padding: 0 16.5rem;
