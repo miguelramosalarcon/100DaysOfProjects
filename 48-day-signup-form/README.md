@@ -61,7 +61,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/47-day-social-media-dashboard-theme-switcher/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/48-day-signup-form/)
 
 ## Proceso de trabajo
 
