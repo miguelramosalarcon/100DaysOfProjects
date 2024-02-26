@@ -1,0 +1,206 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ----- Variables ----- */
+:root{
+    --text-body:#171435;
+    --body-bg: #F0F0F6;
+    --card-bg: #F4F5FA;
+    --item: #FFFFFF;
+    --box-shadow-one: #FFFBEC;
+    --box-shadow-two: #F9ECFF;
+    --box-shadow-three: #ECEEFF;
+    --button-bg: #F4F5FA;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 41px;
+    transition: all ease .5s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-body);
+}
+
+.container{
+    background-color: var(--card-bg);
+    box-shadow: 0px 8px 10px #E2E2ED;
+    border-radius: 23px;
+    width: 80%;
+    height: 80%;
+    padding: 30px 70px;
+}
+
+/* header */
+.header__container{
+    text-align: center;
+    line-height: 1.35;
+}
+
+.header__title{
+    font-weight: 900;
+    font-size: 32px;
+    margin: 0;
+    font-family: 'Merriweather';
+}
+
+.header__subtitle{
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding: 20px 0px;
+    
+}
+
+/* Body container */
+.body__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+    font-family: 'Poppins';
+    padding: 30px 0px;   
+}
+
+
+.body__card{
+    position: relative;
+    z-index: 100;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;    
+}
+
+.body__card-background{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 250px;
+    height: 300px;
+    
+    border-radius: 14px;
+    z-index: -1;
+}
+
+.bg-one{
+    background-color: var(--box-shadow-one);
+}
+.bg-two{
+    background-color: var(--box-shadow-two);
+}
+.bg-three{
+    background-color: var(--box-shadow-three);
+}
+
+.body__card-content{
+    position: relative;
+    z-index: 1;
+    width: 220px;
+    height: 270px;
+    background-color: var(--item);
+    padding: 25px 30px;
+    border-radius: 14px;
+}
+
+
+.body__card-content h2{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.body__card-content h3{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.body__card-content h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.body__card-content.month{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-sub{
+    width: 100%;
+    height: 56px;
+    margin: 30px 0;
+    background-color: var(--button-bg);
+    color: var(--text-body);
+    font-size: 16px;
+}
+
+.btn-sub:hover{
+    background-color: var(--text-body);
+    color:var(--item);
+}
+
+.footer__container{
+    text-align: center;
+}
+
+.footer__btn{
+    width: 200px;
+    height: 56px;
+    background-color: var(--text-body);
+    color: var(--item);
+    border: 1px solid var(--text-body);
+    margin-top: 60px;
+}
+
+.footer__btn:hover{
+    background-color: var(--item);
+    color: var(--text-body);
+}
+
+@media (max-width: 768px) {
+    
+    .body__container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .body__card {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
