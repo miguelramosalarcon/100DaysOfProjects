@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/50-day-buy-subscription-section/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/51-day-pricing-component-with-toggle/)
 
 ## Proceso de trabajo
 
