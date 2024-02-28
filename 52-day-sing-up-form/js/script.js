@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '¡Registro exitoso!',
             text: 'Tu cuenta ha sido creada correctamente.'
         }).then(function() {
-            // Aquí puedes redirigir al usuario a otra página o realizar cualquier otra acción necesaria
+
             document.querySelector('.card__form').submit();
         });
     });
