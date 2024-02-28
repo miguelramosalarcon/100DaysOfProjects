@@ -51,7 +51,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/movile-design.jpeg)
+![](./screen/movile.jpg)
 
 </details>
 
@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/50-day-buy-subscription-section/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/52-day-sing-up-form/)
 
 ## Proceso de trabajo
 
