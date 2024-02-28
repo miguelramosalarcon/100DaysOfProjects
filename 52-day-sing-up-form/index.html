@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Reto 52 - Sing Up Form">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Sing Up Form</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="card">
+            <div class="card__header">
+                <h1 class="card__title">Join the <br> community</h1>
+                <p class="card__paragraph">Take your art to the next level. Get it seen by millions of people.</p>
+                <button class="card__button card__button--facebook">Join with Facebook</button><br>
+                <span class="card__separator">Or</span>
+            </div>
+            
+            <form class="card__form" action="">
+                <input class="card__input" type="text" name="firstName" id="first-name" placeholder="First name">
+                <input class="card__input" type="text" name="lastName" id="last-name" placeholder="Last name">
+                
+                <input class="card__input lg" type="email" name="email" id="email" placeholder="Email">
+                <input class="card__input lg" type="password" name="password" id="password" placeholder="Password"><br>
+    
+                <button class="card__button card__button--create" id="createAccountButton">Create New Account</button>
+                <div class="card__footer">
+                    <p class="card__terms">By joining, you agree to our Terms of Service and Privacy Policy</p>
+                    <a href="https://github.com/miguelramosalarcon/100DaysOfProjects" class="card__terms xs" target="_blank">&copy; 2024 - Miguel Ramos</a>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* ----- Variables ----- */
+:root{
+    --text-color: #1B1C40;
+    --body-bg-color: #F4F9FF;
+    --card-box-shadow-color: #E8F1FD;
+    --card-bg-color: #FFFFFF;
+    --btn-one-bg-color: #4968AD;
+    --btn-two-bg-color: #1E2C4B;
+/* - Heading - 800 - 36px
+- Paragraph - 600 - 20px
+- Text button - 800 - 18px
+- Placeholder text - 600 - 18px
+- Text footer - 400 - 14px */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    background-color:var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 700px;
+    background-color: #C8D1E5;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card__title{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card__paragraph{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.card__button{
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+    border-radius:5px;
+    color: var(--card-bg-color);
+    transition: all ease .5s;
+}
+
+.card__button:hover{
+    opacity: .7;
+}
+
+
+::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 10px;
+    opacity: .5;
+}
+
+.card__terms{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card{
+    background-color:var(--card-bg-color);
+    border-radius: 20px;
+    box-shadow: 0px 22px 35px rgba(5, 27, 105,0.12);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.card__button--facebook{
+    background-color: var(--btn-one-bg-color);
+    margin-bottom: 5px;
+}
+
+.card__separator{
+    font-weight: 800;
+    opacity: .5;
+}
+
+.card__form{
+    padding: 20px 0px;
+}
+
+.card__input{
+    width:  175px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 2px solid #C8D1E5;
+    border-radius:5px ;
+    padding: 0px 15px;
+}
+
+.lg{
+    width: 355px;
+}
+
+.card__button--create{
+    background-color:var(--btn-two-bg-color);
+    margin-bottom: 14px;
+}
+
+.card__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__terms{
+    width: 60%;
+    margin-bottom: 10px;
+
+}
+
+.xs{
+    font-size: 10px;
+    text-decoration: none;
+    color:#4968AD;
+    transition: all ease .5s;
+}
+
+.xs:hover{
+    color: var(--btn-two-bg-color);
+    text-decoration: underline;
+}
+
+/* Agregar media query para dispositivos móviles con una anchura máxima de 375px */
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        height: auto; /* Altura automática para adaptarse al contenido */
+        padding: 10px; /* Reducir el relleno para dispositivos móviles */
+    }
+
+    .card__title {
+        font-size: 28px; /* Reducir el tamaño del título */
+    }
+
+    .card__paragraph {
+        font-size: 16px; /* Reducir el tamaño del párrafo */
+        width: auto; /* Permitir que el párrafo se ajuste automáticamente */
+    }
+
+    .card__button,
+    .card__input {
+        width: 100%; /* Ajustar el ancho de los botones y campos de entrada */
+    }
+
+    .lg {
+        width: 100%; /* Ajustar el ancho del campo de entrada de correo electrónico y contraseña */
+    }
+
+    .card__footer {
+        width: 100%; /* Ajustar el ancho del pie de página */
+    }
+
+    .xs {
+        font-size: 12px; /* Reducir el tamaño del texto del pie de página */
+    }
+}
