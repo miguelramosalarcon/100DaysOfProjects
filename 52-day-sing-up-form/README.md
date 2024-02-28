@@ -51,7 +51,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/movile.jpg)
+![](./screen/mobile.jpg)
 
 </details>
 
@@ -113,21 +113,20 @@ Usamos `Javascript` para menu hamburguesa:
 
 ```js
 /* ----- Javascript ----- */
-const menuBtn = document.querySelector(".menu-btn");
+document.addEventListener('DOMContentLoaded', function() {
+    // Bloquear clic derecho en toda la página
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 
-menuBtn.addEventListener("click", () => {
-  const menu = document.querySelector(".nav-links");
-  const icon = menuBtn.querySelector("img");
-  menu.classList.toggle("active");
-  if (menu.classList.contains("active")) {
-    icon.src = "./images/icon-close.svg";
-    document.body.style.overflow = "hidden";
-  } else {
-    icon.src = "./images/icon-hamburger.svg";
-    document.body.style.overflow = "auto";
-  }
-});
+    // Desactivar selección de texto en toda la página
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
 
+//...ver el resto en la carpeta js
+
+}
 ```
 
 
