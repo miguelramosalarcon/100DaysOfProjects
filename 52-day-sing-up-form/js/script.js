@@ -1,15 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Bloquear clic derecho en toda la página
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-
-    // Desactivar selección de texto en toda la página
-    document.addEventListener('selectstart', function(e) {
-        e.preventDefault();
-    });
-
-    // Agregar event listener al botón "Create New Account"
     document.getElementById('createAccountButton').addEventListener('click', function(event) {
         event.preventDefault(); // Evitar que el formulario se envíe automáticamente
         
