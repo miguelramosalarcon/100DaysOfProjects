@@ -58,7 +58,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto53Mramos.jpg)
+![](./screen/reto53Mramos.png)
 
 </details>
 
@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/51-day-pricing-component-with-toggle/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/53-day-project-tracking-intro-component/)
 
 ## Proceso de trabajo
 
