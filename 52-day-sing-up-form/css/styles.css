@@ -176,37 +176,60 @@ body{
     text-decoration: underline;
 }
 
-/* Agregar media query para dispositivos móviles con una anchura máxima de 375px */
+
+/* CSS Ojito */
+.card__input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password {
+    color: var(--btn-one-bg-color);
+    transition: all ease .5s;
+}
+
+.toggle-password:hover {
+    color: var(--btn-two-bg-color);
+}
+
 @media only screen and (max-width: 375px) {
     .container {
         width: 100%;
-        height: auto; /* Altura automática para adaptarse al contenido */
-        padding: 10px; /* Reducir el relleno para dispositivos móviles */
+        height: auto; 
+        padding: 10px; 
     }
 
     .card__title {
-        font-size: 28px; /* Reducir el tamaño del título */
+        font-size: 28px; 
     }
 
     .card__paragraph {
-        font-size: 16px; /* Reducir el tamaño del párrafo */
-        width: auto; /* Permitir que el párrafo se ajuste automáticamente */
+        font-size: 16px; 
+        width: auto; 
     }
 
     .card__button,
     .card__input {
-        width: 100%; /* Ajustar el ancho de los botones y campos de entrada */
+        width: 100%; 
     }
 
     .lg {
-        width: 100%; /* Ajustar el ancho del campo de entrada de correo electrónico y contraseña */
+        width: 100%; 
     }
 
     .card__footer {
-        width: 100%; /* Ajustar el ancho del pie de página */
+        width: 100%; 
     }
 
     .xs {
-        font-size: 12px; /* Reducir el tamaño del texto del pie de página */
+        font-size: 12px;
     }
 }

@@ -38,8 +38,11 @@
                 <input class="card__input" type="text" name="lastName" id="last-name" placeholder="Last name">
                 
                 <input class="card__input lg" type="email" name="email" id="email" placeholder="Email">
-                <input class="card__input lg" type="password" name="password" id="password" placeholder="Password"><br>
-    
+                <div class="card__input-container">
+                    <input class="card__input lg" type="password" name="password" id="password" placeholder="Password">
+                    <i class="far fa-eye toggle-password" id="togglePasswordIcon" onclick="togglePasswordVisibility()"></i>
+                </div>
+               
                 <button class="card__button card__button--create" id="createAccountButton">Create New Account</button>
                 <div class="card__footer">
                     <p class="card__terms">By joining, you agree to our Terms of Service and Privacy Policy</p>
