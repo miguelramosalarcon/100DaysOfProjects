@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos">
+    <meta name="description" content="Reto 54 - Newsletter Popup Template">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Animate Js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Newsletter Popup Template</title>
+</head>
+
+<body>
+    <main class="container  animate__animated animate__bounceIn">
+        <div class="card">
+            <div class="card__header">
+                <h1 class="card__title">Creating email templates has never been easier.</h1>
+            </div>
+            <div class="card__body">
+                <h2 class="card__subtitle">
+                    Recieve daily emails on how to best create emails templaes, completely free.
+                </h2>
+                <div class="input__container">
+                    <input type="email" name="email" id="email" class="input__email" placeholder="Email Address - Subscribe">
+                    <input type="button" value="Suscribe" class="input__button">
+                </div>
+                <span class="card__spam">No spam, ever, Unsubscribe anytime.</span>
+            </div>
+            <div class="card__footer">
+                <div class="card__avatar">
+                    <img src="./images/User Avatar.svg" alt="" class="card__avatar-img">
+                    <div class="card__names">
+                        <h2 class="card__avatar-name">Andrew Vickins</h2>
+                        <h2 class="card__avatar-news">Newsletter Designer</h2>
+                    </div>
+                </div>
+                <p class="card__paragraph">
+                    "By far one of the best newsletter i've ever subscribed to. 
+                    it is sent biweekly and i'm always looking forward to their emails."
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="autor animate__backInUp">
+        <a href="https://github.com/miguelramosalarcon/100DaysOfProjects" class="autor__name">
+            &copy; 2024 - Miguel Ramos
+        </a>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
