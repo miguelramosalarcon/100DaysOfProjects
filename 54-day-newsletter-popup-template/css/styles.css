@@ -41,6 +41,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     display: grid;
     place-content: center;
+    overflow: hidden;
 }
 
 .container{

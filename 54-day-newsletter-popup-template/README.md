@@ -58,7 +58,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto54Mramos.png)
+![](./screen/reto54Mramos.jpg)
 
 </details>
 
@@ -109,23 +109,40 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para el Hamburguer:
+Usamos `Javascript` para la validaciones:
 
 ```js
 /* ----- Javascript ----- */
-var navList = document.getElementById("nav-lists");
-function Show() {
-  navList.classList.add("_Menus-show");
-}
+vdocument.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("email");
+    const subscribeButton = document.querySelector(".input__button");
 
-function Hide() {
-  navList.classList.remove("_Menus-show");
-}
+    subscribeButton.addEventListener("click", function () {
+        const email = emailInput.value.trim();
 
-function hideHam() {
-  var element = document.getElementById("hamburguer");
-  element.classList.toggle("mystyle");
-}
+        if (!isValidEmail(email)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Correo no válido',
+                text: 'Ingresa un email válido.',
+                confirmButtonColor: '#2355F2',
+            });
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Subscripción Exitosa!',
+                html: `Tu email <strong>${email}</strong> ha sido registrado. Gracias por tu suscripción!`,
+                confirmButtonColor: '#2355F2',
+            });
+
+        }
+    });
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+});
 ```
 
 
