@@ -14,305 +14,122 @@ Tabla de contenidos:
 
 /* ----- Variables ----- */
 * {
-	--title-font-family: 'Merryweather', sans-serif;
-	--body-font-family: 'Poppins', sans-serif;
-
-	--body-bg-color: #D2DDF6;
-	--card-bg-color: #F6F9FF;
-	--text-color: #12163C;
-
-	--blue-color-1: #96B3FF;
-	--blue-color-2: #6792FF;
-	--blue-color-3: #4473EA;
-	--blue-color-4: #1A52E1;
-	font-family: var(--body-font-family);
-	--fs-text: 1rem;
-	--lh-text: 22px;
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-	--lg: 3.14159265359;
-	--n1: 32;
-	--n2: 22;
-	--n3: 30;
-	--n4: 10;
+	/* # Colores */
+--body-bg-color: #D2DDF6;
+--card-bg-color: #F6F9FF;
+--text-color: #12163C;
+
+--blue-color-1: rgb(150, 179, 255);
+--blue-color-2: rgb(103, 146, 255);
+--blue-color-3: rgb(68, 115, 234);
+--blue-color-4: rgb(26, 82, 225);
+
+/* # Tipografia
+- Family (title): [Merryweather](https://fonts.google.com/specimen/Merryweather)
+- Family (body): [Poppins](https://fonts.google.com/specimen/Poppins) */
 }
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
-body {
-	font-family: var(--primary-font-family);
+
+body{
 	background-color: var(--body-bg-color);
-	color: var(--text-color);
-	font-size: var(--fs-text);
-	line-height: var(--lh-text);
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
+}
+.container{
+	background-color: var(--card-bg-color);
+	border-radius: 20px;
+	width: 50%;
+	height: 50%;
+	padding: 20px 40px;
 }
 
-
-.container {
-	width: 65vw;
-	background: white;
-	border-radius: 30px;
-	box-shadow: #e5edff 10px 10px;
-	color: #24284a;
-}
-
-.circle {
-	width: 240px;
-	height: 240px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.circle>p {
-	position: absolute;
-	font-size: 20px;
-	font-weight: 600;
-	color: var(--text-color);
-	text-align: center;
-	line-height: 30px;
-}
-
-.circle-svg {
+.card{
 	width: 100%;
 	height: 100%;
+	border:1px solid red;
+}
+
+.card__header{
+	width: 100%;
+	font-family: 'Merryweather';
+	padding-bottom: 20px;
+}
+
+.card__title{
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+
+.card__subtitle{
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	font-weight: 500;
 }
 
-@keyframes percent1 {
-	to {
-		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n1) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n1) / 100));
-		stroke-dashoffset: -20;
-	}
-
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px; /* Esto controla la distancia del punto con respecto al texto */
 }
 
-@keyframes percent2 {
-	to {
-		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n2) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n2) / 100));
-		stroke-dashoffset: -30;
-	}
-}
-
-@keyframes percent3 {
-	to {
-		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n3) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n3) / 100));
-		stroke-dashoffset: -40;
-	}
-}
-
-@keyframes percent4 {
-	to {
-		stroke-dasharray: calc(2 * var(--lg) * 100 * var(--n4) / 100) calc(2 * var(--lg) * 100 * calc(1 - var(--n4) / 100));
-		stroke-dashoffset: -49;
-	}
-}
-
-.circle-bar {
-	transform-origin: center center;
-	transition: 0.5s ease-in-out;
-	stroke-dashoffset: 0;
-	stroke-width: 18;
-	stroke-linecap: butt;
-}
-
-.circle-bar:nth-child(1) {
-	transform: rotateZ(-90deg);
-	animation: percent1 1s ease-in-out forwards;
-
-	stroke: var(--blue-color-3);
-}
-
-.circle-bar:nth-child(2) {
-	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100)));
-	animation: percent2 1s ease-in-out forwards;
-
-	stroke: var(--blue-color-2);
-}
-
-.circle-bar:nth-child(3) {
-	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100)));
-	animation: percent3 1s ease-in-out forwards;
-	stroke: var(--blue-color-4);
-}
-
-.circle-bar:nth-child(4) {
-	transform: rotateZ(calc(-90deg + calc(var(--n1) * 360deg / 100) + calc(var(--n2) * 360deg / 100) + calc(var(--n3) * 360deg / 100)));
-	animation: percent4 1s ease-in-out forwards;
-	stroke: var(--blue-color-1);
-}
-
-.flex {
+.section__container{
+	border: 1px dashed darkgoldenrod;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.bar-container {
-	display: flex;
-	gap: 10px;
-	font-weight: 600;
-}
-
-.more-inf{
-	margin-left: -50px;
-	margin-bottom: 50px;
-}
-
-.row-container,
-.percent {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.row {
-	display: flex;
-	gap: 30px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.bar {
-	width: 200px;
-	height: 5px;
-	background: transparent;
-	border-radius: 15px;
+	flex-direction: row;
 	overflow: hidden;
-	position: relative;
 }
 
-.title {
-	margin-left: 2.5rem;
-	margin-top: 2.5rem;
+#myChart{
+	width: 200px;
+	height: 200px;
 }
 
-.inf {
-	margin-left: 2.5rem;
+.section__container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
 }
 
-.progress {
-	height: 10px;
-	position: absolute;
-	right: 0;
+.center-text {
+	font-family: 'Poppins';
+	text-align: center;
+    position: absolute;
+    top: 53%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    font-size: 16px; 
+    color: black; 
+    z-index: 2;
+	font-weight: 700;
 }
 
-.p1 {
-	width: 37.5%;
-	background: #6792ff;
-	animation: p1 1s;
+.footer{
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	padding: 10px 20px;
 }
-
-@keyframes p1 {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 37.5%;
-	}
+.see-more{
+	color:var(--blue-color-3);
+	font-weight: bold;
 }
-
-.p2 {
-	width: 33.6%;
-	background: #4473ea;
-	animation: p2 1s;
-}
-
-@keyframes p2 {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 33.6%;
-	}
-}
-
-.p3 {
-	width: 11%;
-	background: #1a52e1;
-	animation: p3 1s;
-}
-
-@keyframes p3 {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 11%;
-	}
-}
-
-.p4 {
-	width: 6%;
-	background: #96b3ff;
-	animation: p4 1s;
-}
-
-@keyframes p4 {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 6%;
-	}
-}
-
-@media only screen and (max-width: 955px) {
-	body {
-		overflow-y: visible;
-		height: 130vh;
-	}
-	.container {
-		width: 80%;
-	}
-	.flex {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-  }
-
-  @media only screen and (max-width: 400px) {
-	body {
-		overflow-y: visible;
-		height: 130vh;
-	}
-	.container {
-		width: 90%;
-	}
-	.flex {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	h1{
-		font-size: 1.5rem;
-	}
-	.inf{
-		font-size: .8rem;
-	}
-	.pro-bar-info{
-		font-size: 1rem;
-	}
-
-	.bar-container{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
- }

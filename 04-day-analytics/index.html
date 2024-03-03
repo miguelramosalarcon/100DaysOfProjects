@@ -14,64 +14,44 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Archivo de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    
+
     <title>Analytics</title>
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="title">Traffic source types</h1>
-      <p class="inf">Views - Lost 28 days</p>
-      <div class="flex">
-        <div class="circle-content">
-          <div class="circle">
-            <p>Traffic<br/>sources</p>
-            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="120" cy="120" class="circle-bar" r="100"stroke-width="25" fill="none"></circle>
-              <circle cx="120"cy="120" class="circle-bar" r="100" stroke-width="25" fill="none"></circle>
-              <circle cx="120" cy="120" class="circle-bar" r="100" stroke-width="25"fill="none"></circle>
-              <circle cx="120" cy="120" class="circle-bar" r="100" stroke-width="25" fill="none"></circle>
-            </svg>
-          </div>
-        </div>
-        <div class="bar-container">
-          <div class="row-container">
-            <div class="row">
-              <p class="pro-bar-info">Channel pages</p>
-              <div class="bar">
-                <div class="progress p1"></div>
-              </div>
-            </div>
-            <div class="row">
-              <p class="pro-bar-info">Direct or unkown</p>
-              <div class="bar">
-                <div class="progress p2"></div>
-              </div>
-            </div>
-            <div class="row">
-              <p class="pro-bar-info">Search</p>
-              <div class="bar">
-                <div class="progress p3"></div>
-              </div>
-            </div>
-            <div class="row">
-              <p class="pro-bar-info">External</p>
-              <div class="bar">
-                <div class="progress p4"></div>
-              </div>
-            </div>
+
+      <main class="container">
+        <div class="card">
+          <div class="card__header">
+            <h1 class="card__title">Traffic source types</h1>
+            <p class="card__subtitle">Views<span class="dot"></span>Last 28 days</p>
           </div>
 
-          <div class="percent">
-            <p class="percent">37.5%</p>
-            <p class="percent">33.6%</p>
-            <p class="percent">11%</p>
-            <p class="percent">6%</p>
-            <div class="more-inf">
-              <a href="#" target="">See more</a>
+          <div class="section__container">
+            <div class="donut-chart">
+              <canvas id="myChart"></canvas>
+              <div class="center-text">Traffic <br> sources</div>
             </div>
+            <div class="texts-bars">
+              <p class="text-bar1">Channel pages</p>
+              <p class="text-bar2">Direct or unkown</p>
+              <p class="text-bar3">Search</p>
+              <p class="text-bar4">External</p>
+            </div>
+            <div class="chars-bars">
+  
+            </div>
+            
           </div>
+          <div class="footer">
+            <a href="#" class="see-more">See more</a>
+          </div>
+          
         </div>
-      </div>
-    </div>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="./js/script.js"></script>
   </body>
 </html>
