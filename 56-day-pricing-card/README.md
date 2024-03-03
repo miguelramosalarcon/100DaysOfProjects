@@ -1,8 +1,8 @@
-# Fylo Dark Theme Landing Page - Solution
+# Pricing Card - Solution
 
-<img src="./screen/desktop-preview.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Fylo Dark Theme Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Pricing Card** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -44,21 +44,21 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop-preview.jpg)
+![](./screen/desktop-preview.png)
 
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile-design.jpg)
+![](./screen/mobile.jpg)
 
 </details>
 
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto55MRamos.jpg)
+![](./screen/reto56Mramos.jpg)
 
 </details>
 
@@ -108,6 +108,35 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
   }
 }
 ```
+Usamos `Javascript` para la activar el contenedor con checked:
+
+```js
+/* ----- Javascript ----- */
+const checkboxes = document.querySelectorAll('input[type="radio"]');
+
+checkboxes.forEach((checkbox, index) => {
+  checkbox.addEventListener("change", function () {
+    document.querySelectorAll(".card__container").forEach((cardContainer) => {
+      cardContainer.classList.remove("border-blue");
+    });
+
+    const cardContainer = this.closest(".card__container");
+
+    if (this.checked) {
+      cardContainer.classList.add("border-blue");
+    }
+  });
+
+  if (index === 0) {
+    checkbox.checked = true;
+    const cardContainer = checkbox.closest(".card__container");
+    cardContainer.classList.add("border-blue");
+  }
+});
+```
+
+
+
 
 
 ### Lo que aprenderemos
