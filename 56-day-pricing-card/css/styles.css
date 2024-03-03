@@ -10,12 +10,245 @@ Tabla de contenidos:
 
 /* ----- Fuente ----- */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* ----- Variables ----- */
+:root{
+/* ### Paleta de colores */
+--Body-background: #E9EBF8;
+--Card-background: #ffffff;
+--Text-body: #0C1033;
+--Button-background: #2F42EE;
+--border-card-selection: #2F42EE;
+--text-decoration: rgb(47, 66, 238);
+--Card-and-button-border-color: #E9EBF8;
 
+/* ### Tipografia
+- Fuente: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Peso: 500, 600
+
+
+### Config
+- Title - 32px
+- Title card - 24px
+- Paragraph - 18px
+- Card border radius - 32px
+- Card selection border radius - 8px */
+}
 
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Body-background);
+    width: 100dvw;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins';
+}
+
+.container{
+    background-color: var(--Card-background);
+    border-radius: 16px;
+    width: 450px;
+    height: 650px;
+    box-shadow: 0px 34px 44px rgba(0, 11, 115, .1);
+    padding: 35px;
+    color: var(--Text-body);
+}
+
+.header__container{
+    width: 100%;
+    text-align: center;
+    font-family: 'Merriweather';
+    display: grid;
+    place-items: center;
+    padding-bottom: 20px;
+}
+
+.header__title{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.header__subtitle{
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    width: 80%;
+    line-height: 1.5;
+}
+
+
+/* body container */
+.body__container{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    border: 4px solid #E9EBF8;
+    gap: 10px;
+    padding: 20px;
+    border-radius:8px;
+    transition: all 0.3s ease;
+}
+
+.card__container:hover{
+    border: 4px solid var(--border-card-selection);
+}
+
+.input__container{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.monthly-texts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.monthly, span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.weeks{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+label{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+span{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border:3px solid var(--Text-body);
+    border-radius: 100%;
+    transition: all ease .5s;
+}
+
+label input:checked ~ span{
+    box-shadow: 0px 0px 20px 0px rgba(47, 66, 238, .5);
+    background-color: var(--Text-body);
+}
+
+span::after{
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 0.30em 0.30em 0;
+    transform: rotate(45deg);
+    width:.50em;
+    height: 1em;
+    left: 1.3em;
+    top: .7em;
+    opacity: 0;
+    transform: all ease .3s;
+}
+
+label input:checked ~ span::after{
+    opacity: 1;
+}
+
+.border-blue{
+    border:4px solid var(--border-card-selection);
+}
+
+.best-value{
+    background-color:var(--Button-background);
+    width: 70px;
+    height: 25px;
+    border-radius: 8px;
+    color: var(--Card-and-button-border-color);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card__footer */
+
+.card__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 15px;
+}
+
+.buttons{
+    border-radius: 24px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color:var(--Text-body);
+    color:var(--Card-and-button-border-color);
+    font-weight: 600;
+    transition: all ease .3s;
+}
+
+.buttons:hover{
+    background-color: var(--Card-and-button-border-color);
+    color: var(--Text-body);
+}
+
+.btn-paypal{
+    background-color: var(--Card-background);
+    border: 2px solid var(--Card-and-button-border-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--Text-body);
+}
+
+.paypal-img{
+    width: 50px;
+}
+
+.link{
+    font-size: 12px;
+    padding-top: 10px;
+    color:var(--Button-background);
+    font-weight: 600;
+    transition: all ease .3s;
+}
+
+.link:hover{
+    color: var(--Text-body);
+}
