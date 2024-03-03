@@ -19,3 +19,34 @@ checkboxes.forEach((checkbox, index) => {
     cardContainer.classList.add("border-blue");
   }
 });
+
+//Peticion de correo electronico
+// Obtenemos el botón con id "btn-continue"
+const btnContinue = document.getElementById("btn-continue");
+
+// Cuando se hace clic en el botón, mostramos el mensaje de SweetAlert
+btnContinue.addEventListener("click", function() {
+    // Mostramos el modal de SweetAlert
+    Swal.fire({
+        title: 'Ingresa tu correo electrónico',
+        input: 'email',
+        inputPlaceholder: 'Correo electrónico',
+        showCancelButton: true,
+        confirmButtonText: 'Activar',
+        cancelButtonText: 'Cancelar',
+        showLoaderOnConfirm: true,
+        preConfirm: (email) => {
+            
+            return email;
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            
+            Swal.fire(
+                'Gracias por tu suscripción',
+                `Correo electrónico: ${result.value}`,
+                'success'
+            );
+        }
+    });
+});

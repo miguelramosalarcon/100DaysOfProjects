@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
     <title>Pricing Card</title>
 </head>
 
@@ -32,7 +35,7 @@
             <div class="card__container">
                 <div class="input__container">
                     <label>
-                        <input type="radio" name="monthly1" id="monthly1" class="input__monthly" checked>
+                        <input type="radio" name="monthly1" id="btn-monthly" class="input__monthly" checked>
                         <span></span>
                     </label>
                     
@@ -47,7 +50,7 @@
             <div class="card__container">
                 <div class="input__container">
                     <label>
-                        <input type="radio" name="monthly1" id="monthly1" class="input__monthly">
+                        <input type="radio" name="monthly1" id="btn-yearly" class="input__monthly">
                         <span></span>
                     </label>
                     
@@ -61,14 +64,14 @@
             </div>
         </div>
         <div class="card__footer">
-            <button class="buttons">Continue</button>
+            <button class="buttons" id="btn-continue">Continue</button>
             <button class="buttons btn-paypal">Continue with <img src="./images/paypal.png" alt="logo paypal" class="paypal-img"></button>
             <a href="#" class="link">View more offers</a>
         </div>
     </div>
 
     <script src="./js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
