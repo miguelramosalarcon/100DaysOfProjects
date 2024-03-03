@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/53-day-project-tracking-intro-component/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/55-day-fylo-dark-theme-landing-page/)
 
 ## Proceso de trabajo
 
@@ -107,42 +107,6 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
     grid-template-columns: 1fr;
   }
 }
-```
-
-Usamos `Javascript` para la validaciones:
-
-```js
-/* ----- Javascript ----- */
-vdocument.addEventListener("DOMContentLoaded", function () {
-    const emailInput = document.getElementById("email");
-    const subscribeButton = document.querySelector(".input__button");
-
-    subscribeButton.addEventListener("click", function () {
-        const email = emailInput.value.trim();
-
-        if (!isValidEmail(email)) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Correo no válido',
-                text: 'Ingresa un email válido.',
-                confirmButtonColor: '#2355F2',
-            });
-        } else {
-            Swal.fire({
-                icon: 'success',
-                title: 'Subscripción Exitosa!',
-                html: `Tu email <strong>${email}</strong> ha sido registrado. Gracias por tu suscripción!`,
-                confirmButtonColor: '#2355F2',
-            });
-
-        }
-    });
-
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-});
 ```
 
 
