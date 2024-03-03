@@ -49,10 +49,10 @@ Tabla de contenidos:
 
 body{
     background-color: var(--Body-background);
-    width: 100dvw;
-    min-height: 100dvh;
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    place-items: center;
+    place-content: center;
     font-family: 'Poppins';
 }
 
@@ -60,7 +60,7 @@ body{
     background-color: var(--Card-background);
     border-radius: 16px;
     width: 450px;
-    height: 650px;
+    height: auto;
     box-shadow: 0px 34px 44px rgba(0, 11, 115, .1);
     padding: 35px;
     color: var(--Text-body);
@@ -75,14 +75,14 @@ body{
     padding-bottom: 20px;
 }
 
-.header__title{
+.header__container .header__title{
     font-size: 32px;
     font-weight: 800;
     margin: 0;
     padding-bottom: 10px;
 }
 
-.header__subtitle{
+.header__container .header__subtitle{
     font-size: 16px;
     font-family: 'Poppins';
     font-weight: 500;
@@ -133,7 +133,7 @@ body{
     font-weight: 500;
 }
 
-.weeks{
+.monthly-texts .weeks{
     font-size: 16px;
     font-weight: 600;
 }
@@ -208,7 +208,7 @@ label input:checked ~ span::after{
     gap: 15px;
 }
 
-.buttons{
+.card__footer .buttons{
     border-radius: 24px;
     width: 200px;
     height: 50px;
@@ -221,12 +221,12 @@ label input:checked ~ span::after{
     transition: all ease .3s;
 }
 
-.buttons:hover{
+.card__footer .buttons:hover{
     background-color: var(--Card-and-button-border-color);
     color: var(--Text-body);
 }
 
-.btn-paypal{
+.card__footer .btn-paypal{
     background-color: var(--Card-background);
     border: 2px solid var(--Card-and-button-border-color);
     display: flex;
@@ -252,3 +252,11 @@ label input:checked ~ span::after{
 .link:hover{
     color: var(--Text-body);
 }
+
+/* Agregar media query para pantallas de hasta 375px */
+@media only screen and (max-width: 376px) {
+    .container {
+        width: 370px !important;
+    } 
+}
+
