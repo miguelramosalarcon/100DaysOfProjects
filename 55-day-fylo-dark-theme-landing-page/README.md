@@ -1,8 +1,8 @@
-# Project Tracking Intro Component - Solution
+# Fylo Dark Theme Landing Page - Solution
 
-<img src="./screen/desktop-design.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop-preview.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Project Tracking Intro Component** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Fylo Dark Theme Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -44,21 +44,21 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop-design.png)
+![](./screen/desktop-preview.jpg)
 
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile-design.png)
+![](./screen/mobile-design.jpg)
 
 </details>
 
 <details>
     <summary>💪 Solution </summary>
 
-![](./screen/reto54Mramos.jpg)
+![](./screen/reto55MRamos.jpg)
 
 </details>
 
