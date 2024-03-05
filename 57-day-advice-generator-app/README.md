@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution]()
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/57-day-advice-generator-app/)
 
 ## Proceso de trabajo
 
@@ -101,22 +101,38 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 
 ```css
 /* ----- Media queries ----- */
-@media screen and (max-width: 1080px) {
-  .card {
-    width: 90%;
-    grid-template-columns: 1fr;
-  }
+@media only screen and (min-width: 550px) {
+    #breakpoint {
+        content: url(../images/pattern-divider-desktop.svg)
+    }
 }
 ```
-Usamos `Javascript` para uso de API:
+Usamos `Javascript` para consumo de API:
 
 ```js
 /* ----- Javascript ----- */
+window.onload = function() {
+    populateQuote();
+}
 
+let quoteNumber = document.getElementById('quote-number');
+let quote = document.getElementById('quote');
+let quoteBtn = document.getElementById('generate-quote-btn');
 
+quoteBtn.addEventListener('click', populateQuote);
 
-
-
+function populateQuote() {
+    fetch('https://api.adviceslip.com/advice')
+    .then(response => response.json())
+    .then(data => {
+        let advice = data.slip;
+        quoteNumber.textContent = advice.id;
+        quote.textContent = advice.advice;
+    })
+    .catch(error => {
+        console.error('Error al obtener el consejo:', error);
+    });
+}
 ```
 
 
