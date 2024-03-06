@@ -1,0 +1,227 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----- Variables ----- */
+:root{
+    --color-bg-body:#F5F3E6;
+    --color-bg-one: #FCC863;
+    --color-bg-two: #FC9A63;
+    --color-bg-main: #FFFFFF;
+    
+    --text-color: #0D1C52;
+
+    --border-input-color: #8F9DCE;
+    --button-color: #FE6F4F;
+
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/background-body.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text-color);
+}
+
+.container{
+    width: 375px;
+    height: auto;
+    background-color: var(--color-bg-main);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0px 44px 60px rgba(69, 25, 160, .1);
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.card__h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+/* Location */
+
+.location__label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input{
+    border:2px solid var(--border-input-color);
+    border-radius: 4px;
+    height: 40px;
+
+}
+
+.input__search{
+    width: 100%;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 14px;
+}
+
+::placeholder{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+.input__search:focus{
+    padding-left: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    font-weight: bold;
+    content: "";
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none; /* Elimina estilos por defecto*/
+    -moz-appearance: none; /* Elimina estilos por defecto*/
+    appearance: none; /* Elimina estilos por defecto*/
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--text-color);
+}
+
+input[type=checkbox]:checked::before {
+    content: "\2713"; /* Unicode para el símbolo de verificación */
+    font-size: 14px; /* Tamaño del símbolo */
+    color: white; /* Color del símbolo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* dates */
+
+.dates{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    gap: 18px;
+}
+
+.date{
+    width: 100%;
+}
+
+.date__label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.date__time{
+    width: 143px;
+}
+
+.input__date{
+    margin: 10px 0px;
+}
+
+
+
+.checks{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* List */
+.list {
+    width: 100%;
+    margin-top: 15px;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+li:last-child{
+    padding: 0;
+}
+.list__text{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.button{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 54px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--color-bg-main);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--text-color);
+}
+
+.info-circle{
+    color: var(--text-color);
+}

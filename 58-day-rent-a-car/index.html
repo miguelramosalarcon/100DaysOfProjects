@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="description" content="Reto 57 - Rent a car">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>Rent a Car</title>
+</head>
+
+<body>
+   
+    <main class="container">
+        <div class="card">
+            <h1 class="card__h1">Search for a rental car</h1>
+            <form action="" class="form">
+                <div class="location">
+                    <label for="" class="location__label">Pick up location</label>
+                    <input type="search" name="search" id="search" placeholder="City, airport, region, district..." class="input__search">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="input__checkbox"> 
+                        <label for="" class="location__label label__checkbox">Deliver the car somewhere else</label>
+                    </div>                    
+                </div>
+
+                <div class="dates">
+                    <div class="date">
+                        <label for="" class="date__label">Date of pickup</label>
+                        <input type="date" name="pickup_date" id="pickup_date" class="input__date">
+                        <input type="time" name="" id="time-pickup" class="date__time">
+                    </div>
+                    <div class="date">
+                        <label for="" class="date__label">Date of delivery</label>
+                        <input type="date" name="delivery" id="delivery" class="input__date delivery">
+                        <input type="time" name="time" id="time-delivery" class="date__time">
+                    </div>
+                </div>
+
+                <div class="checks">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="input__checkbox" checked="checked">
+                    <label for="" class="location__label check">The driver’s age between 30 and 65?</label>
+                    <box-icon name='info-circle' class="info-circle"></box-icon>
+                </div>
+
+                <div class="list">
+                    <ul>
+                        <li><label class="check-icon check">&#10003;</label> No credit card fees</li>
+                        <li><label class="check-icon check">&#10003;</label> No change fees</li>
+                        <li><label class="check-icon check">&#10003;</label> Price match guarantee</li>
+                    </ul>
+                </div>
+                
+                <button class="button">Search</button>
+               
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
