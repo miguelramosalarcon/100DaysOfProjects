@@ -68,7 +68,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 - [Pagina web]()
 - [Codigo fuente]()
-- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/57-day-advice-generator-app/)
+- [Live Solution](https://miguelramosalarcon.github.io/100DaysOfProjects/59-day-chat-app-css-illustration//)
 
 ## Proceso de trabajo
 
@@ -101,44 +101,19 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 
 ```css
 /* ----- Media queries ----- */
-@media only screen and (min-width: 550px) {
-    #breakpoint {
-        content: url(../images/pattern-divider-desktop.svg)
+@media (max-width: 900px){
+    body {
+      background-image: url(../images/bg-tablet.svg);
+      background-size: 150vw;
+      overflow-y: visible;
+    }
+    
+    main {
+      flex-direction: column-reverse;
+      gap: 0;
     }
 }
 ```
-Usamos `Javascript` para consumo de API:
-
-```js
-/* ----- Javascript ----- */
-window.onload = function() {
-    populateQuote();
-}
-
-let quoteNumber = document.getElementById('quote-number');
-let quote = document.getElementById('quote');
-let quoteBtn = document.getElementById('generate-quote-btn');
-
-quoteBtn.addEventListener('click', populateQuote);
-
-function populateQuote() {
-    fetch('https://api.adviceslip.com/advice')
-    .then(response => response.json())
-    .then(data => {
-        let advice = data.slip;
-        quoteNumber.textContent = advice.id;
-        quote.textContent = advice.advice;
-    })
-    .catch(error => {
-        console.error('Error al obtener el consejo:', error);
-    });
-}
-```
-
-
-
-
-
 ### Lo que aprenderemos
 
 Aprenderemos más sobre el concepto _mobile-first_ para usar correctamente las propiedades CSS.
