@@ -48,6 +48,7 @@ body{
     align-items: center;
     font-family: 'Mulish', sans-serif;
     color: var(--text-color);
+    flex-direction: column;
 }
 
 .container{
@@ -224,4 +225,20 @@ li:last-child{
 
 .info-circle{
     color: var(--text-color);
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer__a{
+    font-size: 12px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer__a:hover{
+    color:var(--button-color);
 }
