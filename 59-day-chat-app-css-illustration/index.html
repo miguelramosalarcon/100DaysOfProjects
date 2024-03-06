@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="description" content="Reto 59 - Chat App CSS Illustration">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Chat App CSS Illustration</title>
+</head>
+
+<body>
+    <main>
+        <section class="text animate__animated animate__fadeInRight">
+          <h1>Simple booking</h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+          </p>
+        </section>
+    
+        <section class="illustration animate__animated animate__zoomIn" aria-hidden="true">
+          <div class="wrapper">
+            <div class="top-bar">
+    
+              <div class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <path id="back" d="M 28.295148,5.0493065 16.942353,25.000001 28.295148,44.950694 33.057648,42.732252 25.051936,25.000001 33.057648,7.2677495 Z" />
+                </svg>
+              </div>
+    
+              <div class="account">
+                <div class="avatar">
+                  <img src="./images/avatar.jpg" alt="A handsome dude">
+                </div>
+                <div class="account-info">
+                  <div class="user-name">
+                    Samuel Green
+                  </div>
+                  <div class="status">
+                    Available to Walk
+                  </div>
+                </div>
+              </div>
+    
+              <div class="three-dots-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <path id="three-dots" d="m 24.982431,6.908085 a 4.2877064,4.2877064 0 0 0 -4.270024,4.287594 4.2877064,4.2877064 0 0 0 4.287594,4.287593 4.2877064,4.2877064 0 0 0 4.287594,-4.287593 4.2877064,4.2877064 0 0 0 -4.287594,-4.287594 4.2877064,4.2877064 0 0 0 -0.01757,0 z m 0,13.804326 a 4.2877064,4.2877064 0 0 0 -4.270024,4.287593 4.2877064,4.2877064 0 0 0 4.287594,4.287595 4.2877064,4.2877064 0 0 0 4.287594,-4.287595 4.2877064,4.2877064 0 0 0 -4.287594,-4.287593 4.2877064,4.2877064 0 0 0 -0.01757,0 z m 0,13.804325 a 4.2877064,4.2877064 0 0 0 -4.270024,4.287595 4.2877064,4.2877064 0 0 0 4.287594,4.287594 4.2877064,4.2877064 0 0 0 4.287594,-4.287594 4.2877064,4.2877064 0 0 0 -4.287594,-4.287595 4.2877064,4.2877064 0 0 0 -0.01757,0 z" />
+                </svg>
+              </div>
+    
+            </div>
+    
+            <div class="chat-room">
+              <div class="msg received animate__animated animate__fadeInLeft animate__delay-1s">
+                That sounds great. I’d be happy to discuss more.
+              </div>
+    
+              <div class="msg received animate__animated animate__fadeInLeft animate__delay-2s">
+                Could you send over some pictures of your dog, please?
+              </div>
+    
+              <div class="img-row sent">
+                <div class="img animate__animated animate__fadeInRight animate__delay-3s">
+                  <img src="./images/dog-image-1.jpg" alt="Dog smiling">
+                </div>
+    
+                <div class="img animate__animated animate__fadeInRight animate__delay-4s">
+                  <img src="./images/dog-image-2.jpg" alt="Dog sitting">
+                </div>
+    
+                <div class="img animate__animated animate__fadeInRight animate__delay-5s">
+                  <img src="./images/dog-image-3.jpg" alt="Dog carrying a branch">
+                </div>
+              </div>
+    
+              <div class="msg sent animate__animated animate__fadeInRight animate__delay-6s">
+                Here are a few pictures. She’s a happy girl!
+              </div>
+    
+              <div class="msg sent animate__animated animate__fadeInRight animate__delay-7s">
+                Can you make it?
+              </div>
+    
+              <div class="msg received animate__animated animate__fadeInLeft animate__delay-8s">
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </div>
+    
+              <div class="msg received offer animate__animated animate__fadeInLeft animate__delay-9s">
+                <div class="radio-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <circle class="radio" r="18" cy="25" cx="25" fill="none" stroke-width="2" />
+                  </svg>
+                </div>
+                30 minute walk
+                <div class="price">$29</div>
+              </div>
+    
+              <div class="msg received offer animate__animated animate__fadeInLeft animate__delay-10s">
+                <div class="radio-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <circle class="radio" r="18" cy="25" cx="25" fill="none" stroke-width="2" />
+                  </svg>
+                </div>
+                1 hour walk
+                <div class="price">$49</div>
+              </div>
+    
+              <div class="text-input">
+                <span class="place-holder">Type a message…</span>
+                <div class="send-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path id="send" d="M 24.999995,7.2677492 A 17.732252,17.732252 0 0 0 7.2677456,25.000001 17.732252,17.732252 0 0 0 24.999995,42.732252 17.732252,17.732252 0 0 0 42.732255,25.000001 17.732252,17.732252 0 0 0 24.999995,7.2677492 Z m -3.41167,7.8046928 a 2.645835,2.645835 0 0 1 0.0703,0 2.645835,2.645835 0 0 1 1.53169,0.511596 l 9.92549,7.283276 a 2.6460996,2.6460996 0 0 1 0,4.265375 l -9.92549,7.283274 a 2.645835,2.645835 0 0 1 -3.69745,-0.568441 2.645835,2.645835 0 0 1 0.56637,-3.699 l 7.01766,-5.148521 -7.01766,-5.148522 a 2.645835,2.645835 0 0 1 -0.56637,-3.699 2.645835,2.645835 0 0 1 2.09548,-1.080037 z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <!-- ATTRIBUTION -->
+    
+      <aside class="attribution">
+        Coded by&nbsp;<a href="https://github.com/miguelramosalarcon/100DaysOfProjects" target="_blank">Miguel Ramos Alarcón</a>.
+      </aside>
+</body>
+
+</html>

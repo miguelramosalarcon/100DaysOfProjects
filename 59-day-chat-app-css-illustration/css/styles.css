@@ -1,0 +1,373 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* ----- Variables ----- */
+:root{
+/* 🎨Paleta de colores */
+/* #Texto */
+--Pale-Violet: #d89eff;
+--Moderate-Violet: #9241c8;
+--Desaturated-Dark-Violet: #6e5d7e;
+--Grayish-Blue: #c6cacd;
+--Very-Dark-Desaturated-Violet: #3e2753;
+--Dark-Grayish-Violet: #a39daa;
+
+/* #Gradientes */
+--Light-Magenta: #e942ff;
+--Light-Violet: #8838ff;
+
+/* #Secundario */
+--White: #ffffff;
+--Light-Grayish-Violet: #f5f3f7;
+--Very-Dark-Desaturated-Violet: #3e2753;
+--Very-Light-Magenta: #e570ff;
+
+--animate-delay: 20s;
+
+/* ✍️Tipografia */
+/* - Fuente: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Peso: 400, 500, 700
+- Font size: 16px */
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    background-color: var(--White);
+    background-image: url(../images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125vw;
+    line-height: 1.6em;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--Light-Violet);
+    outline-offset: .5em;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: var(--Light-Magenta);
+  }
+  
+  main {
+    flex: 1 0 auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5vw;
+  }
+  
+  .attribution {
+    flex: 0 0 auto;
+    opacity: .7;
+    font-size: .7rem;
+    margin: -3.5em 0 1.5em;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  body, main, .top-bar, .img-row, .offer, .text-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  img, svg {
+    display: block;
+    width: 100%;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+  
+  .text {
+    max-width: 45ch;
+    color: var(--Dark-Grayish-Violet);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--Very-Dark-Desaturated-Violet);
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .illustration {
+    border: 13px solid var(--White);
+    border-radius: 40px;
+    background: var(--Light-Grayish-Violet);
+    font-size: .7rem;
+    line-height: 1.3;
+    transform: scale(.8);
+    position: relative;
+    margin-left: -3%;
+    box-shadow: 10px 30px 60px rgba(0,0,0,.15);
+  }
+  
+  .illustration .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 630px;
+    border-radius: 27px;
+    overflow: hidden;
+  }
+  
+  .illustration::before {
+    content: "";
+    background: var(--White);
+    border-radius: 0 0 20px 20px;
+    height: 25px;
+    position: absolute;
+    top: -1px;
+    left: 75px;
+    right: 75px;
+    z-index: 1;
+  }
+  
+  .illustration .top-bar {
+    height: 80px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, var(--Light-Violet),var(--Light-Magenta));
+    color: white;
+    padding: 25px 16px 0;
+    border-radius: 7px;
+  }
+  
+  .illustration .back-btn,
+  .illustration .three-dots-btn {
+    width: 16px;
+    cursor: pointer;
+  }
+  
+  .illustration .back-btn {
+    margin-right: -4px;
+  }
+  
+  .illustration .account {
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  .illustration .avatar {
+    width: 30px;
+    margin: 0 15px;
+    border: 1.5px solid var(--White);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .illustration .account-info {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+   
+  .illustration .user-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .illustration .status {
+    color: var(--Pale-Violet);
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .illustration .chat-room {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em 1.1em;
+    flex-grow: 1;
+  }
+  
+  .illustration .msg,
+  .illustration .img-row {
+    margin-bottom: 1.2em;
+  }
+  
+  .illustration .msg,
+  .illustration .img {
+    border-radius: 1.3em;
+  }
+  
+  .illustration .img-row {
+    column-gap: 1.2em;
+  }
+  
+  .illustration .img {
+    overflow: hidden;
+    width: 5em;
+  }
+  
+  .illustration .msg {
+    box-sizing: content-box;
+    max-width: 22ch;
+    padding: .7em 1em;
+  }
+  
+  .illustration .received {
+    align-self: flex-start;
+  }
+  
+  .illustration .sent {
+    align-self: flex-end;
+  }
+  
+  .illustration .msg.received {
+    background: rgba(110,93,126,.07);
+    color: var(--Moderate-Violet);
+    border-bottom-left-radius: .5em;
+  }
+  
+  .illustration .msg.sent {
+    background: var(--White);
+    color: var(--Desaturated-Dark-Violet);
+    border-bottom-right-radius: .5em;
+    box-shadow: 0 1.2em 1em -1em rgba(0,0,0,.1);
+  }
+  
+  .illustration .msg.offer {
+    background: linear-gradient(to left,var(--Light-Violet),var(--Light-Magenta));
+    color: rgba(255,255,255,.7);
+    padding: .7em;
+    max-width: none;
+    width: 28ch;
+  }
+  
+  .illustration .radio-btn {
+    color: var(--Very-Light-Magenta);
+    width: 1.5em;
+    margin-right: .7em;
+    font-weight: 900;
+  }
+  
+  .illustration .price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--White);
+    margin: .2em .7em .2em auto;
+    line-height: 1;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .illustration .text-input {
+    font-size: .8rem;
+    background: white;
+    color: var(--Grayish-Blue);
+    border-radius: 999vw;
+    padding-left: 1.6em;
+    margin-top: auto;
+  }
+  
+  .illustration .place-holder {
+    flex-grow: 1;
+  }
+  
+  .illustration .send-btn {
+    width: 4em;
+    color: var(--Very-Dark-Desaturated-Violet);
+    cursor: pointer;
+  }
+  
+
+  /*------------------------------------------------------------*/
+  
+  @media (max-width: 900px){
+    body {
+      background-image: url(../images/bg-tablet.svg);
+      background-size: 150vw;
+      overflow-y: visible;
+    }
+    
+    main {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+    
+    .text {
+      text-align: center;
+      width: 82vw;
+      margin-bottom: 3em;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-top: .4em;
+    }
+    
+    .illustration {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 700px){
+    body {
+      background-image: url(../images/bg-mobile.svg);
+      background-size: 290vw;
+    }
+  }
+  
+  @media (max-width: 370px){
+    h1 {
+      font-size: 10vw;
+    }
+  }
+  
+  @keyframes custom-delay {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate__delay-6s {
+    animation: custom-delay 0s linear 6s forwards;
+  }
+
+  .animate__delay-7s {
+    animation: custom-delay 0s linear 7s forwards;
+  }
+
+  .animate__delay-8s {
+    animation: custom-delay 0s linear 8s forwards;
+  }
+
+  .animate__delay-9s {
+    animation: custom-delay 0s linear 9s forwards;
+  }
+
+  .animate__delay-10s {
+    animation: custom-delay 0s linear 10s forwards;
+  }
