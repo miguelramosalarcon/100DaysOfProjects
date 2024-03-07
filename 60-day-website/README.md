@@ -44,13 +44,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop.jpg
+![](./screen/desktop.jpg)
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.jpg)
+![](./screen/mobile.jpeg)
 </details>
 
 <details>
