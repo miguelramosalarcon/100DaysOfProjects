@@ -92,30 +92,3 @@ function hasForbiddenCharacters(password) {
         return password.includes(char);
     });
 }
-
-
-//modal
-$(document).ready(function() {
-    // Agregar event listener al enlace "¿No puedes iniciar sesión? ¡Regístrate ahora!"
-    $('.form__account').click(function(event) {
-        event.preventDefault(); // Evitar que el enlace recargue la página
-        
-        $('#registerModal').modal('show'); // Mostrar el modal de registro
-    });
-
-    // Agregar event listener al botón "Registrarse" en el modal
-    $('#registerButton').click(function(event) {
-        event.preventDefault(); // Evitar que el formulario se envíe automáticamente
-        
-        // Obtener los valores de los campos de entrada en el modal
-        var firstName = $('#firstName').val().trim();
-        var lastName = $('#lastName').val().trim();
-        var email = $('#email').val().trim();
-        var password = $('#password').val().trim();
-
-        // Realizar validaciones aquí si es necesario
-
-        // Si todos los campos son válidos, puedes enviar el formulario
-        // Aquí puedes agregar la lógica para enviar el formulario
-    });
-});
