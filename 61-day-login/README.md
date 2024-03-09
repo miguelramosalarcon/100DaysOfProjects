@@ -54,7 +54,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 </details>
 
 <details>
-    <summary> Transformación </summary>
+    <summary> Solución </summary>
 
 ![](./screen/reto61Mramos.jpg)
 </details>
