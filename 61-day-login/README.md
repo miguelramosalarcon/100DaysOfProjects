@@ -56,7 +56,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary> Transformación </summary>
 
-![](./screen/reto60Mramos.jpg)
+![](./screen/reto61Mramos.jpg)
 </details>
 
 
@@ -104,25 +104,24 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
   }
 }
 ```
-Usamos `javascript` para darle funcionalidad al buscador:
+Usamos `javascript` para darle validaciones a los input y visibilidad del Eye:
 
 ```js
 /* ----- Javascript ----- */
-document.getElementById('search').addEventListener('input', function() {
-  var searchTerm = this.value.toLowerCase();
-  var cards = document.querySelectorAll('.card__item');
-  
-  cards.forEach(function(card) {
-      var title = card.querySelector('.card__title').innerText.toLowerCase();
-      var description = card.querySelector('p').innerText.toLowerCase();
-      
-      if (title.includes(searchTerm) || description.includes(searchTerm)) {
-          card.style.display = 'block';
-      } else {
-          card.style.display = 'none';
-      }
-  });
-});
+function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    var togglePasswordIcon = document.getElementById("togglePasswordIcon");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        togglePasswordIcon.classList.remove("fa-eye");
+        togglePasswordIcon.classList.add("fa-eye-slash");
+    } else {
+        passwordInput.type = "password";
+        togglePasswordIcon.classList.remove("fa-eye-slash");
+        togglePasswordIcon.classList.add("fa-eye");
+    }
+}
 ```
 
 ### Lo que aprenderemos
