@@ -1,8 +1,8 @@
-# Sketch-website-card-day-1270 - Solution
+# Login - Solution
 
-<img src="./screen/desktop.jpg" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Sketch-website-card-day-1270** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Login** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Newbie-green" alt="Level - Newbie">
@@ -44,7 +44,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop.jpg)
+![](./screen/desktop-preview.png)
 </details>
 
 <details>

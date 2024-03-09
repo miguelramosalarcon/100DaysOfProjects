@@ -218,6 +218,10 @@ body{
     padding: 20px 0;
 }
 
+.form__account:hover{
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer{
     width: 100%;
@@ -269,4 +273,8 @@ body{
     .footer__autor{
         color: var(--color-text);
     }
+}
+
+#registerModal {
+    display: none;
 }
