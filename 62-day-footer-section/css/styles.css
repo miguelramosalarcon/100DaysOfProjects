@@ -1,0 +1,262 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- Variables ----- */
+:root {
+  /* 🎨Paleta de colores */
+  --body-background: #f0efff;
+  --card-under-background: #ffffff;
+  --card1-background: #fb896b;
+  --card2-background: #fb6b6b;
+  --card3-background: #f1a864;
+  --card4-background: #fbd36b;
+  --card5-background: #485258;
+  --text-other: #485258;
+  --text-body: #ffff;
+
+  /* ⚙️Configuraciones
+    - card under border radius - 24px
+    - card border radius - 24px
+    
+    ✍️Tipografia
+    - Fuente: [Poppins](https://fonts.google.com/specimen/Poppins)
+    - title card item - 600 - 24px
+    - paragraph - 500 - 16px */
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../images/background-body.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-body);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  flex-direction: column;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  background-color: var(--card-under-background);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.padding{
+    padding: 100px 0px 0px 70px;
+}
+
+.padding-1{
+    padding: 50px 0px 0px 70px;
+}
+
+.padding-2{
+    padding: 50px 0px 0px 70px;
+}
+
+.padding-3{
+    padding: 100px 0px 0px 35px;
+}
+
+.padding-4{
+    padding: 50px 0px 0px 35px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    color: var(--card-under-background);
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+    width: 220px;
+    text-align: left;
+    font-weight: 400;
+    transition: all ease .3s;
+}
+
+.hover1:hover{
+    background-color:#F27251;
+}
+
+.hover2:hover{
+    background-color:#f35151;
+}
+
+.hover3:hover{
+    background-color:#ef9d4f;
+}
+
+.hover4:hover{
+    background-color:#f8c74c;
+}
+
+.text-color{
+    color: var(--text-other);
+    font-weight: 500;
+}
+
+.card {
+  background-color: var(--card-under-background);
+    padding-bottom: 30px;
+}
+
+.card1 {
+  background-color: var(--card1-background);
+  
+}
+
+.card2 {
+  background-color: var(--card2-background);
+}
+
+.card3 {
+  background-color: var(--card3-background);
+}
+
+.card4 {
+  background-color: var(--card4-background);
+  color: var(--text-other);
+}
+
+.card5 {
+  background-color: var(--card5-background);
+  grid-column: span 2;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.title5{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 48%;
+}
+.bx{
+    font-size: 22px;
+}
+
+.texts{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+
+p{
+    width: 50%;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.btn-book{
+    margin-top: 15px;
+    width: 170px;
+    height: 40px;
+    background-color: var(--card-under-background);
+    color:var(--text-other);
+    text-align: center;
+    font-weight: 500;
+    transition: all ease .3s;
+}
+
+
+.btn-book:hover{
+    border: 1px solid var(--card-under-background);
+    background-color: var(--card5-background);
+    color: var(--card-under-background);
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--card5-background);
+    font-weight: 500;
+    
+}
+
+/* Media query para hacer el diseño responsivo */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      border-radius: 0px;
+    }
+
+    .card{
+        padding: 20px 10px;
+        
+    }
+
+    .bg{
+        width: 180px;
+    }
+
+    .title{
+        line-height: 1.250;
+        font-size: 12px;
+    }
+
+    .title5{
+        width: 90%;
+    }
+    p{
+        width: 80%;
+    }
+
+    .flex{
+        gap:0px;    
+    }
+  }
+
+ 
