@@ -105,42 +105,34 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
   }
 }
 ```
-Usamos `javascript` para darle validaciones al input:
+Usamos `javascript` para mensajes:
 
 ```js
 /* ----- Javascript ----- */
-document.addEventListener("DOMContentLoaded", function() {
-    const emailInput = document.getElementById('email');
-    const iconContainer = document.querySelector('.icon__container');
+document.addEventListener('DOMContentLoaded', function() {
+    const eventTitles = document.querySelectorAll('.event__info-title');
+    const eventButtons = document.querySelectorAll('.event__add-btn');
 
     alertify.set('notifier', 'position', 'top-right');
 
-    iconContainer.addEventListener('click', function(event) {
-        event.stopPropagation(); 
-
-        const emailValue = emailInput.value.trim();
-
-        if (!isValidEmail(emailValue)) {
-            alertify.error('Por favor, ingrese un correo electrónico válido.');
-            emailInput.focus(); 
-        } else {
-            
-            alertify.success(`¡Bienvenido ${emailValue}!`);
-
-            setTimeout(function() {
-                window.open('https://frontend-club.bullet.site/', '_blank');
-            }, 2000);
-
-            window.scrollTo(0, 0);
-        }
+    eventTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            showAlert(title.textContent);
+        });
     });
 
-    function isValidEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailPattern.test(email); 
-    }
+    eventButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            showAlert(button.closest('.event').querySelector('.event__info-title').textContent); // 
+        });
+    });
+
 });
 
+function showAlert(eventTitle) {
+    const coloredEventTitle = `<span style="color:goldenrod;">${eventTitle}</span>`;
+    alertify.notify(`<div style="font-family: 'IBM Plex Sans', sans-serif; background-color:#000000;border-radius:20px; color:#ffff;padding:10px; font-size:14px; line-height: 1.5;">Evento "${coloredEventTitle}" añadido a tu calendario</div>`, 'success', 5);
+}
 ```
 
 ### Lo que aprenderemos
