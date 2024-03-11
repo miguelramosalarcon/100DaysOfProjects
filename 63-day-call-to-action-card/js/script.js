@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Después de 2 segundos, abrir la página web en una nueva pestaña
             setTimeout(function() {
                 window.open('https://frontend-club.bullet.site/', '_blank');
-            }, 2000);
+            }, 1000);
 
             // Desplazar la ventana de vuelta a la parte superior de la página
             window.scrollTo(0, 0);
