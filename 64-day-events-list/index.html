@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="description" content="Event List">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    
+    <!-- Alertify JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/default.min.css" />
+
+    <title>Events List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="event__title">Events</h2>
+        <!-- Evente one -->
+        <div class="event">
+            <div class="event__date">
+                <h3 class="event__date-date">Today</h3>
+                <h4 class="event__date-hour">17:00</h4>
+            </div>
+            <div class="event_info">
+                <h2 class="event__info-title">Bergen International Film Festival</h2>
+                <p class="event__info-paragraph">Films from all over the world gather 
+                    all film enthusiasts for <br> unique moments at the Bergen International Film Festival.</p>
+            </div>
+            <div class="event__add">
+                <button type="submit" class="event__add-btn" id="addToCalendar"><i class="fa-solid fa-plus"></i>Add to calendar</button>
+            </div>
+        </div>
+        <!-- Evente two -->
+        <div class="event">
+            <div class="event__date two">
+                <h3 class="event__date-date">22 - 31 Oct</h3>
+                <h4 class="event__date-hour">10:00</h4>
+            </div>
+            <div class="event_info">
+                <h2 class="event__info-title">Wool week</h2>
+                <p class="event__info-paragraph">ULLVEKA 2021 will be held for the eighth time in the period 22 -<br> 31 October 2021, and will take place in the entire Bergen region.</p>
+            </div>
+            <div class="event__add">
+                <button type="submit" class="event__add-btn activate" id="addToCalendar"><i class="fa-solid fa-plus"></i>Add to calendar</button>
+            </div>
+        </div>
+        <!-- Evente three -->
+        <div class="event ">
+            <div class="event__date three">
+                <h3 class="event__date-date">22 - 31 Oct</h3>
+                <h4 class="event__date-hour">19:00</h4>
+            </div>
+            <div class="event_info">
+                <h2 class="event__info-title">Light park at Bergenhus Fortress</h2>
+                <p class="event__info-paragraph">LUMAGICA - a magical experience for young and old at <br> Bergenhus Fortress, 12 November to 19 December 2021.</p>
+            </div>
+            <div class="event__add">
+                <button type="submit" class="event__add-btn" id="addToCalendar"><i class="fa-solid fa-plus"></i>Add to calendar</button>
+            </div>
+        </div>
+        <!-- Evente four -->
+        <div class="event ">
+            <div class="event__date four">
+                <h3 class="event__date-date">13 - 31 Dec</h3>
+                <h4 class="event__date-hour">10:00</h4>
+            </div>
+            <div class="event_info">
+                <h2 class="event__info-title">Gingerbread City 2021</h2>
+                <p class="event__info-paragraph">The world's largest Gingerbread Town can be found in the <br> Xhibition shopping center, right in the center of Bergen</p>
+            </div>
+            <div class="event__add">
+                <button type="submit" class="event__add-btn" id="addToCalendar"><i class="fa-solid fa-plus"></i>Add to calendar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
