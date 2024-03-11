@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/63-day-call-to-action-card/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/64-day-events-list/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
