@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/61-day-login/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/63-day-call-to-action-card/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -157,8 +157,8 @@ Hemos recopilado una lista de recursos e información valiosa que puede ayudarte
 - [Responsively App](https://responsively.app/) - es una app que nos muestra como va quedando nuestro diseño en distintos dispositivos ya sean desktops,tablets, celulares, etc.
  [NOTE]
 - [CodePen](https://codepen.io/sosuke/pen/Pjoqqp) - Modificar el color de un SVG
-- [Boxy-SVG] (https://boxy-svg.com/) - Modificar o crear un SVG
-- [Alertify-JS] (https://alertifyjs.com/) - Alertas en JS
+- [Boxy-SVG](https://boxy-svg.com/) - Modificar o crear un SVG
+- [Alertify-JS](https://alertifyjs.com/) - Alertas en JS
 
 ## Autor del reto
 
