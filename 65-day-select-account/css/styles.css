@@ -147,6 +147,7 @@ body{
 
 .menu{
     display: none;
+    font-family: 'Roboto',sans-serif;
     position: absolute;
     top: 95%;
     background-color: var(--main-color);
