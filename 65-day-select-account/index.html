@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="description" content="Select Account">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Select Account</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="profiles__container">
+            <div class="profiles__titles">
+                <h3 class="title">Select your profile</h3>
+            <p class="subtitle">Logged in users can view full business profiles and can <br> save contact details.</p>
+            </div>
+            
+
+            <div class="cards__container">
+                <div class="cards">
+                    <div class="card">
+                        <img id="robinsonImage" src="./images/user1.png" alt="" class="img__card" onclick="handleEditClick('robinson')">
+                        <h2 class="name__user robinson">Andrew Robinson</h2>
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div class="menu">
+                            <button class="edit" id="edit"><i class="fa-solid fa-pen margin"></i>Edit</button> 
+                            <button class="delete" id="delete"><i class="fa-regular fa-trash-can margin"></i>Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="cards">
+                    <div class="card">
+                        <img id="maryImage" src="./images/user2.png" alt="" class="img__card" onclick="handleEditClick('mary')">
+                        <h2 class="name__user mary">Mary Kyles</h2>
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div class="menu">
+                            <button class="edit"  id="edit"><i class="fa-solid fa-pen margin"></i>Edit</button> 
+                            <button class="delete" id="delete"><i class="fa-regular fa-trash-can margin"></i>Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div class="ellipsis">
+                    <div class="ellipsis__container">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/miguelramosalarcon/100DaysOfProjects" target="_blank">&copy; 2024 - Miguel Ramos Alarcón</a>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+
+</html>

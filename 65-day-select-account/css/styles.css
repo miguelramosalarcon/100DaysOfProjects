@@ -1,0 +1,227 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----- Variables ----- */
+:root{
+    --body-color:#F0F4FB;
+    --main-color: #FFFFFF;
+    --shadow-main: 0px 34px 25px -20px rgba(149, 179, 232, .18);
+    --shadow-profile: 0px 10px 20px -4px rgb(198, 216, 246); 
+    --text-color:#2C3E50;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish',sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.container{
+    background-color:var(--main-color);
+    border-radius: 20px;
+    width: 834px;
+    height: 577px;
+    box-shadow: var(--shadow-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profiles__container{
+    width: 70%;
+    height: auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.cards{
+    border-radius:15px;
+    background-color: var(--body-color);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card{
+    width: 85%;
+    height: 85%;
+    border-radius:15px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: var(--shadow-profile);
+    position: relative;
+}
+
+.img__card{
+    width: 71px;
+    height: 71px;
+}
+
+.name__user{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ellipsis{
+    background-color: transparent;
+}
+
+.ellipsis__container{
+    width: 72px;
+    height: 72px;
+    border:4px solid var(--body-color);
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-plus{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #BCCEEA;
+    cursor: pointer;
+}
+
+.fa-ellipsis{
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #F0F4FB;
+    padding: 2px;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    top: 95%;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    z-index: 100;
+    box-shadow: var(--shadow-profile);
+}
+
+.cards:hover .menu {
+    display: flex;
+    flex-direction: column; 
+}
+
+.margin{
+    margin-right: 10px;
+}
+
+button{
+    border: none;
+    width: 80px;
+    border-radius:3px;
+    background-color: var(--main-color);
+    font-size: 10px;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+button:hover{
+    background-color: #F0F4FB;
+}
+
+.footer{
+    margin-top: 30px;
+    font-size: 12px;
+    
+}
+
+.footer a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        padding: 50px 0px;
+        height: 700px;
+    }
+
+    .profiles__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profiles__titles{
+        width: 55%;
+        text-align: center;
+    }
+
+    .cards__container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .subtitle{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .menu{
+        left: 90px;
+        top: 80%;
+    }
+}
