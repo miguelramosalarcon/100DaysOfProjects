@@ -1,0 +1,169 @@
+/* Importar fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --bg-white:rgba(255, 255, 255, 0.7);
+  --text-color: #141843;
+  --font-merri: 'Merriweather';
+  --font-ibm: 'IBM Plex Sans';
+  --btn-one: #EDBBFF;
+  --btn-two: #AEF1F5;
+  --btn-three: #FFDDB6;
+}
+
+/* Estilos mobile first*/
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background-body.jpg);
+  color: var(--text-color);
+  font-family: var(--font-ibm);
+}
+
+.main {
+  background-color: rgba(255, 255, 255,.7);
+  border-radius:20px;
+  border: 10px solid var(--bg-white);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos Cards*/
+.cards{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+  gap: 40px;
+}
+
+.cards__card{
+  
+}
+
+.card__h2{
+  font-size: 26px;
+  font-weight: bold;
+  font-family: var(--font-merri);
+}
+
+.card__price{
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.card_price-simbol{
+  font-size: 36px; 
+}
+
+.card__h4{
+  font-size: 16px;
+}
+
+.card__p{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+.card__button{
+  border-radius:10px;
+  color: var(--text-color);
+  width: 140px;
+  height: 60px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.card__button:hover{
+  background-color: var(--text-color);
+  color: #FFFF;
+}
+
+.btn-one{
+  background-color: var(--btn-one);
+}
+
+.btn-two{
+  background-color: var(--btn-two);
+}
+
+.btn-three{
+  background-color: var(--btn-three);
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  font-size: 12px;
+}
+
+.footer__a{
+  color: var(--text-color);
+
+}
+
+.footer__a:hover{
+  text-decoration: underline;
+
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px){
+
+  .cards{
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    place-content: center;
+  }
+
+  .card__p{
+    font-size: 16px;
+  }
+}
+
+
+
+@media only screen and (min-width: 1200px){
+  .main{
+    width: 75%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 140px;
+  }
+
+  .card__p{
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1441px){
+  .main{
+    max-width: 60%;
+  }
+
+  .card__p{
+    font-size: 18px;
+  }
+}
