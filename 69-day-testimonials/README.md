@@ -1,6 +1,6 @@
 # Testimonial Carrousel - Solution
 
-<img src="./screen/desktop.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
 Esta es una solución del proyecto **Testimonial Carrousel** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
@@ -45,7 +45,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop.png)
+![](./screen/desktop-preview.png)
 </details>
 
 <details>
