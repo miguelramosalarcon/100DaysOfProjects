@@ -106,6 +106,31 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
+Usamos `javascript` para el carrousel:
+
+```js
+/* ----- Javascript ----- */
+// Función para mostrar el siguiente testimonial
+    function goToNextTestimonial() {
+      if (currentIndex < testimonials.length - 2) {
+        currentIndex += 2;
+      } else {
+        currentIndex = 0;
+      }
+      showTestimonials(currentIndex);
+    }
+  
+    // Función para mostrar el testimonial anterior
+    function goToPrevTestimonial() {
+      if (currentIndex > 0) {
+        currentIndex -= 2;
+      } else {
+        currentIndex = testimonials.length - 2;
+      }
+      showTestimonials(currentIndex);
+    }
+```
+
 
 ### Lo que aprenderemos
 
