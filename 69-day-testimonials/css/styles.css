@@ -1,0 +1,175 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  --color-arrow: #d4dcef;
+  --color-body: #f5f8ff;
+  --text-color: #15152f;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+/* Day 1456 Testimonials UI Design */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-body);
+  font-family: "Merriweather";
+  font-size: 14px;
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+    font-weight: 900;
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 300px;
+}
+
+.carousel-control {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--color-arrow);
+  cursor: pointer;
+  margin: 0px 20px;
+  transition: all .3s;
+}
+
+.carousel-control:hover{
+    color: var(--text-color);
+    opacity: .6;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.testimonial {
+  width: 360px;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 25px;
+}
+
+/* .testimonial.visible {
+    opacity: 1;
+    transform: translateX(0);
+} */
+
+.testimonial p{
+    line-height:1.8;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans';
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info {
+  text-align: left;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.profession {
+  font-size: 12px;
+  font-family: 'IBM Plex Sans';
+}
+
+.dots {
+  text-align: center;
+  
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--white);
+  border-radius: 50%;
+  border:4px solid var(--color-arrow);
+  margin: 0 5px;
+  transition: all .3s;
+}
+
+.dot:hover{
+    border:4px solid var(--text-color);
+    opacity: .6;
+}
+
+.dot.active {
+  background-color: var(--color-arrow);
+
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    h2{
+        margin-top: 30px;
+    }
+    .carousel-container {
+        flex-direction: column;
+        height: 600px;
+      }
+
+      .carousel{
+        flex-direction: column;
+      }
+  }
+  
+  
+  
+  
