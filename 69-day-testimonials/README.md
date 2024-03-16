@@ -1,8 +1,8 @@
-# Modern Landing Page - Solution
+# Testimonial Carrousel - Solution
 
 <img src="./screen/desktop.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Modern Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Testimonial Carrousel** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -57,7 +57,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto67Mramos.jpg)
+![](./screen/reto69Mramos.jpg)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/67-day-modern-landing-page/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/69-day-testimonials/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
