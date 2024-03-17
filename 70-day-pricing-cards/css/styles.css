@@ -1,0 +1,257 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuentes ----- */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --body-bg: #19223e;
+    --card1-border: #7a3af4;
+    --card2-border: #212c4d;
+    --button-bg: #7a3af4;
+    --button-border: #7a3af4;
+    --text: #ffffff;
+
+    --color-icon-sun: #ffde59;
+    /* config. */
+    --fuente-mw: "Merriweather", sans-serif;
+    --fuente-ibm: "IBM Plex Sans", sans-serif;
+    --l-height: 22px;
+    --f-size: 16px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: var(--fuente-ibm);
+    background-color: var(--body-bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* darkmode */
+.btn{
+    background-color:var(--text);
+    width: 8em;
+    height: 4em;
+    border-radius: 5em;
+    margin-bottom: 30px;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn__indicator{
+    background-color:var(--text);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    transition: transform .5s ease;
+}
+
+.btn__icon-container{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__icon{
+    font-size: 2rem;
+    color: var(--color-icon-sun);
+}
+
+body.darkmode{
+    background-color:var(--text);
+    color:var(--body-bg);
+}
+
+.darkmode .btn__indicator{
+    transform: translateX(4em);
+    background-color: var(--body-bg);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn__icon{
+    color: var(--text);
+}
+
+.btn__icon.animated{
+    animation: spin .5s;
+}
+
+.darkmode button{
+    background-color: var(--body-bg);
+    border:1px solid var(--body-bg);
+    opacity: 1;
+}
+
+.darkmode a{
+    color: var(--body-bg);
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* main */
+main{
+    margin-bottom: 20px;
+}
+
+/* section */
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+article{
+    width: 356px;
+    height: 559px;
+    border:10px solid var(--card2-border);
+    border-radius: 20px;
+    transition: all .3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 60px;
+    font-family: var(--fuente-mw);
+}
+
+span{
+    font-size: 20px;
+}
+
+button{
+    width: 157px;
+    height: 59px;
+    border-radius: 10px;
+    border:2px solid var(--card2-border);
+    background-color: var(--body-bg);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 20px;
+    opacity: .7;
+    transition: all .5s;
+}
+
+article:hover button{
+    background-color: var(--button-bg);
+    border:1px solid var(--button-border);
+    color: var(--text);
+    opacity:1;
+}
+
+article:hover{
+    border:10px solid var(--card1-border);
+}
+
+hr{
+    border:2px solid var(--card2-border);
+    width: 333px;
+}   
+
+li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.bx-check{
+    margin-right: 10px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--color-icon-sun);
+}
+
+@media only screen and (max-width: 1120px){
+    main{
+        margin-bottom: 0px;
+    }
+    section{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    section{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    article{
+        width: 100%;
+    }
+    hr{
+        width: 280px;
+    }
+}
