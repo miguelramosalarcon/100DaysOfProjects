@@ -1,0 +1,33 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --color: #333;
+
+    /* config. */
+    --ft-size: 1rem;
+    --l-height: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    color: var(--color);
+    font-family: Arial, Helvetica, sans-serif;
+}
