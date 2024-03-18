@@ -1,0 +1,245 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --body-bg: #EEEFF9;
+    --card-bg: #FFFFFF;
+    --text1: #090B2E;
+    --card-item-bg: radial-gradient(#9B7FF8, #6570DA);
+    --button-bg: #090B2E;
+    --text2: #FFFFFF;
+
+    /* config. */
+    --fuente-mw: 'Merriweather', sans-serif;
+    --fuente-ibm: 'IBM Plex Sans', sans-serif;
+    --f-size: 1rem;
+    --l-height: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--text1);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   width: 350px;
+   height: auto;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title__h2{
+    font-size: 22px;
+    font-family: var(--fuente-mw);
+    font-weight: 900;
+}
+
+.title__a{
+    color: var(--text1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.account__container{
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.offer{
+    background-color: var(--body-bg);
+    font-size: 10px;
+    font-family: var(--fuente-ibm);
+    padding: 10px 5px;
+    border-radius: 27px;
+    text-align: center;
+    font-weight: 500;
+    width: 200px;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.contain{
+    border-radius:10px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+.account__info{
+    background: linear-gradient(135deg, #9B7FF8 0%, #6570DA 100%);
+    color: var(--text2);
+    padding: 10px 20px;
+    height: 60px;
+    font-family: var(--fuente-ibm);
+}
+
+.account__info2{
+    background: linear-gradient(135deg, #9B7FF8 0%, #6570DA 100%);
+    color: var(--text2);
+    padding: 10px 20px;
+    height: 60px;
+    font-family: var(--fuente-ibm);
+}
+
+.type__info{
+    display: flex;
+    font-family: var(--fuente-mw);
+    font-weight: 900;
+    justify-content: space-between; 
+    font-size: 12px;
+}
+
+.oneaccount{
+    font-size: 10px;
+    font-family: var(--fuente-ibm);
+}
+.account__list{
+   background: #7F81E4;
+   font-size: 10px;
+   color: var(--text2);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   font-family: var(--fuente-ibm);
+}
+
+.payment-method{
+    font-weight: 900;
+    font-size: 14px;
+    font-family: var(--fuente-mw);
+    margin-bottom: 15px;
+}
+
+.inputs{
+    width: 100%;
+    font-family: var(--fuente-ibm);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    margin-right: 15px;
+}
+
+.btn-continue{
+    background-color:var(--button-bg);
+    color: var(--text2);
+    font-family: var(--fuente-ibm);
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    border:none;
+}
+
+.btn-continue:hover{
+    border: none;
+    background: linear-gradient(135deg, #9B7FF8 0%, #6570DA 100%);
+}
+
+.fa-solid {
+    margin-left: 10px;
+}
+
+.radio{
+    appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border:1px solid var(--text1);
+    border-radius: 50%;
+}
+
+.radio:checked{
+    border:7px solid var(--text1);
+}
+
+@media screen and (min-width: 500px) and (max-width: 1920px) {
+    .container{
+        width: 400px;
+     }
+
+     .account__container{
+        height: 440px;
+     }
+
+     .title__h2{
+        font-size: 26px;
+     }
+
+     .title__a{
+        font-size: 16px;
+     }
+
+     .offer{
+        font-size: 12px;
+        width: 250px;
+     }
+     .contain{
+        height: 350px;
+     }
+     .account__info{
+        height: 80px;
+     }
+     .account__info2{
+       height:100px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+     }
+     .type__info{
+        font-size: 14px;
+     }
+
+     .oneaccount{
+        font-size: 14px;
+     }
+
+     .account__list{
+        font-size: 14px;
+     }
+
+     .payment-method{
+        font-size: 16px;
+     }
+
+     .label{
+        margin-left: -70px;
+     }
+
+}
