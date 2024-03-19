@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/70-day-pricing-cards/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/72-day-job-cards/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
