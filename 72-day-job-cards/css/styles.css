@@ -9,25 +9,148 @@ Tabla de contenidos:
 
 
 /* ----- Fuente ----- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 /* ----- Variables ----- */
 :root {
     /* colores */
-    --color: #333;
-
-    /* config. */
-    --ft-size: 1rem;
-    --l-height: 22px;
+    --color-text: #1E2246;
+    --color-body: #F3F6FF;
+    --color-card: #FFFFFF;
 }
 
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
-    color: var(--color);
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family:'Merriweather';
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card__item{
+    border-radius: 16px;
+    width: 240px;
+    max-width: 100%;
+    height: 180px;
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 24px 44px rgba(180, 191, 225, 0.4);
+}
+
+.card__header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card__image{
+    width: 60px;
+    height: 60px;
+}
+
+.title__design{
+    font-size: 16px;
+}
+
+.card__buttons{
+    width: 100%;
+    text-align: center;
+}
+
+.card__button{
+    height: 60px;
+    width: 200px;
+    background: none;
+    border-radius: 8px;
+    border:1px solid #C2C5E2;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.card__button:hover{
+    background-color: var(--color-text);
+    color: var(--color-card);
+}
+
+.footer{
+    width: 630px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer__p{
+    font-size: 14px;
+    line-height: 2;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+@media (min-width: 320px) and (max-width: 620px){
+    .card__container{
+        grid-template-columns: 1fr;
+    }
+
+    .title{
+        margin-top: 50px;
+    }
+
+    .footer{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .footer__p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 768px){
+    .card__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 769px){
+    .card__container{
+        gap: 10px;
+    }
 }

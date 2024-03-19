@@ -1,8 +1,8 @@
-# Upgrade plan - Solution
+# Job Cards - Solution
 
 <img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Upgrade plan** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Job Cards** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -51,13 +51,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.png)
+![](./screen/mobile.jpeg)
 </details>
 
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto71Mramos.jpg)
+![](./screen/reto72Mramos.jpg)
 </details>
 
 
@@ -104,57 +104,6 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
     grid-template-columns: 1fr;
   }
 }
-```
-
-Usamos `javascript` para darkmode:
-
-```js
-/* ----- Javascript ----- */
-const body = document.querySelector('body');
-const btn = document.querySelector('.btn');
-const icon = document.querySelector('.btn__icon');
-
-
-//function 
-function store(value){
-    localStorage.setItem('darkmode',value);
-}
-
-function load(){
-    const darkmode = localStorage.getItem('darkmode');
-
-    if (!darkmode) {
-        store(false);
-        icon.classList.add('fa-sun');
-    }else if(darkmode === 'true'){
-        body.classList.add('darkmode');
-        icon.classList.add('fa-moon');
-    }else if(darkmode === 'false'){
-        icon.classList.add('fa-sun');
-    }
-}
-
-load();
-
-btn.addEventListener('click', () =>{
-    body.classList.toggle('darkmode');
-    icon.classList.add('animated');
-
-    store(body.classList.contains('darkmode'));
-
-    if (body.classList.contains('darkmode')) {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-    }else{
-        icon.classList.add('fa-sun');
-        icon.classList.remove('fa-moon');
-    }
-
-
-    setTimeout(() =>{
-        icon.classList.remove('animated');
-    },500);
-});
 ```
 
 
