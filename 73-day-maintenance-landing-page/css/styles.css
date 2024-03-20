@@ -209,6 +209,7 @@ body {
     
     .main{
         height: 35%;
+        padding-left: 80px;
     }
     .main__h1{
         font-size: 50px;
@@ -220,10 +221,11 @@ body {
 
     .card__container{
         padding-top: 50px;
+        padding-left: 80px;
     }
 
     .card__item{
-        width: 280px;
+        width: 240px;
         height: 180px;
     }
     
@@ -361,6 +363,7 @@ body {
 
     .main__p{
         width: 90%;
+        margin-top: 10px;
     }
 
     .card__container{
@@ -369,19 +372,22 @@ body {
         grid-template-columns: 1fr 1fr;
         place-items: center;
         padding: 0;
+        margin-top: 20px;
         z-index: 2;
         position: relative;
+        gap: 10px;
     }
 
     .card__item{
         width: 120px;
-        height: 100px;
-        padding: 15px 10px;
+        height: 90px;
+        padding: 15px 20px;
         position: relative;
+        margin-top: 10px;
     }
 
     .card__h3{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .card__p{

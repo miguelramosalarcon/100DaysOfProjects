@@ -1,8 +1,8 @@
-# Job Cards - Solution
+# Maintenance Landing Page - Solution
 
 <img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Job Cards** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Maintenance Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -51,13 +51,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.jpeg)
+![](./screen/mobile.png)
 </details>
 
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto72Mramos.jpg)
+![](./screen/reto73Mramos.jpg)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/72-day-job-cards/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/73-day-maintenance-landing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -104,6 +104,23 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
     grid-template-columns: 1fr;
   }
 }
+```
+
+Usamos `javascript` para el menu toggle:
+
+```js
+/* ----- Javascript ----- */
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const headerNav = document.getElementById("header__nav");
+    const overlay = document.getElementById("overlay");
+
+    menuToggle.addEventListener("click", function() {
+        headerNav.classList.toggle("show");
+        menuToggle.classList.toggle("bx-menu");
+        menuToggle.classList.toggle("bx-x");
+    });
+});
 ```
 
 
