@@ -1,0 +1,282 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --bg-color: #17103B;
+    --color-main:linear-gradient(135.24deg, #D3EDEE 0%, #D9E5DD 100.35%, #D9E5DD 100.36%);
+    --green: #59AF96;
+    --white:#ffff;
+    --btn:#FFA593;
+
+    /* config. */
+    --fuente: 'IBM Plex Sans', sans-serif;
+    --ft-size: 1rem;
+    --l-height: 22px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--fuente);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color)
+}
+
+li{
+    list-style: none;
+}
+
+.grid__container{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    
+    display: grid;
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    ;
+    gap: 10px;
+    background: var(--color-main);
+    place-content: center;
+    border-radius: 5px;
+}
+
+.item{
+
+   width: 322px;
+   height: 259px;
+
+   display: flex;
+   flex-direction: column;
+   padding: 22px 20px;
+
+   gap: 25px;
+
+   border-radius: 5px;
+
+   font-weight: 500;
+
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item1__h3{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.item__span{
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.item__p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.pt{
+    padding-top: 50px;
+}
+
+li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.item3__button{
+    width: 223px;
+    height: 61px;
+    background-color: var(--btn);
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 200px;
+    transition: all .3s;
+    font-weight: 900;
+    box-shadow: 0px 12px 32px -15px #FF7267;
+}
+
+.item3__button:hover{
+    background-color:#C3DFD8;
+    box-shadow: 0px 12px 32px -15px #96b2ab;
+}
+
+.itemh{
+    height: 541px;
+    border:1px solid var(--white);
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #DDEBE7;
+}
+
+.item__a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--bg-color);
+    height: 35px;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.item__a:hover{
+    background-color: #C3DFD8;
+}
+
+.item__h5{
+    font-weight: 400;
+}
+
+.item5{
+    background-color:#C3DFD8;
+    gap: 10px;
+    height: 230px;
+}
+
+.item__aside{
+    margin-bottom: 15px;
+    font-weight: 600;
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .grid__container{
+        width: 90%;
+        height: 90%;
+        padding: 20px;
+        grid-template-areas: 
+        "item1 item3"
+        "item2 item3"
+        "item4 item5"
+        ;
+    }
+
+    
+    
+    .item5{
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .grid__container{
+        width: 88%;
+        height: 90%;
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item3"
+        ;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .itemh{
+       
+        width: 300px;
+    }
+    
+    .item5{
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1301px){
+    .grid__container{
+        width: 75%;
+        height: 90%;
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item3"
+        ;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .itemh{
+       
+        width: 300px;
+    }
+      
+    .item5{
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1441px){
+    .grid__container{
+        width: 75%;
+        height: 90%;
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item3"
+        ;
+        row-gap: 20px;
+        column-gap: 60px;
+    }
+
+    .itemh{
+        width: 280px;
+    }
+
+    .item5{
+        margin-top: 70px;
+    }
+}
