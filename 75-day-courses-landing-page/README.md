@@ -1,8 +1,8 @@
-# Website Section Bento Grid - Solution
+# Courses Landing Page- Solution
 
-<img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Website Section Bento Grid** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Courses Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -45,19 +45,19 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop-preview.png)
+![](./screen/desktop.avif)
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/Tablet.png)
+![](./screen/mobile.jpeg)
 </details>
 
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto74Mramos.jpg)
+![](./screen/reto75Mramos.jpeg)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/74-day-website-section/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/75-day-courses-landing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -110,6 +110,23 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
         ;
     }
 }
+```
+Usamos `javascript` para slider:
+
+```js
+/* ----- Javascript ----- */
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.fa-arrow-left');
+const nextButton = document.querySelector('.fa-arrow-right');
+
+let maxVisibleSlides = 1;
+
+if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+  maxVisibleSlides = 2; 
+} else if (window.innerWidth >= 1200) {
+  maxVisibleSlides = 4; 
+}
+
 ```
 
 
