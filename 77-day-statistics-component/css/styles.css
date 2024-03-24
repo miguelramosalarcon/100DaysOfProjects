@@ -9,17 +9,20 @@ Tabla de contenidos:
 
 
 /* ----- Fuente ----- */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ----- Variables ----- */
 :root {
     /* colores */
     --color: #333;
+    --bg-body: #0E183E;
+    --bg-card:#FFFFFF;
+
+    --bg-graph: #BBC6E7;
 
     /* config. */
-    --fuente: 'Poppins', sans-serif;
+    --fuente-poppins: 'Poppins', sans-serif;
+    --fuente-merri: 'Merriweather', sans-serif;
     --ft-size: 1rem;
     --l-height: 22px;
 }
@@ -28,6 +31,232 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1600px;
+    max-height: 1200px;
     font-family: var(--fuente);
+    background-color: var(--bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--fuente-poppins);
+}
+
+button, .arrow{
+    transition: all .3s;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+.container{
+    width: 1104px;
+    height: 684px;
+    border:2px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.courses__container{
+    width: 576px;
+    height: 477px;
+    background-color: var(--bg-card);
+    border-radius: 24px;
+    padding: 72px;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 37px;
+}
+
+.courses__h2{
+    font-size: 24px;
+    font-family: var(--fuente-merri);
+    font-weight: 900;
+}
+
+/* Bars */
+.bars{
+    width: 100%;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.bar__math{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contain{
+    border:1px solid #E8EBF4;
+    background-color:var(--bg-graph);
+    border-radius: 17px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.skill{
+    border:none;
+    width: 52%;
+    height: 100%;
+    border-radius: 17px;
+    
+
+}
+
+.orange{
+    width: 52%;
+    background-color: #FC9861;
+    animation: fillBarMath 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.blue{
+    background-color: #618CFC;
+    width: 76%;
+    animation: fillBarChemistry 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.rose{
+    background-color: #FC6186;
+    width: 21%;
+    animation: fillBarScience 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+.bar-math{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* keyframes */
+@keyframes fillBarMath {
+    0% {
+        width: 0%;
+    }
+    52% {
+        width: 52%;
+    }
+    100% {
+        width: 52%;
+    }
+}
+
+@keyframes fillBarChemistry {
+    0% {
+        width: 0%;
+    }
+    76% {
+        width: 76%;
+    }
+    100% {
+        width: 76%;
+    }
+}
+
+@keyframes fillBarScience {
+    0% {
+        width: 0%;
+    }
+    21% {
+        width: 21%;
+    }
+    100% {
+        width: 21%;
+    }
+}
+
+/* SUMMARY */
+.summary__container{
+    width: 454px;
+    height: 385px;
+    background-color: var(--bg-card);
+    border-radius: 24px;
+    margin-top: 250px;
+    padding: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 37px;
+}   
+
+.summary__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary__span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.arrow{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.open__courses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.open__h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.open__span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: var(--bg-body);
+    padding: 10px 24px;
+    border-radius: 66px;
+    color: var(--bg-card);
+    cursor: pointer;
+    border: none;
 }
