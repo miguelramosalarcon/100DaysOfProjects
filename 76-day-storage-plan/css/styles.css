@@ -166,10 +166,12 @@ button:hover{
 }
 
 .plan__title{
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     margin: 0;
     padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .infos__h6{
@@ -297,7 +299,7 @@ button:hover{
 
 /* media queries */
 
-@media screen and (width>1000px) and (width < 1201px) {
+/* @media screen and (width>1000px) and (width < 1201px) {
     body{
         flex-direction: row;
         gap: 50px;
@@ -359,7 +361,7 @@ button:hover{
 
 }
 
-@media screen and (width>1202px) and (width < 1920px) {
+@media screen and (width>1202px) and (width < 1921px) {
     body{
         flex-direction: row;
         gap: 50px;
@@ -409,4 +411,180 @@ button:hover{
         right: 240px;      
     }
 
+} */
+
+/* Media queries */
+
+/* Consulta de medios para pantallas pequeñas (móviles) */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .aside {
+        left: 220px;
+        border-radius: 16px;
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tablets y dispositivos pequeños) */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    /* Ajustes para pantallas medianas */
+    body {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .storage__container {
+        flex-direction: row;
+        width: 500px;
+        height: 350px;
+        position: relative;
+        z-index: 200;
+    }
+
+    .card__container {
+        display: flex;
+    }
+
+    .graph__info {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .info__button {
+        width: 90%;
+    }
+
+    .span {
+        font-size: 12px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .aside {
+        width: 540px;
+        top: 24.5%;
+        left: 125px;
+        border-radius: 24px;
+    }
+
+    .aside2 {
+        width: 330px;
+        height: 770px;
+        top: 90px;
+        right: 120px;
+    }
+}
+
+/* Consulta de medios para pantallas grandes (escritorio y dispositivos grandes) */
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+    /* Estilos para pantallas grandes */
+    body {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .storage__container {
+        flex-direction: row;
+        width: 500px;
+        height: 350px;
+        position: relative;
+        z-index: 200;
+    }
+
+    .card__container {
+        display: flex;
+    }
+
+    .graph__info {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .info__button {
+        width: 75%;
+    }
+
+    .span {
+        font-size: 12px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .aside {
+        width: 540px;
+        top: 24.5%;
+        left: 245px;
+        border-radius: 24px;
+    }
+
+    .aside2 {
+        width: 330px;
+        height: 770px;
+        top: 70px;
+        right: 240px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width:1920px) {
+    /* Estilos específicos para pantallas mayores a 1440px */
+    body {
+        max-width: 1440px; /* Limitar el ancho máximo del body */
+        margin: 0 auto; /* Centrar el contenido en pantallas grandes */
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .storage__container {
+        flex-direction: row;
+        width: 500px;
+        height: 350px;
+        position: relative;
+        z-index: 200;
+    }
+
+    .card__container {
+        display: flex;
+    }
+
+    .graph__info {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .info__button {
+        width: 90%;
+    }
+
+    .span {
+        font-size: 12px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .aside {
+        width: 540px;
+        top: 150px;
+        left: 285px;
+        border-radius: 24px;
+    }
+
+    .aside2 {
+        width: 330px;
+        height: 690px;
+        top: 70px;
+        right: 280px;
+    }
+
+    .plan__title{
+        margin-top: 85px;
+        padding: 0;
+    }
+    
 }
