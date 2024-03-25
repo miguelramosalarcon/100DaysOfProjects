@@ -1,8 +1,8 @@
-# Statistic Component- Solution
+# Statistics Component- Solution
 
 <img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Statistic Component** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Statistics Component** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/76-day-storage-plan/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/77-day-statistics-component/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
