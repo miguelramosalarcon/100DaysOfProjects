@@ -111,7 +111,7 @@ button:hover{
 
 label{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contain{
@@ -131,8 +131,6 @@ label{
     width: 52%;
     height: 100%;
     border-radius: 17px;
-    
-
 }
 
 .orange{
@@ -259,4 +257,37 @@ label{
     color: var(--bg-card);
     cursor: pointer;
     border: none;
+}
+
+/* Ajustes específicos para dispositivos de 375px */
+@media (max-width: 376px) {
+    body{
+        min-height:100vh;
+    }
+    .container{
+        width: 350px;
+        height: 1024px;
+        margin-bottom: 40px;
+    }
+    .courses__container{
+        margin-top: 20px;
+        padding: 30px;
+    }
+ 
+    .summary__container{
+        margin: 0;
+        margin-top: -80px;
+        padding: 30px;
+    }
+}
+
+/* Ajustes específicos para dispositivos de 768px */
+@media (min-width: 376px) and (max-width: 768px) {
+    .courses__container{
+        margin-top: -70px;
+    }
+
+    .summary__container{
+        margin: 0;
+    }
 }
