@@ -62,7 +62,6 @@ button:hover{
 .container{
     width: 1104px;
     height: 684px;
-    border:2px solid yellowgreen;
     display: flex;
     justify-content: center;
     align-items: center;
