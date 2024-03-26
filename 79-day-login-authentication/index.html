@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="title" content="Login Authentication">
+    <meta name="description" content="Breve descripción del contenido del proyecto">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Alertify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs/build/css/alertify.min.css"/>
+
+    <title>Log In Authentication</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card__container">
+            <div class="card__login">
+                <h2 class="login__h2">Log in to your account</h2>
+                <button class="btn blue"><img src="./images/google.png" alt=""> Log In with Google</button>
+                
+                <div class="divider">
+                    <span class="or">OR</span>
+                </div>
+
+                <div class="input__container">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+">
+                    <button class="btn continue">Continue</button>
+                </div>
+                <a href="#" class="link">Dont's have an account? <span class="span">Sign Up</span></a>
+            </div>
+            <div class="text__container">
+                <div class="text">
+                    <h3 class="text__h3">Seamless data tiering with  Online Archive</h3>
+                <p class="text__p">Offload aged data from your cluster to a lower-cost, queryable storage tier. Create an Online Archive to start saving on storage costs.</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs/build/alertify.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --black: #040404;
+  --blue: #4285f4;
+  --white: #ffff;
+
+  /* config. */
+  --fuente: "Mulish", sans-serif;
+  --ft-size: 1rem;
+  --l-height: 22px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+  width: 100vw;
+  max-width: 1600px;
+  height: 100vh;
+  min-height: 100vh;
+  font-family: var(--fuente);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.card__container {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 979px;
+  height: 671px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__login {
+  width: 334px;
+  height: 521px;
+  background-color: rgba(8, 8, 8, 0.8);
+  color: #ffff;
+  border-radius: 10px;
+  padding: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login__h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: -60px;
+}
+
+.blue:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+img {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--white);
+}
+
+.blue:hover img {
+  background-color: var(--black);
+}
+
+/* divider */
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #ffff;
+  opacity: 0.3;
+}
+
+.or {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 10px;
+  color: var(--white);
+}
+
+/* input + button */
+.input__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  height: 58px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: var(--white);
+  outline: none;
+}
+
+input:focus {
+  background-color: transparent;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.continue:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.span {
+  color: var(--blue);
+}
+
+.link:hover span {
+  text-decoration: underline;
+}
+
+/* TEXT */
+
+.text__container {
+  color: var(--white);
+
+  width: 50%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.text {
+  font-weight: 400;
+  width: 70%;
+  height: 100%;
+
+  text-align: left;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  line-height: 1.5;
+}
+
+.text__h3 {
+  font-size: 26px;
+}
+
+.text__p {
+  font-size: 16px;
+}
+
+@media (max-width: 769px) {
+  .card__container {
+    width: 760px;
+    height: 671px;
+  }
+
+  .card__login {
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
+  }
+
+  .text__container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 376px) {
+   
+    .card__container {
+      width: 100%;
+      height: auto;
+      border-radius: 0; 
+      flex-direction: column;
+    }
+  
+    .card__login {
+      width: 90%;
+      height: 600px;
+      max-height: 100%;
+      overflow-y: auto;
+      margin-top: 300px;
+    }
+  
+    .text__container {
+      width: 70%;
+    }
+  
+    .text {
+      width: 100%;
+      padding-right: 0; /* Eliminar el relleno derecho en pantallas pequeñas */
+      align-items: right; /* Centrar el contenido en pantallas pequeñas */
+      text-align: right; /* Centrar el texto en pantallas pequeñas */
+    }
+  
+    
+  }
+  
