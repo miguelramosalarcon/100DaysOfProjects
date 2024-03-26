@@ -213,7 +213,7 @@ input:focus {
   font-size: 16px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1000px) {
   .card__container {
     width: 760px;
     height: 671px;
@@ -230,13 +230,15 @@ input:focus {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
    
     .card__container {
       width: 100%;
       height: auto;
       border-radius: 0; 
       flex-direction: column;
+      margin-bottom: 50px;
+      
     }
   
     .card__login {
@@ -244,7 +246,7 @@ input:focus {
       height: 600px;
       max-height: 100%;
       overflow-y: auto;
-      margin-top: 300px;
+      margin-top: 500px;
     }
   
     .text__container {

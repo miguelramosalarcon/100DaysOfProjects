@@ -1,8 +1,8 @@
-# Oracle Landing Page - Solution
+# Login Authentication - Solution
 
 <img src="./screen/desktop-preview.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Oracle Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Login Authentication** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -51,13 +51,13 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>📱 Mobile version</summary>
 
-![](./screen/mobile.jpeg)
+![](./screen/mobile.gif)
 </details>
 
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto78Mramos.jpeg)
+![](./screen/reto79Mramos.png)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/78-day-oracle-landing-page/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/79-day-login-authentication/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -98,53 +98,52 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 
 ```css
 /* ----- Media queries ----- */
-@media screen and (max-width:376px){
-    .open, .close{
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-    }
+@media (max-width: 1000px) {
+  .card__container {
+    width: 760px;
+    height: 671px;
+  }
 
-    .navbar{
-        width: 200px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        
-        background-color: var(--text-color);
-        color: var(--border-color);
-        padding: 20px;
-        bottom: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /*efecto oscuro al aparecer el nabvar*/
+  .card__login {
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
+  }
 
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 20px;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
+  .text__container {
+    width: 60%;
+  }
 }
 ```
 
-Usamos `Javascript` para el menu hamburguesa:
+Usamos `Javascript` para el validación del input email:
 
 ```js
 /* ----- JS ----- */
-const navbar = document.querySelector('#navbar');
-const open = document.querySelector('#open');
-const close = document.querySelector('#close');
+document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.getElementById('email');
+    const continueButton = document.querySelector('.btn.continue');
 
-open.addEventListener('click',() => {
-    navbar.classList.add('visible');
-})
+    continueButton.addEventListener('click', function(event) {
+        event.preventDefault();
 
-close.addEventListener('click',() => {
-    navbar.classList.remove('visible');
-})
+        const emailValue = emailInput.value.trim();
+
+        if (emailValue === '') {
+            alertify.error('Please enter your email address');
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailValue)) {
+            alertify.error('Invalid email address');
+            return;
+        }
+        alertify.success('Login successful');
+
+        
+    });
+});
 ```
 
 
