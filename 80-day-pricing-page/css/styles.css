@@ -90,7 +90,11 @@ body {
     margin: 0;
 }
 
-
+hr{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #E9EEF8;
+}
 
 /* card left */
 .card-left{

@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/80-day-princing-page/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/80-day-pricing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
