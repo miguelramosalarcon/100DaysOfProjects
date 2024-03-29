@@ -1,0 +1,277 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --text-color: #0f0f2b;
+  --blue-dark: #0f0f2b;
+  --btn-bg: #3f9ccf;
+  --body-bg: #f4f9ff;
+  --white: #ffffff;
+
+  /* config. */
+  --fuente: "Mulish", sans-serif;
+  --ft-size: 1rem;
+  --l-height: 22px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente);
+  width: 100vw;
+  max-width: 1600px;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-bg);
+  background-image: url(../images/circle.png), url(../images/lunar.png),
+    url(../images/shade-top-left.png);
+  background-position: bottom left, bottom right, top left;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+li {
+  list-style: none;
+}
+.navbar__a {
+  text-decoration: none;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.navbar__a:hover,
+.navbar__a:focus,
+.navbar__a:active {
+  opacity: 1;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  background-color: var(--white);
+  box-shadow: 0px 30px 55px -30px rgba(50, 112, 187, 0.5);
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__ul {
+  display: flex;
+  gap: 20px;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+  background-image: url(../images/shade1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 150px;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px 0px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.blue {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.suscribe {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input {
+  width: 100%;
+}
+
+.inputEmail {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.span {
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-size: auto;
+  }
+
+  .navbar {
+    justify-content: end;
+    padding-right: 40px;
+  }
+
+  .main {
+    height: 100%;
+  }
+
+  .text {
+    height: 300px;
+    text-align: left;
+    background-size: 200px;
+  }
+
+  .text__info {
+    width: 60%;
+    margin-left: 50px;
+  }
+
+  /* blue */
+
+  .h3 {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .sign {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+
+  .text {
+    text-align: left;
+    height: 350px;
+    background-size: 300px;
+  }
+
+  .text__info {
+    width: 45%;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+
+  /* blue */
+
+  .h3 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .sign {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+
+  .text {
+    text-align: left;
+    height: 350px;
+    background-size: 300px;
+  }
+
+  .text__info {
+    width: 45%;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+
+  /* blue */
+
+  .h3 {
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .sign {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
