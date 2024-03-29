@@ -1,8 +1,8 @@
-# Feedback Modal - Solution
+# Joinlist Landing Page - Solution
 
 <img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **Feedback Modal** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Joinlist Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -57,7 +57,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto81Mramos.gif)
+![](./screen/reto82Mramos.png)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/81-day-feedback-modal/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/82-day-joinlist-landing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -116,30 +116,31 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
 }
 ```
 
-Usamos `Javascript` para el validación del Text Area y apertura y cierre de modales :
+Usamos `Javascript` para el validación del input email:
 
 ```js
 /* ----- JS ----- */
-document.addEventListener("DOMContentLoaded", function () {
-    const closeButton = document.querySelector('.close');
-    const sendFeedbackButton = document.querySelector('.send-feedback');
-    const copyLink = document.querySelector('.copy');
-    const equisButton = document.querySelector('.equis');
-    const cancelButton = document.querySelector('.cancel');
-    const cardElement = document.querySelector('.card');
-    const faceIcons = document.querySelectorAll('.icon-face');
-    const sendButton = document.querySelector('.send');
-    const thankyouModal = document.getElementById('thankyou');
-    const okButton = thankyouModal.querySelector('button[type="button"]');
-    const textarea = document.getElementById('textarea');
+document.addEventListener('DOMContentLoaded', function() {
+    const subscribeButton = document.querySelector('.email');
+    subscribeButton.addEventListener('click', function() {
+        const emailInput = document.querySelector('.inputEmail');
+        const email = emailInput.value.trim();
 
-    // Evento para mostrar los elementos ocultos y ocultar la tarjeta cuando se hace clic en el botón de cerrar
-    equisButton.addEventListener('click', function () {
-        sendFeedbackButton.style.display = 'block';
-        copyLink.style.display = 'block';
-        cardElement.style.display = 'none';
+        if (validateEmail(email)) {
+            // Email válido, mostrar mensaje de suscripción
+            alertify.success('Thanks for your subscription');
+            // Aquí puedes enviar el formulario si lo deseas
+        } else {
+            // Email no válido, mostrar mensaje de error
+            alertify.error('Please enter a valid email address');
+        }
     });
+});
 
+function validateEmail(email) {
+    // Expresión regular para validar el formato de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
 ```
 
