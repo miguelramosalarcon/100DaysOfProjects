@@ -1,0 +1,434 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --body-color: #202021;
+  --black: #202021;
+  --star-color: #e5a14d;
+  --white: #ffffff;
+  --blue: #6b6bf3;
+
+  /* config. */
+  --fuente: "Mulish", sans-serif;
+  --ft-size: 1rem;
+  --l-height: 22px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 1600px;
+  height: 100dvh;
+  min-height: 100vh;
+  font-family: var(--fuente);
+  background-color: var(--body-color);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* card1 */
+
+.card1__container {
+  width: 100%;
+  height: 35%;
+}
+
+.card1 {
+  width: 60%;
+  height: 100%;
+  background-color: #29292b;
+  margin-left: 150px;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card1__img {
+  background-color: var(--black);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.load {
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.load-blue {
+  width: 80%;
+  background-color: var(--blue);
+  border-radius: 6px;
+  height: 6px;
+  animation: loading linear forwards 2s;
+}
+
+.btn {
+  width: 120px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 18px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--blue);
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  80% {
+    width: 80%;
+  }
+}
+
+/* card2 */
+.card1y2 {
+  display: flex;
+  width: 100%;
+  height: 65%;
+}
+
+.card2__container {
+  width: 80%;
+  height: 100%;
+}
+
+.bg {
+  background-color: #29292b;
+  padding: 40px;
+}
+.card2 {
+  width: 70%;
+  height: 60%;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.btn-purple {
+  padding: 7px 15px;
+  border-radius: 13px;
+  background-color: var(--blue);
+  font-size: 14px;
+  color: var(--white);
+  border: var(--blue);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-purple:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
+/* card3 */
+.card3__container {
+  width: 50%;
+  height: 100%;
+}
+
+.card3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card3__img {
+  background-color: var(--black);
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.text {
+  width: 100%;
+  font-size: 16px;
+}
+
+.h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--blue);
+}
+
+/* RATING */
+
+/* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+.rating-group {
+  display: inline-flex;
+}
+
+/* make hover effect work properly in IE */
+.rating__icon {
+  pointer-events: none;
+}
+
+/* hide radio inputs */
+.rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* set icon padding and size */
+.rating__label {
+  cursor: pointer;
+  /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+  padding: 0 0.1em;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+/* add padding and positioning to half star labels */
+.rating__label--half {
+  padding-right: 0;
+  margin-right: -1.19em;
+  z-index: 2;
+}
+
+/* set default star color */
+.rating__icon--star {
+  color: var(--star-color);
+}
+
+/* set color of none icon when unchecked */
+.rating__icon--none {
+  color: #eee;
+}
+
+/* if none icon is checked, make it red */
+.rating__input--none:checked + .rating__label .rating__icon--none {
+  color: var(--black);
+}
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .rating__icon--star {
+  color: var(--black);
+}
+
+/* make all stars orange on rating group hover */
+.rating-group:hover .rating__label .rating__icon--star,
+.rating-group:hover .rating__label--half .rating__icon--star {
+  color: var(--star-color);
+}
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .rating__icon--star,
+.rating__input:hover ~ .rating__label--half .rating__icon--star {
+  color: var(--black);
+}
+
+.span450 {
+  font-size: 14px;
+}
+
+.install {
+  margin-top: 50px;
+  width: 121px;
+  height: 35px;
+}
+
+@media screen and (max-width: 1441px) {
+  .container {
+    width: 80%;
+  }
+  .card1 {
+    width: 60%;
+  }
+
+  .card2__container {
+    width: 50%;
+  }
+  .card2 {
+    width: 75%;
+    height: 50%;
+  }
+  .card3 {
+    width: 65%;
+    height: 85%;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .container {
+    width: 75%;
+  }
+  .card1 {
+    width: 60%;
+  }
+
+  .card2__container {
+    width: 50%;
+  }
+  .card2 {
+    width: 75%;
+    height: 50%;
+  }
+  .card3 {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .card1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .card1y2 {
+	width: 100%;
+  }
+
+  .card2__container {
+    width: 100%;
+  }
+
+  .card2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50%;
+  }
+
+  .card3__container {
+    width: 100%;
+  }
+
+  .card3 {
+    width:100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    height: auto;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    gap: 0px;
+  }
+  .card1__container {
+    height: 50%;
+  }
+  .card1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .card1y2 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card2__container {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0px;
+  }
+
+  .card2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .card3__container {
+    width: 100%;
+  }
+
+  .card3 {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+  }
+}
