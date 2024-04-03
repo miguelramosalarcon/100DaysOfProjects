@@ -1,0 +1,417 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --white: #ffff;
+  --text-color: #000000;
+  --link-color: #09183f;
+  --color: rgb(9, 24, 63);
+  /* config. */
+  --fuente-merri: "Merriweather", sans-serif;
+  --fuente-mulish: "Mulish", sans-serif;
+  --ft-size: 1rem;
+  --l-height: 22px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 1600px;
+  height: 100dvh;
+  min-height: 100dvh;
+  font-family: var(--fuente-mulish);
+  color: var(--text-color);
+  background: linear-gradient(119.11deg, #ff7982 0%, #ff8d53 100%);
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+  transition: all ease 0.5s;
+  color: var(--link-color);
+}
+
+a:hover {
+  transition: all ease 0.5s;
+  opacity: 1;
+}
+
+.container {
+  background-color: #f4f8fd;
+  width: 90%;
+  /* height: 100%; */
+  margin-top: 50px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px;
+  font-family: var(--fuente-mulish);
+  color: var(--link-color);
+}
+
+/* LOGIN */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login__a {
+  opacity: 0.7;
+}
+
+.btn {
+  font-family: var(--fuente-mulish);
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(119.11deg, #ff7982 0%, #ff8d53 100%);
+  border: 1px solid #ff7982;
+  color: var(--white);
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--link-color);
+  border: 1px solid #ff7982;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: flex;
+  gap: 30px;
+  color: var(--link-color);
+  font-size: 14px;
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-content a {
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff7982;
+  color: var(--white);
+}
+
+.link {
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+/* HERO  */
+.hero {
+  background-image: url(../images/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+.hero__content {
+  border-radius: 10px;
+  background-color: rgba(9, 24, 63, 0.5);
+  box-shadow: 0 14px 25px -10px rgba(9, 24, 63, 0.2);
+  width: 48%;
+  height: 60%;
+  color: var(--white);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.p {
+  font-family: var(--fuente-mulish);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.btn-hero:hover {
+  color: var(--white);
+}
+
+/* MAIN */
+.main {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--white);
+  width: 33%;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card-img {
+  width: 100%;
+  height: 300px;
+}
+
+.women {
+  background-image: url(../images/women.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.purse {
+  background-image: url(../images/purse.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: var(--fuente-merri);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.p-card {
+  width: 75%;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.btn-card {
+  background-color: transparent;
+  border: 1px solid #09183f;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn-card:hover {
+  background: linear-gradient(119.11deg, #ff7982 0%, #ff8d53 100%);
+  color: var(--white);
+}
+
+.menu-toggle, .equis{
+    display: none;
+}
+
+
+
+/* media */
+@media screen and (max-width: 900px) {
+  .hero {
+    width: 100%;
+    height: 50vh;
+  }
+  .hero__content {
+    width: 70%;
+    height: 60%;
+    padding: 20px 60px;
+  }
+
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero__content {
+    width: 100%;
+    height: 90%;
+    flex-wrap: wrap;
+  }
+
+  .p {
+    font-size: 14px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .hamburger-btn {
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    justify-content: end;
+  }
+
+  .navbar{
+    display: none;
+  }
+  
+
+  .dropdown {
+    flex-direction: column;
+  }
+
+  .dropbtn {
+    color: var(--white);
+    margin-top: 20px;
+  }
+
+  .dropdown-content {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  .link {
+    color: var(--white);
+    margin-left: 15px;
+  }
+
+  .login {
+    color: var(--white);
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
+  .login__a {
+    color: var(--white);
+  }
+
+  .menu-toggle{
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .equis{
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .navbar.show {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 16px;
+    flex-direction: column;
+    background-color: var(--link-color);
+    color: var(--white);
+    z-index: 3;
+    transition: all 0.5s ease;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .btn:hover {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid #ff7982;
+  }
+}
