@@ -1,8 +1,8 @@
-# Looking co-founders - Solution
+# Webshop Landing Page - Solution
 
-<img src="./screen/desktop-design.png" alt="Solucion preview" style="max-width: 100%; height: auto;">
+<img src="./screen/desktop.avif" alt="Solucion preview" style="max-width: 100%; height: auto;">
 
-Esta es una solución del proyecto **4Looking co-founders** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
+Esta es una solución del proyecto **Webshop Landing Page** como parte del reto de codificación #100DaysOfProjects [Front End Club](https://www.facebook.com/frontendclubfb). La mejor manera de escribir un buen código es programando todos los días🔥.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Level-Junior-green" alt="Level - Junior">
@@ -45,7 +45,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](./screen/desktop-design.png)
+![](./screen/desktop.avif)
 </details>
 
 <details>
@@ -57,7 +57,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>💪 Solución </summary>
 
-![](./screen/reto85Mramos.png)
+![](./screen/reto86Mramos.gif)
 </details>
 
 
@@ -65,7 +65,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/85-day-looking-co-founders/)
+- [Pagina web](https://miguelramosalarcon.github.io/100DaysOfProjects/86-day-webshop-landing-page/)
 - [Codigo fuente]()
 
 ## Proceso de trabajo
@@ -115,6 +115,30 @@ Usamos `media query` para adaptar el diseño a pantallas pequeñas:
   }
 }
 ```
+Usamos `Javascript` para el menu toggle y dropdown:
+
+```js
+/* ----- JS ----- */
+
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    dropdownContent.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.arrow')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+```
+
 
 > [!IMPORTANT]
 > **“Si deseas usar alguna parte de mi codigo, cita la fuente (Miguel Ramos Alarcón), no es solo copiar todo y pegarlo"** Detras de un código hay un esfuerzo.
