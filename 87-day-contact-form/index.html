@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="title" content="Contact Form">
+    <meta name="description" content="Reto 87 Frontend Club">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+                <img src="./images/logo.png" alt="logo">
+        </div>
+        <div class="header__nav">
+            <div class="nav" id="nav">
+                <a href="#" class="link">Features</a>
+                <a href="#" class="link">How it works</a>
+                <a href="#" class="link">Pricing</a>
+                <a href="#" class="link">Documentation</a>
+            </div>
+        </div>
+        <div class="header__login">
+            <a href="#" class="link">Log In</a>
+            <button class="btn">Try for free</button>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="touch__container">
+            <div class="touch">
+                <h2 class="touch__h2">Get in touch</h2>
+                <span class="touch__span">We are here for you! How can we help?</span>
+                <div class="form">
+                    <h3 class="form__title">Drop us a line</h3>
+                    <form action="">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Please enter your email" required>
+    
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="just">Just saying hi</option>
+                            <option value="front">FrontEnd Club</option>
+                            <option value="back">BackEnd Club</option>
+                        </select>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                        <input type="submit" value="SEND" class="btn btn-submit">
+                    </form>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="resources__container">
+            <div class="resourses">
+                <h3 class="form__title">Or check out these resources</h3>
+                <div class="card">
+                    <img src="./images/slack.png" alt="">
+                    <div class="card__text">
+                        <h4 class="h4">Join our community on Slack</h4>
+                        <p class="p">Popular UI components like tooltips, modals, cards, surveys are there to help you.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/document.png" alt="">
+                    <div class="card__text">
+                        <h4 class="h4">Read our documentation</h4>
+                        <p class="p">Popular UI components like tooltips, modals, cards, surveys are there to help you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
