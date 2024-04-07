@@ -1,0 +1,252 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --text-color: #2E3336;
+    --body-color: #DCE3E9;
+    --white: #FFFFFF;
+
+
+    /* config. */
+    --fuente: 'Mulish', sans-serif;
+    --ft-size: 1rem;
+    --l-height: 22px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    min-height: 100dvh;
+    font-family: var(--fuente);
+	color: var(--text-color);
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--white);
+    width: 70%;
+    height: auto;
+    border-radius:40px;
+    box-shadow: 30px 30px 70px rgba(143, 165, 185, 0.45), -30px -30px 70px rgba(255, 255, 255, 0.9);
+    padding: 30px;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.nav__list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav__a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    position: relative;
+}
+
+.nav__a::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Controla la distancia de la línea desde el texto */
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    transition: width 0.3s ease;
+}
+
+.icon-search{
+    color: #9BAAB7;
+    cursor: pointer;
+}
+
+.nav__a:hover::after,
+.nav__a:focus::after {
+    width: 50%; 
+}
+
+
+/* SECTION SEARCH */
+
+.search__container{
+    display: flex;
+    padding: 0 70px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+
+.search__input{
+    width: 300px;
+    height: 30px;
+    border-bottom: 2px solid #C8D3DC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+::placeholder{
+    color: #9BAAB7;
+    font-size: 18px;
+}
+
+.search__upload button{
+    color: var(--white);
+    background-color: #2E3336;
+    padding: 10px 20px;
+    box-shadow: 0px 11px 14px -10px rgba(46, 51, 54, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* IMAGES */
+.cards__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 275px;
+    height: 214px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+    background: rgba(19, 35, 52, 0.5);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: var(--white);
+    transition: 0.6s;
+    transform: translateY(100%);
+}
+
+.card:hover .overlay{
+    transform: translateY(0%);
+} 
+
+.h2{
+    font-size: 14px;
+}
+
+.span{
+    font-size: 12px;
+}
+
+.fa-bookmark{
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1440px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .container{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .container{
+        margin: 30px 0px;
+    }
+    .nav{
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+    
+    .search__container{
+        padding: 0px;
+    }
+    
+    .search__input{
+        width: 200px;
+        height: 35px;
+        border-bottom: 2px solid #C8D3DC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    input{
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    
+    ::placeholder{
+        color: #9BAAB7;
+        font-size: 18px;
+    }
+    
+    .search__upload button{
+        color: var(--white);
+        background-color: #2E3336;
+        padding: 10px 20px;
+        box-shadow: 0px 11px 14px -10px rgba(46, 51, 54, 0.8);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}
