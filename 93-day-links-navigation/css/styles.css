@@ -1,0 +1,287 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --body-color: #E7E8EC;
+    --orange: #FFBC00;
+    --orange-name: #DA8F00;
+    --text-color: #2F3144;
+    --white: #FFFFFF;
+
+    /* config. */
+    --fuente: 'Mulish', sans-serif;
+
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+	color: var(--text-color);
+    min-height: 100dvh;
+    height: 100dvh;
+    width: 100vw;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-color);
+}
+
+.container{
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 80vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 35px 40px -22px rgba(42, 48, 83, 0.1);
+    padding: 50px 40px;
+}
+
+.card__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header{
+    width: 60%;
+}
+
+.h1{
+    font-size: 34px;
+    font-weight: 900;
+}
+.grid{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+    gap: 10px;
+}
+
+.card{
+    width: 360px;
+    height: 195px;
+    border-radius:10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.images__container{
+    background-color: var(--orange);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+
+svg{
+    width: 30px;
+}
+.card img{
+    border-radius: 50%;
+    width: 50px;
+    
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: var(--orange);
+}
+
+.images__container,
+.images__container svg {
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+.card:hover .images__container svg {
+    filter: invert(100%);
+}
+
+.card:hover .images__container {
+    background-color: var(--white); /* Cambia el color de fondo del contenedor en hover */
+}
+
+.card__blog{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 9px 20px -14px rgba(47, 49, 68, 0.5);
+    border: 1px solid #E7E8EC;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+.blog__h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.blog__info{
+    width: 100%;
+    height: auto;
+    padding: 20px;    
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blog__info:hover,
+.blog__info.clicked {
+    background-color: #F1F2F7;
+}
+
+.blog__h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog__span{
+    font-size: 16px;
+    color: var(--orange-name);
+    font-weight: 500;
+}
+
+@media screen and (max-width:1441px) {
+    .container{
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .card{
+        width: 320px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .container{
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .card{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container{
+        height: 90vh;
+    }
+    .header{
+        width: 100%;
+        text-align: center;
+    }
+    .card__container{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 310px;
+    }
+
+    .card__blog{
+        width: 100%;
+        height: auto;
+        flex-direction: column
+    }
+
+    .card__blog{
+        margin-top: 20px;
+    }
+    .blog{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 100vw;
+        min-height: 1500px;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 920px;
+        align-items: start;
+    }
+    .header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .h1{
+        font-size: 30px;
+    }
+
+    .card__container{
+        flex-direction: column;
+        
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+       
+    }
+    .card{
+        width: 95vw;
+    }
+
+    .card__blog{
+        flex-direction: column;
+        background-color: var(--white);
+    }
+
+    .blog{
+        flex-direction: column;
+        
+    }
+    
+}
