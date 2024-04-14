@@ -1,0 +1,186 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* ----- Variables ----- */
+:root {
+    /* colores */
+    --form-color: #E36A7D;
+    --text-color: #2D2B2B;
+    --white: #FFFFFF;
+    --body-color: #F7F7F7;
+
+    /* config. */
+    --fuente: 'Lato', sans-serif;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1600px;
+    font-family: var(--fuente);
+    background-color:var(--body-color);
+    display: flex;
+    justify-content: center;   
+}
+
+.shape{
+    background-color: var(--form-color);
+    width: 100%;
+    height: 200px;
+    color:var(--white);
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+    
+}
+
+.shape__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.h1{
+    font-size: clamp(30px,5vw,35px);
+}
+
+.span{
+    font-size: clamp(15px,2vw,25px);
+    opacity: .7;
+    text-decoration: none;
+    color: var(--white);
+    transition: all .5s;
+}
+
+.span:hover{
+    opacity: 1;
+}
+
+.list__container{
+    background-color: var(--white);
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
+    top: 18%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    box-shadow: 0px 11px 14px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    overflow-y: auto;
+
+    scrollbar-width: thin; 
+    scrollbar-color: var(--form-color) var(--white);
+}
+
+.music__container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.number{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #979797;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.music__avatar-image{
+    width: 60px;
+    height: 60px;
+}
+
+.music__info{
+    text-align:left;
+    width: 300px;
+}
+
+.music__title{
+    font-size: clamp(20px,2vw,29px);
+    font-weight: 900;
+}
+
+.music__autor{
+    font-size: clamp(15px,1vw,20px);
+    font-weight: 400;
+}
+
+.counter{
+    font-size: clamp(15px,1vw,20px);
+    font-weight: 400;
+    opacity: .5;
+}
+
+.play{
+    padding: 10px;
+}
+
+.icon-play{
+    font-size: clamp(15px,10vw,30px);
+    color: var(--form-color);
+    cursor: pointer;
+    transition: color .5s;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-play:hover{
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 769px){
+    .list__container{
+        top: 15%;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .list__container{
+        top: 22%;
+        width: 95vw;
+        padding: 20px;
+    }
+
+    .shape__container{
+        padding-left: 30px;
+    }
+    .counter{
+        display: none;
+    }
+}

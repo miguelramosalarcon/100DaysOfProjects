@@ -1,0 +1,53 @@
+[
+    {
+      "title": "Dance Monkey",
+      "artist": "Tones and I",
+      "src": "./music/dancemonkey.mp3",
+      "cover": "./images/danceMonkey.webp"
+    },
+    {
+      "title": "Motor y Motivo",
+      "artist": "Grupo 5",
+      "src": "./music/motorymotivo.mp3",
+      "cover": "./images/grupo5.jpeg"
+    },
+    {
+      "title": "Balada",
+      "artist": "Gusttavo Lima",
+      "src": "./music/Balada.mp3",
+      "cover": "./images/gustavolima.webp"
+    },
+    {
+      "title": "Ignorantes",
+      "artist": "Bad Bunny x Seach",
+      "src": "./music/ignorantes.mp3",
+      "cover": "./images/badbunny.webp"
+    },
+    {
+      "title": "Taboo",
+      "artist": "Don Omar",
+      "src": "./music/taboo.mp3",
+      "cover": "./images/donomar.jpeg"
+    },
+    {
+      "title": "Numb",
+      "artist": "Linkin Park",
+      "src": "./music/numb.mp3",
+      "cover": "./images/linkinpark.jpeg"
+    },
+    {
+      "title": "Rehab",
+      "artist": "Amy Winehouse",
+      "src": "./music/rehab.mp3",
+      "cover": "./images/amy.jpeg"
+    },
+    {
+      "title": "Play Hard",
+      "artist": "David Guetta",
+      "src": "./music/playhard.mp3",
+      "cover": "./images/davidguetta.jpeg"
+    }
+   
+   
+  ]
+  
