@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="title" content="Restaurant Landing Page">
+    <meta name="description" content="Reto 97 - Frontend Club ">
+    <!-- Font Asweome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Restaurant Landing Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./images/favicon.png" alt="">
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__link link" id="languageDropdownToggle">EN <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown" style="display: none;">
+                    <a href="#" class="nav__link link link-drop">ES</a>
+                    <a href="#" class="nav__link link link-drop">DE</a>
+                    <a href="#" class="nav__link link link-drop">IT</a>
+                </div>
+                <a href="#" class="nav__link link">Contact</a>
+                <a href="#" class="nav__link link">Log In</a>
+                <a href="#" class="nav__link link btn">Sign Up</a>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section__info">
+                <h1 class="section__h1">Food delivery from the best restaurants in your town</h1>
+                <p class="section__p">Food, drinks and desserts available for delivery or pickup.</p>
+                <div class="section__input">
+                    <div class="input__container">
+                        <input type="text" name="text" id="text" placeholder="Enter delivery address">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>                
+                    <div class="button">
+                        <a href="#" class="nav__link btn signup">Find food</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footer__termn">
+                <a href="#" class="nav__link link-footer">Terms of Privacy</a>
+                <span>・</span>
+                <a href="#" class="nav__link link-footer">Cookies</a>
+                <span>・</span>
+                <a href="#" class="nav__link link-footer">About</a>
+                <span>・</span>
+                <a href="#" class="nav__link link-footer">Contact</a>
+            </section>
+            <section class="section__autor">
+                <a href="https://github.com/miguelramosalarcon/100DaysOfProjects" target="_blank" class="nav__link link-footer">&copy; 2024 - Miguel Ramos Alarcón</a>
+            </section>
+            <section class="section__icons">
+                <i class="fa-brands fa-facebook link-footer"></i>
+                <i class="fa-brands fa-github link-footer"></i>
+            </section>
+        </footer>
+    </div>
+    
+<script src="./js/script.js"></script>
+</body>
+
+</html>
