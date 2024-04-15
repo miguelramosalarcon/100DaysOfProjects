@@ -159,10 +159,12 @@ body {
     width: 600px;
     height: 50px;
     margin: 20px 0px;
+    
 }
 
 .input__container{
     background-color: var(--white);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
 }
 
 input{
@@ -190,6 +192,7 @@ input{
 
 .signup{
     color: var(--white);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
 }
 
 .signup:hover{
