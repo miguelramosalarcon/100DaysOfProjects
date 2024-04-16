@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ramos Alarcón">
+    <meta name="title" content="Users List">
+    <meta name="description" content=" Reto 99 - Frontend Club">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Users List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__title">
+                <h1 class="header__h1">Users</h1> 
+                <i class="fa-solid fa-bars"></i>   
+            </div>
+            <div class="header__nav">
+                <div class="input__container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" id="search" placeholder="Search users">
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav__link">Reputation</a>
+                    <a href="#" class="nav__link">New users</a>
+                    <a href="#" class="nav__link">Voters</a>
+                    <a href="#" class="nav__link">Editors</a>
+                    <a href="#" class="nav__link">Moderators</a>
+                </nav>
+            </div>
+        </div>
+        <div class="users__container">
+            <div class="user__card" id="user1" >
+                <div class="user__image">
+                    <img src="./images/user1.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Lelah Nichols</h2>
+                    <h3 class="user__locate">Troy, MI</h3>
+                    <div class="clothes">
+                        <span class="user__span">clothes</span>
+                        <span class="user__span">stem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__card" id="user2">
+                <div class="user__image">
+                    <img src="./images/user2.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Jesus Weiss</h2>
+                    <h3 class="user__locate">Fort Worth, TX</h3>
+                    <div class="clothes">
+                        <span class="user__span">headset</span>
+                        <span class="user__span">gadget</span>
+                        <span class="user__span">speed</span>
+                        <span class="user__span">winter</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__card" id="user3">
+                <div class="user__image">
+                    <img src="./images/user3.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Annie Rice</h2>
+                    <h3 class="user__locate">Austin, TX</h3>
+                    <div class="clothes">
+                        <span class="user__span">road</span>
+                        <span class="user__span">mountain</span>
+                        <span class="user__span">trip</span>
+                        <span class="user__span">earth</span>
+                        <span class="user__span">nature</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__card" id="user4">
+                <div class="user__image">
+                    <img src="./images/user4.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Robert Brower</h2>
+                    <h3 class="user__locate">Cincinnati, OH</h3>
+                    <div class="clothes">
+                        <span class="user__span">Maintenance</span>
+                        <span class="user__span">gears</span>
+                        <span class="user__span">frames</span>
+                        <span class="user__span">repair</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__card"id="user5">
+                <div class="user__image">
+                    <img src="./images/user5.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Amy Campbell</h2>
+                    <h3 class="user__locate">Warrior, AL</h3>
+                    <div class="clothes">
+                        <span class="user__span">music</span>
+                        <span class="user__span">disks</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__card" id="user6">
+                <div class="user__image">
+                    <img src="./images/user6.png" alt="" class="avatar">
+                </div>
+                <div class="user__info">
+                    <h2 class="user__name">Anthony S. Morin</h2>
+                    <h3 class="user__locate">Lyndhurst, NJ</h3>
+                    <div class="clothes">
+                        <span class="user__span">vintage</span>
+                        <span class="user__span">electric</span>    
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
