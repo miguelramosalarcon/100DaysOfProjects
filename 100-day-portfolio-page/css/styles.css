@@ -1,0 +1,208 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --body-color: #f9f9f9;
+  --text-color: #242e4c;
+  --white: #ffffff;
+  --blue: #235bf6;
+
+  /* config. */
+  --fuente: "Mulish", sans-serif;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  font-family: var(--fuente);
+  background-color: var(--body-color);
+}
+
+.header {
+  background: var(--white);
+  box-shadow: 0px 2px 10px rgba(36, 46, 76, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 1;
+}
+
+.email {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.email:hover {
+  opacity: 0.5;
+}
+
+.fa-envelope {
+  cursor: pointer;
+}
+
+/* main */
+.main {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main__info {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.p {
+  font-size: 14px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: var(--blue);
+  border-radius: 31px;
+  padding: 10px 20px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+}
+
+/* portfolio */
+.main__portfolio {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+picture {
+  background-color: var(--white);
+  width: 330px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.span {
+  position: absolute;
+  background-color: var(--white);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: -30px;
+  right: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.span__day {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.span__100 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 769px) {
+  .p {
+    width: 70%;
+  }
+
+  .span {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    right: 0px;
+  }
+}
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px; 
+  background-color: var(--text-color);
+}
+
+/* Estilo del "agarre" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue); 
+  border-radius: 10px;
+}
+
+/* Estilo de la barra de desplazamiento cuando se desplaza */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color); 
+  border: 1px solid var(--white);
+}
